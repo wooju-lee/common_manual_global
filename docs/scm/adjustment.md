@@ -1,8 +1,9 @@
 ---
-sidebar_label: ▸ Adjustment
+sidebar_label: ▸ 재고 조정
 sidebar_position: 4
 author: Wooju
 created: "2026-04-14"
+countries: [us]
 ---
 
 # 📍 재고 조정 (Adjustment)

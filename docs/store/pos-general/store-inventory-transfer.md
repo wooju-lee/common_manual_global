@@ -1,8 +1,9 @@
 ---
-sidebar_label: Store Inventory Transfer
+sidebar_label: 매장 재고 이동
 sidebar_position: 4
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 매장 재고 이동 (Sales > DP)

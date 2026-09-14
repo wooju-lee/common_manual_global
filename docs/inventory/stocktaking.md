@@ -1,8 +1,9 @@
 ---
-sidebar_label: 📋 Stocktaking
+sidebar_label: 📋 재고 실사
 sidebar_position: 4
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 스토어 재고 실사

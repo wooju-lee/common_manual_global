@@ -1,8 +1,9 @@
 ---
-sidebar_label: Corporation Inbound (US)
+sidebar_label: 법인 입고 (US)
 sidebar_position: 2
 author: Wooju
 created: "2026-05-05"
+countries: [us]
 ---
 
 # 🇺🇸 법인 물류 입고 (US)

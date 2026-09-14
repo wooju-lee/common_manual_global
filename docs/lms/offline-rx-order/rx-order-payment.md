@@ -1,8 +1,9 @@
 ---
-sidebar_label: RX Order Create & View
+sidebar_label: RX 주문 생성 및 조회
 sidebar_position: 1
 author: Wooju
 created: "2026-04-27"
+countries: [us]
 ---
 
 # 📍 RX 주문 생성 및 조회

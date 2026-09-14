@@ -1,6 +1,7 @@
 ---
-sidebar_label: Login
+sidebar_label: 로그인
 sidebar_position: 0
+countries: [us]
 ---
 
 # 📍 시스템 로그인

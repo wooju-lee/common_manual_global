@@ -1,8 +1,9 @@
 ---
-sidebar_label: 📊 Inventory List
+sidebar_label: 📊 재고 목록
 sidebar_position: 6
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 실시간 재고 조회

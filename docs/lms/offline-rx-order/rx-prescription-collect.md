@@ -1,8 +1,9 @@
 ---
-sidebar_label: RX Prescription Collect
+sidebar_label: RX 처방 수집
 sidebar_position: 2
 author: Wooju
 created: "2026-04-27"
+countries: [us]
 ---
 
 # 📍 RX Prescription 수집

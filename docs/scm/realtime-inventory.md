@@ -1,8 +1,9 @@
 ---
-sidebar_label: ▸ Realtime Inventory
+sidebar_label: ▸ 실시간 재고
 sidebar_position: 5
 author: Wooju
 created: "2026-04-14"
+countries: [us]
 ---
 
 # 📍 실시간 재고 조회

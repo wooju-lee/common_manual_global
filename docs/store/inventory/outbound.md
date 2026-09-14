@@ -1,8 +1,9 @@
 ---
-sidebar_label: Outbound
+sidebar_label: 출고
 sidebar_position: 3
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 스토어 재고 출고 등록

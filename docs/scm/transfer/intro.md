@@ -1,8 +1,9 @@
 ---
-sidebar_label: Overview
+sidebar_label: 개요
 sidebar_position: 1
 author: Wooju
 created: "2026-04-14"
+countries: [us]
 ---
 
 # 📍 재고 로케이션 이동 (Transfer)

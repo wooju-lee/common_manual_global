@@ -1,8 +1,9 @@
 ---
-sidebar_label: Realtime Stock
+sidebar_label: 실시간 재고
 sidebar_position: 1
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 실시간 재고 조회

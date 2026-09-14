@@ -1,0 +1,46 @@
+{
+  "title": {
+    "message": "IIC BO : User Manual",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "IIC BO Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.공통": {
+    "message": "Common",
+    "description": "Navbar item with label 공통"
+  },
+  "item.label.POS": {
+    "message": "POS",
+    "description": "Navbar item with label POS"
+  },
+  "item.label.재고": {
+    "message": "Inventory",
+    "description": "Navbar item with label 재고"
+  },
+  "item.label.렌즈 작업 관리": {
+    "message": "LMS",
+    "description": "Navbar item with label 렌즈 작업 관리"
+  },
+  "item.label.매출": {
+    "message": "Sales",
+    "description": "Navbar item with label 매출"
+  },
+  "item.label.주문": {
+    "message": "Order",
+    "description": "Navbar item with label 주문"
+  },
+  "item.label.데일리 리포트": {
+    "message": "Report",
+    "description": "Navbar item with label 데일리 리포트"
+  },
+  "item.label.스토어 관리": {
+    "message": "Store Management",
+    "description": "Navbar item with label 스토어 관리"
+  },
+  "item.label.시스템 설정": {
+    "message": "System Setting",
+    "description": "Navbar item with label 시스템 설정"
+  }
+}

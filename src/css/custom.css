@@ -42,8 +42,8 @@ html {
   content: 'TBD';
   font-size: 0.55rem;
   font-weight: 600;
-  color: var(--ifm-color-emphasis-500);
-  background: var(--ifm-color-emphasis-200);
+  color: #fff;
+  background: var(--ifm-color-primary);
   padding: 1px 4px;
   border-radius: 3px;
   margin-left: 4px;

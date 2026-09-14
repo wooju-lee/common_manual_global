@@ -1,8 +1,9 @@
 ---
-sidebar_label: To Store (B2B)
+sidebar_label: 스토어 배송 (B2B)
 sidebar_position: 2
 author: Wooju
 created: "2026-04-27"
+countries: [us]
 ---
 
 # 📍 To Store (B2B)

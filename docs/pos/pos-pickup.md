@@ -1,8 +1,9 @@
 ---
-sidebar_label: 🛍️ POS Pickup
+sidebar_label: 🛍️ POS 픽업
 sidebar_position: 4
 author: Wooju
 created: "2026-04-21"
+countries: [us]
 ---
 
 # 📍 POS Pickup

@@ -1,8 +1,9 @@
 ---
-sidebar_label: 📒 Inventory Ledger
+sidebar_label: 📒 재고 원장
 sidebar_position: 8
 author: Wooju
 created: "2026-04-14"
+countries: [us]
 ---
 
 # 📍 재고 원장 조회

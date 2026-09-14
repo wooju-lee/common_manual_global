@@ -1,6 +1,7 @@
 ---
-sidebar_label: Overview
+sidebar_label: 개요
 sidebar_position: 1
+countries: [us]
 ---
 
 # System Setting

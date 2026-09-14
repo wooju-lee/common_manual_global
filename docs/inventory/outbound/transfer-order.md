@@ -1,8 +1,9 @@
 ---
-sidebar_label: Transfer Order
+sidebar_label: 출고 오더
 sidebar_position: 2
 author: Wooju
 created: "2026-04-14"
+countries: [us]
 ---
 
 # 📍 출고 (Transfer Order)

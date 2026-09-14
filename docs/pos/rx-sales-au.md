@@ -1,5 +1,5 @@
 ---
-sidebar_label: 💊 RX Prescription & Outbound
+sidebar_label: 💊 RX 처방 및 출고
 sidebar_position: 6
 author: Wooju
 created: "2026-08-20"

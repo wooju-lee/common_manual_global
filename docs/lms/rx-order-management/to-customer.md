@@ -1,8 +1,9 @@
 ---
-sidebar_label: To Customer (B2C)
+sidebar_label: 고객 배송 (B2C)
 sidebar_position: 1
 author: Wooju
 created: "2026-04-27"
+countries: [us]
 ---
 
 # 📍 To Customer (B2C)

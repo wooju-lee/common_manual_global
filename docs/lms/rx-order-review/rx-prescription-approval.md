@@ -1,8 +1,9 @@
 ---
-sidebar_label: RX Prescription Approval / Reject
+sidebar_label: RX 처방 승인 / 반려
 sidebar_position: 1
 author: Wooju
 created: "2026-04-27"
+countries: [us]
 ---
 
 # 📍 RX Prescription 조회 및 승인 / 반려

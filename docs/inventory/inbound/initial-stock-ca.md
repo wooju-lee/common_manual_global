@@ -1,8 +1,9 @@
 ---
-sidebar_label: Corporation Inbound (CA)
+sidebar_label: 법인 입고 (CA)
 sidebar_position: 3
 author: Wooju
 created: "2026-05-05"
+countries: [ca]
 ---
 
 # 🇨🇦 법인 물류 입고 (CA)

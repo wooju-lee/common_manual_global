@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.inventorySidebar.category.📥 입고": {
+    "message": "📥 입고",
+    "description": "The label for category '📥 입고' in sidebar 'inventorySidebar'"
+  },
+  "sidebar.inventorySidebar.category.📤 출고": {
+    "message": "📤 출고",
+    "description": "The label for category '📤 출고' in sidebar 'inventorySidebar'"
+  },
+  "sidebar.inventorySidebar.category.🔀 이동": {
+    "message": "🔀 이동",
+    "description": "The label for category '🔀 이동' in sidebar 'inventorySidebar'"
+  },
+  "sidebar.lmsSidebar.category.📝 오프라인 RX 주문": {
+    "message": "📝 오프라인 RX 주문",
+    "description": "The label for category '📝 오프라인 RX 주문' in sidebar 'lmsSidebar'"
+  },
+  "sidebar.lmsSidebar.category.RX 처방 검토 (온·오프라인)": {
+    "message": "RX 처방 검토 (온·오프라인)",
+    "description": "The label for category 'RX 처방 검토 (온·오프라인)' in sidebar 'lmsSidebar'"
+  },
+  "sidebar.lmsSidebar.category.📦 RX 주문 관리": {
+    "message": "📦 RX 주문 관리",
+    "description": "The label for category '📦 RX 주문 관리' in sidebar 'lmsSidebar'"
+  }
+}
