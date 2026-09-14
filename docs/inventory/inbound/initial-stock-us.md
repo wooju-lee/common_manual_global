@@ -1,12 +1,12 @@
 ---
-sidebar_label: 법인 물류 입고 (US)
+sidebar_label: C2C 법인 재고 입고
 sidebar_position: 2
 author: Wooju
 created: "2026-05-05"
 countries: [us]
 ---
 
-# 🇺🇸 법인 물류 입고 (US)
+# C2C 법인 재고 입고
 
 > 법인으로 입고되는 법인 입고 유형 프로세스를 의미합니다.
 >
