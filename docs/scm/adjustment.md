@@ -1,5 +1,5 @@
 ---
-sidebar_label: ▸ 재고 조정
+sidebar_label: 재고 조정 (Adjustment)
 sidebar_position: 4
 author: Wooju
 created: "2026-04-14"

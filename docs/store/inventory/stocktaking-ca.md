@@ -1,5 +1,5 @@
 ---
-sidebar_label: 재고 실사
+sidebar_label: 스토어 재고 실사
 sidebar_position: 5
 countries: [ca]
 ---

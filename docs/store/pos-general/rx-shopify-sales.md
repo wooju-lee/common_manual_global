@@ -1,5 +1,5 @@
 ---
-sidebar_label: Shopify RX 처방 및 출고
+sidebar_label: Shopify RX 처방전 등록 및 출고
 sidebar_position: 6
 author: Wooju
 created: "2026-04-21"

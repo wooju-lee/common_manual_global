@@ -1,5 +1,5 @@
 ---
-sidebar_label: 📸 재고 스냅샷
+sidebar_label: 재고 스냅샷 조회
 sidebar_position: 9
 author: Wooju
 created: "2026-04-14"

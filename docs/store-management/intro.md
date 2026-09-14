@@ -5,4 +5,4 @@ sidebar_position: 1
 
 # 스토어 관리
 
-> Coming soon
+> 이 문서는 준비 중입니다.

@@ -70,6 +70,13 @@ const config = {
                   return {...item, items: enrichItems(item.items)};
                 }
                 return item;
+              }).sort((a, b) => {
+                // Put non-stub docs before stub docs (-au, -ca suffixed)
+                // so Docusaurus navbar links to the original US doc, not the stub
+                const aIsStub = a.type === 'doc' && (a.id.endsWith('-au') || a.id.endsWith('-ca'));
+                const bIsStub = b.type === 'doc' && (b.id.endsWith('-au') || b.id.endsWith('-ca'));
+                if (aIsStub !== bIsStub) return aIsStub ? 1 : -1;
+                return 0; // preserve existing order otherwise
               });
             }
             return enrichItems(items);

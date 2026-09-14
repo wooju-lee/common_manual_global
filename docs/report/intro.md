@@ -4,6 +4,6 @@ sidebar_position: 1
 countries: [us]
 ---
 
-# Report
+# 데일리 리포트
 
-> Coming soon
+> 이 문서는 준비 중입니다.

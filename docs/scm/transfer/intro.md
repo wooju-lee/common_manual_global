@@ -1,5 +1,5 @@
 ---
-sidebar_label: 개요
+sidebar_label: 재고 로케이션 이동 (Transfer)
 sidebar_position: 1
 author: Wooju
 created: "2026-04-14"

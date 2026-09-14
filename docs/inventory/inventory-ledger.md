@@ -1,5 +1,5 @@
 ---
-sidebar_label: 📒 재고 원장
+sidebar_label: 재고 원장 조회
 sidebar_position: 8
 author: Wooju
 created: "2026-04-14"

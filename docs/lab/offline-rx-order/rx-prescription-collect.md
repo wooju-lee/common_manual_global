@@ -1,5 +1,5 @@
 ---
-sidebar_label: RX 처방 수집
+sidebar_label: RX Prescription 수집
 sidebar_position: 2
 author: Wooju
 created: "2026-04-27"

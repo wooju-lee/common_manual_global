@@ -1,5 +1,5 @@
 ---
-sidebar_label: 매장 재고 이동
+sidebar_label: 매장 재고 이동 (Sales > DP)
 sidebar_position: 4
 countries: [au]
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 출고 오더
+sidebar_label: 출고 (Transfer Order)
 sidebar_position: 2
 countries: [ca]
 ---

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 법인 입고 (US)
+sidebar_label: 법인 물류 입고 (US)
 sidebar_position: 1
 author: Wooju
 created: "2026-05-05"

@@ -1,5 +1,5 @@
 ---
-sidebar_label: 스토어 출고
+sidebar_label: 스토어 재고 출고 등록
 sidebar_position: 1
 countries: [au]
 ---

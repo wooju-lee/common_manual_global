@@ -4,6 +4,6 @@ sidebar_position: 1
 countries: [us]
 ---
 
-# Sales
+# 매출
 
-> Coming soon
+> 이 문서는 준비 중입니다.

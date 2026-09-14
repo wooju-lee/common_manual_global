@@ -1,5 +1,5 @@
 ---
-sidebar_label: POS 픽업
+sidebar_label: POS Pickup
 sidebar_position: 5
 countries: [ca]
 ---

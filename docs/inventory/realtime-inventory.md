@@ -1,5 +1,5 @@
 ---
-sidebar_label: ⚡ 실시간 재고
+sidebar_label: 실시간 재고 조회
 sidebar_position: 7
 author: Wooju
 created: "2026-04-14"

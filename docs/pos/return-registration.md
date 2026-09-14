@@ -1,5 +1,5 @@
 ---
-sidebar_label: 🔄 반품 등록
+sidebar_label: 반품 등록
 sidebar_position: 2
 author: Wooju
 created: "2026-08-20"

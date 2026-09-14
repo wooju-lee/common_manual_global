@@ -1,5 +1,5 @@
 ---
-sidebar_label: 🖨️ AC 카드 프린터 설정
+sidebar_label: 시리얼 카드 출력 프린터 세팅
 sidebar_position: 2
 author: Wooju
 created: "2026-04-21"

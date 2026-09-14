@@ -1,5 +1,5 @@
 ---
-sidebar_label: 입고 확정
+sidebar_label: 스토어 입고 목록 조회 및 확정 처리
 sidebar_position: 1
 countries: [au]
 ---

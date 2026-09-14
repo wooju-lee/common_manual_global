@@ -1,5 +1,5 @@
 ---
-sidebar_label: 🔐 로그인
+sidebar_label: 시스템 로그인
 sidebar_position: 1
 countries: [ca]
 ---

@@ -78,6 +78,23 @@ html {
   font-size: 0.85em;
 }
 
+/* Sidebar doc item monochrome indicator */
+.menu__link:not(.menu__link--sublist-caret)::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 1px;
+  background: var(--ifm-color-emphasis-400);
+  margin-right: 8px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+
+.menu__link--active:not(.menu__link--sublist-caret)::before {
+  background: var(--ifm-color-emphasis-800);
+}
+
 /* Sidebar arrow thinner */
 .menu__link--sublist-caret::after,
 .menu__caret::before {

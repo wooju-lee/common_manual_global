@@ -1,5 +1,5 @@
 ---
-sidebar_label: 📊 재고 목록
+sidebar_label: 실시간 재고 조회
 sidebar_position: 6
 countries: [au]
 ---

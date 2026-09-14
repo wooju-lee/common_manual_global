@@ -1,5 +1,5 @@
 ---
-sidebar_label: 로케이션 이동
+sidebar_label: 스토어 로케이션 재고 이동
 sidebar_position: 1
 countries: [ca]
 ---
