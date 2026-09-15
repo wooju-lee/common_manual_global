@@ -1,12 +1,12 @@
 ---
-sidebar_label: 재고 로케이션 이동 (Transfer)
+sidebar_label: 로케이션 이동
 sidebar_position: 2
 author: Wooju
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 📍 재고 로케이션 이동 (Transfer)
+# 로케이션 이동
 
 > 동일 매장 내에서 창고(Location) 간 재고를 이동하는 기능입니다.
 >

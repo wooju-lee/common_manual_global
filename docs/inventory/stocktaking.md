@@ -1,6 +1,6 @@
 ---
 sidebar_label: 재고 실사
-sidebar_position: 4
+sidebar_position: 6
 author: Wooju
 created: "2026-04-21"
 countries: [us]

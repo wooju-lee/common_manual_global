@@ -1,12 +1,12 @@
 ---
-sidebar_label: 실시간 재고 조회
-sidebar_position: 6
+sidebar_label: 실시간 재고 리스트
+sidebar_position: 7
 author: Wooju
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 실시간 재고 조회
+# 실시간 재고 리스트
 
 > 현재 시점의 전산 재고를 스토어, 로케이션, 아이템별로 실시간 확인할 수 있는 메뉴입니다.
 >

@@ -1,12 +1,12 @@
 ---
-sidebar_label: 재고 원장 조회
+sidebar_label: 재고 원장
 sidebar_position: 8
 author: Wooju
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 📍 재고 원장 조회
+# 재고 원장
 
 > 모든 재고 처리 이력에 대해 조회할 수 있는 메뉴입니다.
 >

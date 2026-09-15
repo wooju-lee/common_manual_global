@@ -1,12 +1,12 @@
 ---
 sidebar_label: 재고 스냅샷 조회
-sidebar_position: 9
+sidebar_position: 0
 author: Wooju
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 📍 재고 스냅샷 조회
+# 재고 스냅샷 조회
 
 > 특정 날짜 기준의 재고 현황을 조회하는 기능입니다. 매일 자동으로 생성됩니다.
 >

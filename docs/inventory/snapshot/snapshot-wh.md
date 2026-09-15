@@ -1,0 +1,17 @@
+---
+sidebar_label: 재고 스냅샷 (WH)
+sidebar_position: 2
+author: Wooju
+created: "2026-09-15"
+countries: [us]
+---
+
+# 재고 스냅샷 (WH)
+
+> 물류 창고(Warehouse) 기준 재고 스냅샷을 조회하는 기능입니다.
+>
+> 경로 : `Inventory > Snapshot`
+
+---
+
+> 이 문서는 준비 중입니다.
