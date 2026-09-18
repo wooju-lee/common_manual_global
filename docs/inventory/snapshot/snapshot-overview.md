@@ -1,7 +1,7 @@
 ---
 sidebar_label: 재고 스냅샷 조회
 sidebar_position: 0
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
@@ -94,3 +94,12 @@ countries: [us]
 
 > CA 매장의 경우, 매장 시간대 기준 새벽 3시에 전일자 스냅샷이 SAP로 자동 전송됩니다.
 > 별도의 수동 작업은 필요 없습니다.
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-14 | 최초 작성 | 이우주(Landa) |

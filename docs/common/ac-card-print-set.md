@@ -1,7 +1,7 @@
 ---
 sidebar_label: 시리얼 카드 출력 프린터 세팅
 sidebar_position: 2
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
@@ -99,3 +99,11 @@ countries: [us]
 
 ---
 
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | 이우주(Landa) |

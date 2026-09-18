@@ -1,7 +1,7 @@
 ---
 sidebar_label: 실시간 재고 리스트
 sidebar_position: 7
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
@@ -71,3 +71,12 @@ countries: [us]
 > A. 현재 검색 조건에 맞는 <u>조회된 데이터</u> 기준으로 추출됩니다.
 
 </div>
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | 이우주(Landa) |

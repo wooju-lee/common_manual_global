@@ -1,7 +1,7 @@
 ---
 sidebar_label: 시스템 로그인
 sidebar_position: 1
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
@@ -92,3 +92,12 @@ countries: [us]
 > A. 시스템 Operation 채널(Slack) 또는 스토어 매니저를 통해 IT팀에 계정 상태 전환을 요청해 주세요.
 
 </div>
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | 이우주(Landa) |

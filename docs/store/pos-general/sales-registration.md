@@ -1,7 +1,7 @@
 ---
 sidebar_label: 판매 등록
 sidebar_position: 2
-author: Wooju
+author: 이우주(Landa)
 created: "2026-08-20"
 countries: [au]
 ---

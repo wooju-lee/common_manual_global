@@ -1,12 +1,12 @@
 ---
-sidebar_label: 매장 재고 이동 (Sales > DP)
-sidebar_position: 3
-author: Wooju
+sidebar_label: POS 스토어 재고 이동
+sidebar_position: 7
+author: 이우주(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 매장 재고 이동 (Sales > DP)
+# POS 스토어 재고 이동
 
 > POS에서 Sales 로케이션 재고를 DP 로케이션으로 이동 처리하는 방법을 안내합니다.
 >
@@ -68,3 +68,12 @@ POS Main에서 매출 처리 외에도 **로케이션 간 재고 이동**을 처
 > 역방향 이동이 필요한 경우 <u>IIC BO > Inventory Movement</u> 메뉴에서 스토어 및 로케이션별 선택을 통해 처리할 수 있습니다.
 
 </div>
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | 이우주(Landa) |

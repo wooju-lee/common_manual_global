@@ -1,7 +1,7 @@
 ---
 sidebar_label: Online To Store (L2S)
 sidebar_position: 3
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-16"
 countries: [us]
 ---
@@ -17,3 +17,12 @@ countries: [us]
 :::info
 상세 내용은 추후 업데이트 예정입니다.
 :::
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-16 | 최초 작성 | 이우주(Landa) |

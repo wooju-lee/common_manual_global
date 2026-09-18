@@ -1,7 +1,7 @@
 ---
 sidebar_label: To Store (B2B)
 sidebar_position: 2
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
@@ -41,3 +41,12 @@ countries: [us]
 :::tip 라벨 출력
 생성된 출고(TO)의 라벨은 <span className="path-badge">Inventory > Outbound Order List</span>에서 출력할 수 있습니다.
 :::
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-27 | 최초 작성 | 이우주(Landa) |

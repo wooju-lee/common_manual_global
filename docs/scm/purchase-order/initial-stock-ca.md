@@ -1,7 +1,7 @@
 ---
 sidebar_label: 법인 입고 (CA)
 sidebar_position: 2
-author: Wooju
+author: 이우주(Landa)
 created: "2026-05-05"
 countries: [ca]
 ---

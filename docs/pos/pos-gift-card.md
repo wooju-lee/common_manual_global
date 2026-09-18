@@ -1,16 +1,16 @@
 ---
-sidebar_label: L2S 분배 출고
-sidebar_position: 4
+sidebar_label: POS 기프트 카드 사용
+sidebar_position: 6
 author: 이우주(Landa)
 created: "2026-09-15"
 countries: [us]
 ---
 
-# L2S 분배 출고
+# POS 기프트 카드 사용
 
-> L2S : Logistics To Store로, 물류센터로부터 스토어로의 출고 유형을 의미합니다.
+> 기프트 카드를 사용하여 결제하는 기능입니다.
 >
-> 경로 : `Inventory > Outbound`
+> 경로 : `POS`
 
 ---
 

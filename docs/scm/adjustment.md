@@ -1,7 +1,7 @@
 ---
 sidebar_label: 재고 조정 (Adjustment)
 sidebar_position: 4
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
@@ -125,3 +125,12 @@ countries: [us]
 
 > 대기 상태에서는 확정/반려 시 수량 등 조정 정보를 함께 수정할 수 있습니다.
 > 이미 확정된 건은 수정할 수 없으며, 반대 방향의 조정을 새로 등록해야 합니다.
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-14 | 최초 작성 | 이우주(Landa) |

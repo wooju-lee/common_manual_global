@@ -1,7 +1,7 @@
 ---
 sidebar_label: 반품 등록
-sidebar_position: 2
-author: Wooju
+sidebar_position: 12
+author: 이우주(Landa)
 created: "2026-08-20"
 countries: [au]
 ---

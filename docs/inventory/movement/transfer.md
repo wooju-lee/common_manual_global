@@ -1,7 +1,7 @@
 ---
 sidebar_label: 로케이션 이동
 sidebar_position: 2
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
@@ -88,3 +88,12 @@ US·CA 매장의 경우, 이동 등록 후 Netsuite에 Inventory Transfer가 **�
 
 > 현재 이동 등록 후 취소 기능은 제공되지 않습니다.
 > 잘못 이동한 경우, 반대 방향으로 다시 이동 등록하여 정정해야 합니다.
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-14 | 최초 작성 | 이우주(Landa) |

@@ -1,7 +1,7 @@
 ---
 sidebar_label: RX Prescription 조회 및 승인 / 반려
 sidebar_position: 1
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
@@ -50,3 +50,12 @@ countries: [us]
 - **Optician이 있는 스토어** : 스토어에서 직접 Confirm 처리가 가능합니다.
 - **Optician이 없는 스토어** : US 법인 Lab에서 검토 및 처리합니다.
 :::
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-27 | 최초 작성 | 이우주(Landa) |

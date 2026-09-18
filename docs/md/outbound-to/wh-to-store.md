@@ -1,7 +1,7 @@
 ---
 sidebar_label: W.H To Store (L2S)
 sidebar_position: 1
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-16"
 countries: [us]
 ---
@@ -64,3 +64,12 @@ W.H(창고)에서 실제 출고가 완료되면 WMS로부터 `Completed` 상태�
                                                     ↓
                                          입고 리스트 자동 생성 → 입고 확정 → 스토어 재고 반영
 ```
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-16 | 최초 작성 | 이우주(Landa) |

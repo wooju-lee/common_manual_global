@@ -73,6 +73,7 @@ html {
 
 .menu__list .menu__list .menu__link {
   font-weight: 500;
+  font-size: 0.82rem;
 }
 
 /* Sidebar dot indicator — removed for clean look */
@@ -187,12 +188,15 @@ svg[class*='iconLanguage'] {
 .markdown {
   line-height: 1.8;
   padding-left: 2rem;
+  padding-right: 0;
   max-width: 100%;
 }
+
 
 /* Table container full width */
 .markdown table {
   min-width: 100%;
+  width: 100%;
 }
 
 .markdown h2 {
@@ -360,14 +364,16 @@ svg[class*='iconLanguage'] {
 
 .markdown details summary {
   cursor: pointer;
-  font-weight: 500;
-  padding: 0.5rem 0.8rem;
-  background: var(--ifm-color-emphasis-100);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.7rem 1rem;
+  background: #f9f6f1;
   border-radius: 6px;
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  justify-content: space-between;
+  border-left: none;
 }
 
 .markdown details summary::-webkit-details-marker {
@@ -375,19 +381,32 @@ svg[class*='iconLanguage'] {
 }
 
 .markdown details summary::before {
-  content: '▶';
-  font-size: 0.55rem;
-  color: var(--ifm-color-emphasis-600);
+  display: none;
+}
+
+.markdown details summary::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid var(--ifm-color-primary);
+  border-bottom: 2px solid var(--ifm-color-primary);
+  transform: rotate(45deg);
   flex-shrink: 0;
   transition: transform 0.2s;
 }
 
-.markdown details[open] summary::before {
-  transform: rotate(90deg);
+.markdown details[open] summary::after {
+  transform: rotate(-135deg);
 }
 
 .markdown details > :not(summary) {
-  padding: 0.6rem 1rem 0.4rem 2rem;
+  padding: 0.8rem 1rem 0.6rem 1.6rem;
+}
+
+/* Remove Docusaurus default details border */
+.markdown details {
+  --docusaurus-details-decoration-color: transparent !important;
+  border: none !important;
 }
 
 /* Highlight marker */
@@ -514,6 +533,23 @@ mark {
 .country-selector__option--active {
   color: var(--ifm-color-primary);
   font-weight: 600;
+}
+
+/* Info badge (pastel green) */
+.info-badge {
+  display: inline-block;
+  background: #d4edda;
+  color: #256b3a;
+  font-size: 0.65rem;
+  font-weight: 500;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+}
+
+[data-theme='dark'] .info-badge {
+  background: #1e3a2a;
+  color: #a3d9b1;
 }
 
 /* Footer */

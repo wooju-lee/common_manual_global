@@ -1,12 +1,12 @@
 ---
-sidebar_label: POS Pickup
-sidebar_position: 4
-author: Wooju
+sidebar_label: POS 스토어 픽업
+sidebar_position: 8
+author: 이우주(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 POS Pickup
+# POS 스토어 픽업
 
 > 온라인에서 발생한 스토어 픽업 주문 목록을 조회하고, 픽업 처리 / 취소 / 반품 처리를 할 수 있는 메뉴입니다.
 >
@@ -140,3 +140,12 @@ SCM에서 출고 지시 완료 후 스토어에 입고되면, 아래 흐름대�
 > A. 반품 주문 탭에서 <u>그레이딩</u>을 선택하여 상태를 기록한 후, 양품화 가능 시 스토어 재고로 귀속 처리할 수 있습니다.
 
 </div>
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | 이우주(Landa) |

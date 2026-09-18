@@ -1,7 +1,7 @@
 ---
 sidebar_label: To Customer (B2C)
 sidebar_position: 1
-author: Wooju
+author: 이우주(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
@@ -78,3 +78,12 @@ B2C 유형은 온라인 · 오프라인 주문 모두 해당될 수 있습니다
 |---|---|
 | **Online** | OMS로 환불 요청 전송 |
 | **Offline** | Shopify로 환불 요청 전송 + Lab 재고 입고 처리 |
+
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-27 | 최초 작성 | 이우주(Landa) |
