@@ -6,6 +6,7 @@ const COUNTRIES = [
   {value: 'us', label: 'US', flag: '\u{1F1FA}\u{1F1F8}'},
   {value: 'ca', label: 'CA', flag: '\u{1F1E8}\u{1F1E6}'},
   {value: 'au', label: 'AU', flag: '\u{1F1E6}\u{1F1FA}'},
+  {value: 'kr', label: 'KR', flag: '\u{1F1F0}\u{1F1F7}'},
 ];
 
 function getStoredCountry() {

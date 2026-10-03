@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import clsx from 'clsx';
 import {useHistory} from '@docusaurus/router';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc, useDocsSidebar} from '@docusaurus/plugin-content-docs/client';
 import DocItemPaginator from '@theme/DocItem/Paginator';
@@ -16,8 +17,8 @@ import DocMeta from '@site/src/components/DocMeta';
 import styles from '@docusaurus/theme-classic/lib/theme/DocItem/Layout/styles.module.css';
 import {useCountry} from '../../hooks/useCountry';
 
-// Country variants share a base id: `foo` (US), `foo-ca` (CA), `foo-au` (AU)
-const baseDocId = (id) => id.replace(/-(au|ca)$/, '');
+// Country variants share a base id: `foo` (US), `foo-ca` (CA), `foo-au` (AU), `foo-kr` (KR)
+const baseDocId = (id) => id.replace(/-(au|ca|kr)$/, '');
 
 function flattenLinks(items, out = []) {
   for (const item of items ?? []) {
@@ -38,6 +39,7 @@ function useCountryRedirect(metadata, frontMatter) {
   const country = useCountry();
   const sidebar = useDocsSidebar();
   const history = useHistory();
+  const homeUrl = useBaseUrl('/');
 
   useEffect(() => {
     const countries = frontMatter.countries;
@@ -49,7 +51,9 @@ function useCountryRedirect(metadata, frontMatter) {
       // Country variant may live in a different folder (e.g. AU-only groups)
       links.find((l) => fileName(l.docId) === fileName(metadata.id)) ??
       links[0];
-    if (target && target.href !== metadata.permalink) history.replace(target.href);
+    // No doc for this country in the current menu (e.g. POS for KR) → go home
+    if (!target) history.replace(homeUrl);
+    else if (target.href !== metadata.permalink) history.replace(target.href);
   }, [country, metadata.id]);
 }
 

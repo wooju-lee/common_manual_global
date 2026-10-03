@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview (개요)
 sidebar_position: 1
-countries: [us, ca, au]
+countries: [kr]
 ---
 
 # Overview (개요)

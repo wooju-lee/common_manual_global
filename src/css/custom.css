@@ -706,3 +706,13 @@ mark {
 html[data-country='au'] .navbar-hide-au {
   display: none !important;
 }
+
+/* Navbar items not used in KR (Common / Report / Store Management only) */
+html[data-country='kr'] .navbar-hide-kr {
+  display: none !important;
+}
+
+/* KR Report is live — no TBD badge */
+html[data-country='kr'] .navbar-tbd-show-kr-off::after {
+  display: none;
+}

@@ -1,12 +1,12 @@
 ---
-sidebar_label: Stocktaking (재고 실사)
+sidebar_label: Stocktaking (실사)
 sidebar_position: 6
 author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 Stocktaking (재고 실사)
+# 📍 Stocktaking (실사)
 
 스토어 재고 실사 매뉴얼입니다.
 

@@ -71,10 +71,10 @@ const config = {
                 }
                 return item;
               }).sort((a, b) => {
-                // Put non-stub docs before stub docs (-au, -ca suffixed)
+                // Put non-stub docs before stub docs (-au, -ca, -kr suffixed)
                 // so Docusaurus navbar links to the original US doc, not the stub
-                const aIsStub = a.type === 'doc' && (a.id.endsWith('-au') || a.id.endsWith('-ca'));
-                const bIsStub = b.type === 'doc' && (b.id.endsWith('-au') || b.id.endsWith('-ca'));
+                const aIsStub = a.type === 'doc' && /-(au|ca|kr)$/.test(a.id);
+                const bIsStub = b.type === 'doc' && /-(au|ca|kr)$/.test(b.id);
                 if (aIsStub !== bIsStub) return aIsStub ? 1 : -1;
                 return 0; // preserve existing order otherwise
               });
@@ -137,37 +137,42 @@ const config = {
             sidebarId: 'posSidebar',
             position: 'left',
             label: 'POS',
+            className: 'navbar-hide-kr',
           },
           {
             type: 'docSidebar',
             sidebarId: 'inventorySidebar',
             position: 'left',
             label: 'Inventory',
+            className: 'navbar-hide-kr',
           },
           {
             type: 'docSidebar',
             sidebarId: 'lmsSidebar',
             position: 'left',
             label: 'LMS',
+            className: 'navbar-hide-kr',
           },
           {
             type: 'docSidebar',
             sidebarId: 'salesSidebar',
             position: 'left',
             label: 'Sales',
+            className: 'navbar-hide-kr',
           },
           {
             type: 'docSidebar',
             sidebarId: 'orderSidebar',
             position: 'left',
             label: 'Order',
+            className: 'navbar-hide-kr',
           },
           {
             type: 'docSidebar',
             sidebarId: 'reportSidebar',
             position: 'left',
             label: 'Report',
-            className: 'navbar-tbd',
+            className: 'navbar-tbd navbar-tbd-show-kr-off',
           },
           {
             type: 'docSidebar',
@@ -181,7 +186,7 @@ const config = {
             sidebarId: 'systemSettingSidebar',
             position: 'left',
             label: 'System Setting',
-            className: 'navbar-tbd navbar-hide-au',
+            className: 'navbar-tbd navbar-hide-au navbar-hide-kr',
           },
           {
             type: 'localeDropdown',

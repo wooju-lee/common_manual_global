@@ -2,7 +2,7 @@
 
 ## 수정 범위 규칙
 
-- 작업 시작 시 사용자가 **국가(US/CA/AU)**를 지정하면, 해당 국가에 포함된 메뉴만 수정 또는 추가할 것
+- 작업 시작 시 사용자가 **국가(US/CA/AU/KR)**를 지정하면, 해당 국가에 포함된 메뉴만 수정 또는 추가할 것
 - 국가 지정 없이 작업 요청이 오면 먼저 어떤 국가인지 확인할 것
 
 ## 문서 작업 규칙
@@ -17,6 +17,7 @@
 - `docs/` 원본 = US 버전 (`countries: [us]`)
 - `-ca.md` = CA stub (`countries: [ca]`)
 - `-au.md` = AU stub (`countries: [au]`)
+- `-kr.md` = KR stub (`countries: [kr]`) — KR은 **Common, Report, Store Management 메뉴만** 운영 (나머지 navbar는 `navbar-hide-kr`로 숨김)
 - stub 기본 내용: `> 이 문서는 준비 중입니다.`
 
 ## i18n 구조

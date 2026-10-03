@@ -1,12 +1,12 @@
 ---
-sidebar_label: Adjustment (재고 조정)
+sidebar_label: Adjustment (조정)
 sidebar_position: 5
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
 
-# 📍 Adjustment (재고 조정)
+# 📍 Adjustment (조정)
 
 > 스토어 로케이션의 전산 재고를 증감 조정하는 방법을 안내합니다. 조정은 **등록 → 권한 계정 승인(Confirm)** 후 재고에 반영됩니다.
 >
@@ -19,15 +19,17 @@ countries: [au]
 
 </div>
 
-## 👉 재고 조정 흐름
+## 👉 재고 조정 순서
 
-| Step | 처리 내용 | 처리 주체 |
-|:---:|---|---|
-| **1** | 대상 스토어 / 로케이션 선택 | 스토어 |
-| **2** | 조정 대상 제품 선택 | 스토어 |
-| **3** | 조정 수량 / 사유 입력 후 등록 → `Pending` | 스토어 |
-| **4** | 조정 승인 (`Confirm`) 또는 반려 (`Rejected`) | 승인 권한 계정 |
-| **5** | 승인 시 재고 반영 | IIC BO (자동) |
+> **스토어 / 로케이션 선택** → **제품 선택** → **수량 / 사유 입력 후 등록** → **승인(Confirm) 또는 반려(Rejected)**
+
+| Step | 처리 내용 | 상태 | 처리 주체 |
+|:---:|---|---|---|
+| **1** | 대상 스토어 / 로케이션 선택 | — | 👤 스토어 |
+| **2** | 조정 대상 제품 선택 | — | 👤 스토어 |
+| **3** | 조정 수량 / 사유 입력 후 등록 | `Pending` | 👤 스토어 |
+| **4** | 조정 승인(**Confirm**) 또는 반려(**Rejected**) | `Confirmed` / `Rejected` | 👤 승인 권한 계정 |
+| **5** | 승인 시 조정 수량을 재고에 반영 | — | ⚙️ 자동 |
 
 <div className="blockquote-gray">
 
@@ -68,13 +70,13 @@ countries: [au]
 
 **Step 3 입력 항목**
 
-| 항목 | 필수 | 설명 |
+| 항목 | 필수 여부 | 설명 |
 |---|:---:|---|
-| **Adjustment Reason Code** | ✔ | 조정 사유 선택 |
-| **Adjustment Qty** | ✔ | 조정 수량. 사유 코드에 따라 증가/감소 방향이 정해지며, 양방향 사유는 `-` 입력 가능 |
-| **Accounting Code** | | 회계 코드 |
-| **Billing Store / Location** | | 비용 귀속 스토어 / 로케이션 |
-| **Remarks** | | 비고 |
+| **Adjustment Reason Code** | **필수** | 조정 사유 선택 |
+| **Adjustment Qty** | **필수** | 조정 수량. 사유 코드에 따라 증가/감소 방향이 정해지며, 양방향 사유는 `-` 입력 가능 |
+| **Accounting Code** | 선택 | 회계 코드 |
+| **Billing Store / Location** | 선택 | 비용 귀속 스토어 / 로케이션 |
+| **Remarks** | 선택 | 비고 |
 
 - 등록이 완료되면 `Pending` 상태로 목록에 표시됩니다.
 
@@ -92,13 +94,69 @@ countries: [au]
 
 | Step | 처리 내용 |
 |:---:|---|
-| **1** | **Download Upload Template** 클릭 → 템플릿(`Adjustment_upload_form_V2.xlsx`) 다운로드 |
+| **1** | **Download Upload Template** 클릭 → 템플릿(`Adjustment_upload_form.xlsx`) 다운로드 |
 | **2** | 템플릿 양식에 맞춰 조정 내용 작성 |
-| **3** | 작성한 파일(.xlsx / .xls / .csv)을 끌어다 놓거나 선택 |
+| **3** | 작성한 파일(.xlsx / .xls / .csv, 최대 5MB)을 끌어다 놓거나 선택 |
 | **4** | **Adjustment Registration** 클릭 |
 
+### 📝 양식 작성 방법
+
+<div className="img-placeholder">📷 [Image] Adjustment_upload_form.xlsx — 첫 번째 탭(입력 양식) / 두 번째 탭(조정 사유 코드)</div>
+
+| 컬럼 | 필수 여부 | 입력 내용 |
+|---|:---:|---|
+| **Store Code** | **필수** | 조정할 스토어 코드 |
+| **Location Code** | **필수** | 조정할 로케이션 코드 (예: `1000`) |
+| **Product Code** | **필수** | 조정할 제품 코드 |
+| **Adjustment Qty** | **필수** | 조정 수량 |
+| **Adjustment Reason** | **필수** | 조정 사유 코드 (예: `ADJ003`) |
+| **Account Code** | 선택 | 회계 코드 |
+| **Billing Location (Store Code)** | 선택 | 비용 귀속 스토어 코드 |
+| **Billing Location (Location Code)** | 선택 | 비용 귀속 로케이션 코드 |
+| **Remarks** | 선택 | 비고 (최대 200자) |
+
+- 조정 사유 코드는 양식의 <mark>**두 번째 탭에서 `Code Key`를 확인**</mark>해 입력합니다.
+
+<details>
+<summary>조정 사유 코드 목록 (전체 국가 공통)</summary>
+
+| Code Key | Code Contents |
+|---|---|
+| `ADJ001` | CrossSelling |
+| `ADJ002` | SaleOmission |
+| `ADJ003` | Loss |
+| `ADJ004` | CustomerGiveaway |
+| `ADJ005` | Disposal |
+| `ADJ006` | SampleUsage |
+| `ADJ007` | Other |
+| `ADJ008` | InitialStock |
+| `ADJ009` | Seeding |
+| `ADJ010` | Welfare |
+| `ADJ011` | Return_HQ |
+| `ADJ012` | Free_of_charge |
+| `ADJ013` | Initial Stock |
+| `ADJ014` | Initial Stock (-) |
+| `ADJ015` | Online Refund Inbound |
+| `ADJ123` | Inbound Adjustment |
+| `ADJ998` | PS |
+
+</details>
+
+- 조정 수량은 사유 코드에 따라 입력합니다.
+  - 감소 사유도 <mark>**양수로 입력**</mark>하면 자동으로 차감됩니다.
+  - 양방향 사유만 `-`를 입력할 수 있습니다.
+- Billing Location은 Store Code와 Location Code를 함께 입력해야 하며, 조정 스토어와 같은 법인의 스토어만 입력할 수 있습니다.
+- 같은 스토어 · 로케이션 · 제품을 여러 행으로 나눠 입력할 수 없습니다. 한 행으로 합쳐서 입력해 주세요.
+
+<div className="blockquote-warning">
+
+> <mark>**한 행이라도 오류가 있으면 파일 전체가 등록되지 않습니다.**</mark><br/>
+> 오류 목록에서 해당 행을 확인해 수정한 뒤 다시 업로드해 주세요.
+
+</div>
+
 - 양식이 다르면 `The upload format is invalid.` 메시지가 표시됩니다. 반드시 다운로드한 템플릿을 사용하세요.
-- 데이터 오류가 있으면 오류 목록이 표시됩니다. 해당 행을 수정한 뒤 다시 업로드합니다.
+- 같은 제품에 승인 대기(`Pending`) 중인 조정이 있거나, 해당 로케이션이 실사 중이면 업로드할 수 없습니다.
 
 ## 4. 조정 승인 / 반려
 
