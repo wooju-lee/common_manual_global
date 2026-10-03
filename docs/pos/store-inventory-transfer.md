@@ -1,18 +1,16 @@
 ---
-sidebar_label: POS 스토어 재고 이동
+sidebar_label: Inventory Transfer SALES → DP (매장 재고 이동)
 sidebar_position: 7
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# POS 스토어 재고 이동
+# Inventory Transfer SALES → DP (매장 재고 이동)
 
 > POS에서 Sales 로케이션 재고를 DP 로케이션으로 이동 처리하는 방법을 안내합니다.
 >
 > 경로 : <span className="path-badge">IIC BO > Front POS Main > Inventory 모드</span>
-
----
 
 ## 👉 재고 이동이란?
 
@@ -69,11 +67,10 @@ POS Main에서 매출 처리 외에도 **로케이션 간 재고 이동**을 처
 
 </div>
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

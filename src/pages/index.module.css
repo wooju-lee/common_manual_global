@@ -55,6 +55,10 @@
   margin-bottom: 1.2rem;
 }
 
+.overviewLeadTight {
+  margin-bottom: 0.5rem;
+}
+
 .overviewCards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -122,6 +126,10 @@
   border-radius: 50%;
   background: var(--ifm-color-emphasis-800);
   flex-shrink: 0;
+}
+
+.featureSub {
+  display: block;
 }
 
 /* Feature tags (integration) */

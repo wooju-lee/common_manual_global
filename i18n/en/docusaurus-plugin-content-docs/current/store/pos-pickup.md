@@ -1,7 +1,7 @@
 ---
 sidebar_label: ▸ POS Pickup
 sidebar_position: 3
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

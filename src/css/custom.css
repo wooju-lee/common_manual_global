@@ -161,8 +161,16 @@ svg[class*='iconLanguage'] {
 }
 
 /* Header block: h1 + blockquote */
-.markdown h1:first-child + blockquote {
+.markdown h1:first-child + blockquote,
+.markdown > header + blockquote {
   margin-bottom: 2rem;
+  border-left-color: var(--ifm-color-emphasis-900);
+}
+
+/* First section right after the header block */
+.markdown h1:first-child + blockquote + h2,
+.markdown > header + blockquote + h2 {
+  margin-top: 4rem;
 }
 
 .markdown h2 {
@@ -200,9 +208,14 @@ svg[class*='iconLanguage'] {
 }
 
 .markdown h2 {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   padding-bottom: 0.4rem;
   border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+/* Sections already split by a divider (---) keep the tighter gap */
+.markdown hr + h2 {
+  margin-top: 2.5rem;
 }
 
 .markdown h3 {
@@ -315,14 +328,63 @@ svg[class*='iconLanguage'] {
 }
 
 /* Warning blockquote (red) */
+/* Callout boxes (replace the quote bar with a tinted box) */
+.blockquote-warning blockquote,
+.blockquote-gray blockquote {
+  border-left: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.blockquote-warning blockquote::before,
+.blockquote-gray blockquote::before {
+  position: absolute;
+  left: 0.95rem;
+  top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
 .blockquote-warning blockquote {
-  border-left-color: #e74c3c;
+  background: rgba(231, 76, 60, 0.07);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+}
+
+.blockquote-warning blockquote::before {
+  content: '⚠️';
 }
 
 /* Gray blockquote (subdued) */
 .blockquote-gray blockquote {
-  border-left-color: #aaa;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
   color: var(--ifm-color-emphasis-700);
+}
+
+.blockquote-gray blockquote::before {
+  content: '💡';
+}
+
+/* Mint reference callout */
+.blockquote-mint blockquote {
+  border-left: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  position: relative;
+  margin: 1rem 0;
+  background: rgba(32, 201, 151, 0.08);
+  border: 1px solid rgba(32, 201, 151, 0.35);
+}
+
+.blockquote-mint blockquote::before {
+  content: '💡';
+  position: absolute;
+  left: 0.95rem;
+  top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 /* TOC (Table of Contents) */
@@ -558,4 +620,89 @@ mark {
 }
 .footer .footer__copyright {
   font-size: 10px;
+}
+
+/* Image placeholder — replace with a screenshot later */
+.img-placeholder {
+  margin: 0.8rem 0 1.2rem;
+  padding: 1.6rem 1rem;
+  border: 1.5px dashed var(--ifm-color-emphasis-400);
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Sidebar collapse / expand buttons — small and subtle */
+@media (min-width: 997px) {
+  [class*='collapseSidebarButton_'] {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    height: 32px !important;
+    padding: 0 1rem !important;
+    border: none !important;
+    border-top: 1px solid var(--ifm-toc-border-color) !important;
+    border-radius: 0 !important;
+    background: var(--sidebar-toggle-bg) !important;
+  }
+
+  [class*='expandButton_'] {
+    background: var(--sidebar-toggle-bg) !important;
+    border-right: 1px solid var(--ifm-color-emphasis-200);
+  }
+
+  [class*='collapseSidebarButton_']:hover,
+  [class*='expandButton_']:hover {
+    filter: brightness(0.96);
+  }
+
+  [data-theme='dark'] [class*='collapseSidebarButton_']:hover,
+  [data-theme='dark'] [class*='expandButton_']:hover {
+    filter: brightness(1.25);
+  }
+}
+
+/* Same tone as the right-side index (TOC) box */
+:root {
+  --sidebar-toggle-bg: #f8f6f2;
+}
+
+[data-theme='dark'] {
+  --sidebar-toggle-bg: #2a2a2a;
+}
+
+/* Replace the bulky default icons with thin chevrons */
+[class*='collapseSidebarButtonIcon_'],
+[class*='expandButtonIcon_'] {
+  display: none !important;
+}
+
+[class*='collapseSidebarButton_']::after,
+[class*='expandButton_']::after {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: var(--ifm-color-emphasis-600);
+}
+
+[class*='collapseSidebarButton_']::after {
+  content: '‹';
+}
+
+[class*='expandButton_']::after {
+  content: '›';
+}
+
+/* Second-line Korean label (e.g. table column names) */
+.label-sub {
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: normal;
+  opacity: 0.65;
+}
+
+/* Navbar items not used in AU */
+html[data-country='au'] .navbar-hide-au {
+  display: none !important;
 }

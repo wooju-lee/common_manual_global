@@ -1,12 +1,12 @@
 ---
-sidebar_label: 재고 원장
+sidebar_label: Inventory Ledger (재고 원장 조회)
 sidebar_position: 8
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 재고 원장
+# Inventory Ledger (재고 원장 조회)
 
 > 모든 재고 처리 이력에 대해 조회할 수 있는 메뉴입니다.
 >
@@ -122,4 +122,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

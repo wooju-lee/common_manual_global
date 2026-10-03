@@ -1,7 +1,7 @@
 ---
 sidebar_label: RX 처방 및 출고
 sidebar_position: 6
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-08-20"
 countries: [au]
 ---

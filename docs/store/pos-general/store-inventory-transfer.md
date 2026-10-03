@@ -1,7 +1,7 @@
 ---
 sidebar_label: 매장 재고 이동 (Sales > DP)
 sidebar_position: 4
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
@@ -76,4 +76,4 @@ POS Main에서 매출 처리 외에도 **로케이션 간 재고 이동**을 처
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

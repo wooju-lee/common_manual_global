@@ -1,12 +1,12 @@
 ---
-sidebar_label: 출고 (Transfer Order)
+sidebar_label: Transfer Order (출고)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 📍 출고 (Transfer Order)
+# 📍 Transfer Order (출고)
 
 > 매장 간 또는 매장 ↔ 물류 간 상품을 출고하는 기능입니다.
 >
@@ -148,4 +148,4 @@ WMS(Pantos)로부터 상태 알림을 수신하면 BO에 자동으로 반영됩�
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

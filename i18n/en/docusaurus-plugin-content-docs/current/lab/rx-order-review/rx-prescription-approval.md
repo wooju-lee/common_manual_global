@@ -1,7 +1,7 @@
 ---
 sidebar_label: RX Prescription 조회 및 승인 / 반려
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-27"
 ---
 

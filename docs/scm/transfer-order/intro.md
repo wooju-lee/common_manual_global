@@ -1,7 +1,7 @@
 ---
 sidebar_label: 출고 (Transfer Order)
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
@@ -148,4 +148,4 @@ WMS(Pantos)로부터 상태 알림을 수신하면 BO에 자동으로 반영됩�
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

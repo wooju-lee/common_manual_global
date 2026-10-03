@@ -1,7 +1,7 @@
 ---
 sidebar_label: 재고 실사
 sidebar_position: 5
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
@@ -17,4 +17,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

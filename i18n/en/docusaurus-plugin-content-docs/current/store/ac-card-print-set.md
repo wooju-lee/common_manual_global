@@ -1,7 +1,7 @@
 ---
 sidebar_label: AC Card Print Set
 sidebar_position: 2
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

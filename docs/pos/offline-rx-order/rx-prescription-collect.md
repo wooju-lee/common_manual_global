@@ -1,18 +1,16 @@
 ---
-sidebar_label: RX Prescription 수집
+sidebar_label: RX Prescription Collection (RX 처방전 수집)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
 
-# 📍 RX Prescription 수집
+# 📍 RX Prescription Collection (RX 처방전 수집)
 
 > RX 주문에 필요한 필수 정보를 수집 · 저장하고, 스토어에서 Lab으로 출고를 등록하는 과정을 안내합니다.
 >
 > 경로 : <span className="path-badge">POS > RX Operation</span>
-
----
 
 ## 1. 필수 정보 저장
 
@@ -85,7 +83,7 @@ RX 주문을 진행하려면 아래 4가지 필수 정보를 수집 · 저장해
 | Step | 내용 |
 |:---:|---|
 | **a** | HIPAA, RX 주문 활용 동의 등 정책 내용을 고객에게 안내합니다 |
-| **b** | 고객의 **시그니처(서명)**를 수집합니다 |
+| **b** | 고객의 <strong>시그니처(서명)</strong>를 수집합니다 |
 
 ---
 
@@ -117,11 +115,10 @@ RX 주문을 진행하려면 아래 4가지 필수 정보를 수집 · 저장해
 배송사(Fedex) 픽업이 필요한 건은 **별도로 유선 요청**해 진행합니다. (일시 / 장소 전달)
 :::
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-27 | 최초 작성 | 이우주(Landa) |
+| 2026-04-27 | 최초 작성 | Wooju(Landa) |

@@ -1,18 +1,16 @@
 ---
-sidebar_label: 실시간 재고 리스트
+sidebar_label: Inventory List (실시간 재고 조회)
 sidebar_position: 7
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 실시간 재고 리스트
+# Inventory List (실시간 재고 조회)
 
 > 현재 시점의 전산 재고를 스토어, 로케이션, 아이템별로 실시간 확인할 수 있는 메뉴입니다.
 >
 > 경로 : <span className="path-badge">IIC BO > Inventory > 재고 리스트</span>
-
----
 
 ## 👉 언제 사용하나요?
 
@@ -49,7 +47,6 @@ countries: [us]
 - <mark>고객에게 재고 안내 시에는 **가용 재고** 기준으로 확인해 주세요. 출고 대기/조정 대기 수량은 실제 운용이 불가한 수량입니다.</mark>
 - 조회된 데이터는 **엑셀 다운로드**하여 활용할 수도 있습니다.
 
-
 ---
 
 <div className="qna-section">
@@ -72,11 +69,10 @@ countries: [us]
 
 </div>
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

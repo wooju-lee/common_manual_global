@@ -1,7 +1,7 @@
 ---
 sidebar_label: 재고 로케이션 이동 (Transfer)
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
@@ -96,4 +96,4 @@ US·CA 매장의 경우, 이동 등록 후 Netsuite에 Inventory Transfer가 **�
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

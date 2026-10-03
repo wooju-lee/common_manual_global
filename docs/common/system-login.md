@@ -1,18 +1,16 @@
 ---
-sidebar_label: 시스템 로그인
+sidebar_label: System Login (시스템 로그인)
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 시스템 로그인
+# 📍 System Login (시스템 로그인)
 
 > IIC BO(Offline Unified Back Office) 시스템에 접속하기 위한 로그인 안내입니다.
 >
 > 경로 : <span className="path-badge">IIC BO</span>
-
----
 
 ## 1. 계정(ID) 생성 방법
 
@@ -93,11 +91,10 @@ countries: [us]
 
 </div>
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

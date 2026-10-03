@@ -1,7 +1,7 @@
 ---
 sidebar_label: To Store (B2B)
 sidebar_position: 2
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-27"
 ---
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: W.H To Store (L2S)
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-16"
 ---
 

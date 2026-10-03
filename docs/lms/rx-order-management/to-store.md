@@ -1,18 +1,16 @@
 ---
-sidebar_label: To Store (B2B)
+sidebar_label: To Store (B2B 매장 배송)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
 
-# 📍 To Store (B2B)
+# 📍 To Store (B2B 매장 배송)
 
 > 승인(Confirm)된 RX 주문을 Lab에서 작업한 후, 스토어로 배송하여 고객에게 인도하는 B2B 프로세스를 안내합니다.
 >
 > 경로 : <span className="path-badge">BO > RX Work Management > To Store</span>
-
----
 
 ## 1. B2B 작업 프로세스
 
@@ -42,11 +40,10 @@ countries: [us]
 생성된 출고(TO)의 라벨은 <span className="path-badge">Inventory > Outbound Order List</span>에서 출력할 수 있습니다.
 :::
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-27 | 최초 작성 | 이우주(Landa) |
+| 2026-04-27 | 최초 작성 | Wooju(Landa) |

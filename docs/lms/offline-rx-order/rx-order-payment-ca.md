@@ -1,9 +1,9 @@
 ---
-sidebar_label: RX 주문 생성 및 조회
+sidebar_label: RX Order Creation (RX 주문 생성 및 조회)
 sidebar_position: 1
 countries: [ca]
 ---
 
-# 📍 RX 주문 생성 및 조회
+# 📍 RX Order Creation (RX 주문 생성 및 조회)
 
 > 이 문서는 준비 중입니다.

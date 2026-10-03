@@ -1,7 +1,7 @@
 ---
 sidebar_label: ▸ 실시간 재고 조회
 sidebar_position: 5
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-14"
 ---
 

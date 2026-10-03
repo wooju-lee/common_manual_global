@@ -1,7 +1,7 @@
 ---
 sidebar_label: ▸ 재고 조정 (Adjustment)
 sidebar_position: 4
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-14"
 ---
 

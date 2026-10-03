@@ -1,7 +1,7 @@
 ---
 sidebar_label: Shopify RX 처방전 등록 및 출고
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

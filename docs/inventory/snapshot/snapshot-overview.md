@@ -1,12 +1,12 @@
 ---
-sidebar_label: 재고 스냅샷 조회
+sidebar_label: Inventory Snapshot (재고 스냅샷 조회)
 sidebar_position: 0
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 재고 스냅샷 조회
+# Inventory Snapshot (재고 스냅샷 조회)
 
 > 특정 날짜 기준의 재고 현황을 조회하는 기능입니다. 매일 자동으로 생성됩니다.
 >
@@ -102,4 +102,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

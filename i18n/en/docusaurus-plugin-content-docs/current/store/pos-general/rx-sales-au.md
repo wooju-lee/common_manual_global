@@ -1,7 +1,7 @@
 ---
 sidebar_label: RX Prescription & Outbound
 sidebar_position: 6
-author: Wooju
+author: Wooju(Landa)
 created: "2026-08-20"
 countries: [au]
 ---

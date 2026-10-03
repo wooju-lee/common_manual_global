@@ -1,18 +1,16 @@
 ---
-sidebar_label: POS RX 처방 정보 등록
-sidebar_position: 9
-author: 이우주(Landa)
+sidebar_label: Store > Lab 출고 생성
+sidebar_position: 1
+author: Wooju(Landa)
 created: "2026-04-21"
-countries: [us, ca]
+countries: [us]
 ---
 
-# POS RX 처방 정보 등록
+# Store > Lab 출고 생성
 
 > Shopify에서 발생한 RX 매출 주문의 조회, 처방 정보 등록, Lab 출고 및 배송 라벨 출력까지의 전체 흐름을 안내합니다.
 >
 > 경로 : <span className="path-badge">IIC BO > POS > RX Operation View</span>
-
----
 
 ## 👉 RX 주문 전체 흐름
 
@@ -30,7 +28,7 @@ countries: [us, ca]
 
 ## 1. RX 주문 확인
 
-![RX Operation List](./img/rx-operation-list.png)
+![RX Operation List](../img/rx-operation-list.png)
 
 Shopify에서 일반 매출과 달리 **RX 매출**이 발생되면, POS > RX Operation View 목록에서 **Unready** 상태로 확인할 수 있습니다.
 
@@ -46,7 +44,7 @@ Shopify에서 일반 매출과 달리 **RX 매출**이 발생되면, POS > RX Op
 
 ## 2. 처방 & 고객 정보 등록
 
-![처방 & 고객 정보 등록](./img/스크린샷%202026-04-21%2018.40.11.png)
+![처방 & 고객 정보 등록](../img/스크린샷%202026-04-21%2018.40.11.png)
 
 > **Step 1.** 스토어 옵티션 담당자는 주문 상세 내 처방전 필수 정보를 선택/기재해 저장합니다.
 
@@ -70,7 +68,7 @@ Shopify에서 일반 매출과 달리 **RX 매출**이 발생되면, POS > RX Op
 
 ## 3. 처방정보 검토를 통해 승인 / 반려 (From Lab Optician)
 
-![Lab 확인 및 승인](./img/스크린샷%202026-04-21%2018.41.07.png)
+![Lab 확인 및 승인](../img/스크린샷%202026-04-21%2018.41.07.png)
 
 Lab 작업자(렌즈 작업자)는 등록된 정보를 확인해, 가능 여부를 판단하여 **Confirm** 또는 **Reject** 처리를 진행합니다.
 
@@ -85,7 +83,7 @@ Lab 작업자(렌즈 작업자)는 등록된 정보를 확인해, 가능 여부�
 
 ## 4. 컨펌된 주문에 한하여, 출고 생성 (Outbound Registration)
 
-![출고 생성](./img/스크린샷%202026-04-21%2018.46.51.png)
+![출고 생성](../img/스크린샷%202026-04-21%2018.46.51.png)
 
 컨펌된 여러 RX 주문을 Lab 실로 일괄적으로 보내기 위해, 보낼 주문을 선택하여 출고를 등록합니다.
 
@@ -93,38 +91,12 @@ Lab 작업자(렌즈 작업자)는 등록된 정보를 확인해, 가능 여부�
 >
 > Lab 작업자가 작업 가능하다고 승인한 주문만 출고 대상입니다.
 
-> **Step 2.** 생성된 출고는 <span className="path-badge">Front POS > Outbound Label Print</span> 에서 **1개의 출고 목록**으로 확인할 수 있습니다.
+> **Step 2.** 생성된 출고는 <span className="path-badge">Front POS > Outbound Label Print</span> 에서 **1개의 출고 목록**으로 확인할 수 있습니다. → [Outbound Label Print](/docs/pos/outbound-label-print)
 
 > **Step 3.** 여러 주문을 모아 1개의 출고로 생성했기 때문에, **송장 1개**를 출력합니다.
 
 :::danger 배송사 컨택 필요
 송장 출력과 배송사의 물품 픽업은 **별개**입니다. 배송사 컨택은 **별도로 진행**해야 합니다.
-:::
-
-## 7. 배송 라벨 출력
-
-### Outbound Label Print 목록
-
-<span className="path-badge">Front POS > Outbound Label Print</span> 에서 출고 목록의 진행 사항을 확인합니다.
-
-| 항목 | 설명 |
-|---|---|
-| **Create Date** | 출고 생성 일시 |
-| **Outbound No.** | 출고 번호 |
-| **Order No.** | 주문 번호 |
-| **Product Info** | 제품 코드 / 바코드 |
-| **Qty** | 수량 |
-| **Tracking No.** | 배송사 송장 번호 |
-| **Print** | 라벨 등록 요청 및 출력 버튼 |
-
-### 출력 절차
-
-> 1. 출고 등록 완료 후, `Tracking No.`가 성공적으로 수신되면 출력 가능 상태로 전환됩니다.
-> 2. **Print shipping labels** 버튼이 활성화됩니다.
-> 3. 버튼 선택 시 프린터 시스템 팝업 노출 후, **B2B 송장 1개**가 라벨 프린터로 출력됩니다.
-
-:::danger 처리 실패 시
-버튼 선택 시 우측 상단에 시스템 **실패 얼럿**이 노출됩니다. 어떤 처리에서 에러가 발생했는지 확인 후, 시스템 Operation 채널(Slack)을 통해 **IT팀에 대응 요청**합니다.
 :::
 
 ---
@@ -149,20 +121,17 @@ Lab 작업자(렌즈 작업자)는 등록된 정보를 확인해, 가능 여부�
 >
 > A. 처방전 목록에서 1개를 선택한 후 <u>View</u> 버튼을 통해 저장된 처방전 이미지를 조회할 수 있습니다.
 
-> **Q. 출고 등록 후 Tracking No.가 생성되지 않아요.**
->
-> A. TMS 배송 요청이 정상 처리되었는지 확인해 주세요.
->
-> 수신된 정보가 없는 경우 시스템 Operation 채널(Slack)을 통해 IT팀에 문의해 주세요.
-
-> **Q. 라벨 출력 버튼이 활성화되지 않아요.**
->
-> A. <u>Tracking No.</u>가 정상 수신되어야 라벨 출력이 가능합니다.
->
-> 배송 라벨 등록 단계에서 정보 수신이 완료되었는지 확인해 주세요.
-
 > **Q. 여러 주문을 하나의 출고로 묶을 수 있나요?**
 >
 > A. RX Operation View에서 <u>Confirm</u> 상태인 주문들을 모아 1건의 출고로 등록할 수 있으며, <u>B2B 송장 1개</u>로 출력됩니다.
 
 </div>
+
+---
+
+## 📋 수정 이력
+
+| 수정일자 | 내용 | 수정자 |
+|---|---|---|
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |
+| 2026-10-03 | RX Operation / Outbound Label Print 문서 분리 | Wooju(Landa) |

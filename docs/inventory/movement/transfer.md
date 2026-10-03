@@ -1,12 +1,12 @@
 ---
-sidebar_label: 로케이션 이동
+sidebar_label: Inventory Movement (로케이션 이동)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
 ---
 
-# 로케이션 이동
+# Inventory Movement (로케이션 이동)
 
 > 동일 매장 내에서 창고(Location) 간 재고를 이동하는 기능입니다.
 >
@@ -96,4 +96,4 @@ US·CA 매장의 경우, 이동 등록 후 Netsuite에 Inventory Transfer가 **�
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-14 | 최초 작성 | 이우주(Landa) |
+| 2026-04-14 | 최초 작성 | Wooju(Landa) |

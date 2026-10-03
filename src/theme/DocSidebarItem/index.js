@@ -1,5 +1,7 @@
 import React from 'react';
 import DocSidebarItem from '@theme-original/DocSidebarItem';
+import DocSidebarItemLink from './Link';
+import DocSidebarItemCategory from './Category';
 import {useCountry} from '../hooks/useCountry';
 
 export default function DocSidebarItemWrapper(props) {
@@ -21,6 +23,14 @@ export default function DocSidebarItemWrapper(props) {
     if (!hasVisibleChild) {
       return null;
     }
+  }
+
+  // Render links with the bilingual label component directly
+  if (item.type === 'link') {
+    return <DocSidebarItemLink {...props} />;
+  }
+  if (item.type === 'category') {
+    return <DocSidebarItemCategory {...props} />;
   }
 
   return <DocSidebarItem {...props} />;

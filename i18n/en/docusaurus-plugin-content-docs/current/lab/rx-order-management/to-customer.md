@@ -1,7 +1,7 @@
 ---
 sidebar_label: To Customer (B2C)
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-27"
 ---
 

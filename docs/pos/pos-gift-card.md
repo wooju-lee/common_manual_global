@@ -1,21 +1,18 @@
 ---
-sidebar_label: POS 기프트 카드 사용
+sidebar_label: Gift Pay (기프트 카드 사용)
 sidebar_position: 6
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-09-15"
 countries: [us]
 ---
 
-# POS 기프트 카드 사용
+# Gift Pay (기프트 카드 사용)
 
 > 기프트 카드를 사용하여 결제하는 기능입니다.
 >
 > 경로 : `POS`
 
----
-
 > 이 문서는 준비 중입니다.
-
 
 ---
 
@@ -23,4 +20,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-09-15 | 최초 작성 | 이우주(Landa) |
+| 2026-09-15 | 최초 작성 | Wooju(Landa) |

@@ -1,12 +1,12 @@
 ---
-sidebar_label: 시리얼 카드 출력 프린터 세팅
+sidebar_label: AC Card Printer Setup (시리얼 카드 출력 프린터 세팅)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# 📍 시리얼 카드 출력 프린터 세팅
+# 📍 AC Card Printer Setup (시리얼 카드 출력 프린터 세팅)
 
 > AC Card 출력을 위한 프린터 드라이버 설치 가이드 입니다.
 
@@ -106,4 +106,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

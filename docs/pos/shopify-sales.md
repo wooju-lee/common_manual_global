@@ -1,18 +1,16 @@
 ---
-sidebar_label: Shopify 매출 생성
+sidebar_label: Shopify Sales Creation (Shopify 매출 생성)
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us, ca]
 ---
 
-# Shopify 매출 생성
+# Shopify Sales Creation (Shopify 매출 생성)
 
 > Shopify를 통해 결제된 오프라인 매출을 조회하고, 멤버십 설정 및 AC Card 인쇄, Gift Card 사용 처리를 안내합니다.
 >
 > 경로 : <span className="path-badge">IIC BO > Front POS Main</span>
-
----
 
 ## 1. 매출 조회 방법
 

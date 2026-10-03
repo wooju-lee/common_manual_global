@@ -1,7 +1,7 @@
 ---
 sidebar_label: Sales Registration
 sidebar_position: 2
-author: Wooju
+author: Wooju(Landa)
 created: "2026-08-20"
 countries: [au]
 ---

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Online To W.H (L2L)
 sidebar_position: 4
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-16"
 ---
 

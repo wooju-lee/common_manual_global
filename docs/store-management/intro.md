@@ -1,8 +1,8 @@
 ---
-sidebar_label: 개요
+sidebar_label: Overview (개요)
 sidebar_position: 1
 ---
 
-# 스토어 관리
+# Overview (개요)
 
 > 이 문서는 준비 중입니다.

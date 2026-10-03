@@ -1,7 +1,7 @@
 ---
 sidebar_label: 스토어 재고 출고 등록
 sidebar_position: 3
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

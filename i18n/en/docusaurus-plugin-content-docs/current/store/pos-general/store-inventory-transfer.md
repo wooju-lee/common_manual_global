@@ -1,7 +1,7 @@
 ---
 sidebar_label: 매장 재고 이동 (Sales > DP)
 sidebar_position: 2
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

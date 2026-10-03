@@ -1,7 +1,7 @@
 ---
 sidebar_label: RX 주문 생성 및 조회
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-27"
 ---
 

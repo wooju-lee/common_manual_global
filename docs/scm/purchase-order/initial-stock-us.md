@@ -1,7 +1,7 @@
 ---
 sidebar_label: C2C 법인 재고 입고
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-05-05"
 countries: [us]
 ---
@@ -96,4 +96,4 @@ IIC BO에서 상태를 변경하면 Netsuite로 연동되지만, NS에서만 처
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-05-05 | 최초 작성 | 이우주(Landa) |
+| 2026-05-05 | 최초 작성 | Wooju(Landa) |

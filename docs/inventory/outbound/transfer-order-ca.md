@@ -1,9 +1,9 @@
 ---
-sidebar_label: 출고 (Transfer Order)
+sidebar_label: Transfer Order (출고)
 sidebar_position: 2
 countries: [ca]
 ---
 
-# 📍 출고 (Transfer Order)
+# 📍 Transfer Order (출고)
 
 > 이 문서는 준비 중입니다.

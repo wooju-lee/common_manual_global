@@ -109,6 +109,11 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -125,7 +130,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'commonSidebar',
             position: 'left',
-            label: '공통',
+            label: 'Common',
           },
           {
             type: 'docSidebar',
@@ -137,48 +142,46 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'inventorySidebar',
             position: 'left',
-            label: '재고',
+            label: 'Inventory',
           },
           {
             type: 'docSidebar',
             sidebarId: 'lmsSidebar',
             position: 'left',
-            label: '렌즈 작업 관리',
+            label: 'LMS',
           },
           {
             type: 'docSidebar',
             sidebarId: 'salesSidebar',
             position: 'left',
-            label: '매출',
-            className: 'navbar-tbd',
+            label: 'Sales',
           },
           {
             type: 'docSidebar',
             sidebarId: 'orderSidebar',
             position: 'left',
-            label: '주문',
-            className: 'navbar-tbd',
+            label: 'Order',
           },
           {
             type: 'docSidebar',
             sidebarId: 'reportSidebar',
             position: 'left',
-            label: '데일리 리포트',
+            label: 'Report',
             className: 'navbar-tbd',
           },
           {
             type: 'docSidebar',
             sidebarId: 'storeManagementSidebar',
             position: 'left',
-            label: '스토어 관리',
+            label: 'Store Management',
             className: 'navbar-tbd',
           },
           {
             type: 'docSidebar',
             sidebarId: 'systemSettingSidebar',
             position: 'left',
-            label: '시스템 설정',
-            className: 'navbar-tbd',
+            label: 'System Setting',
+            className: 'navbar-tbd navbar-hide-au',
           },
           {
             type: 'localeDropdown',

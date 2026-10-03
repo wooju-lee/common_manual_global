@@ -1,7 +1,7 @@
 ---
 sidebar_label: ▸ 재고 원장 조회
 sidebar_position: 7
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-14"
 ---
 

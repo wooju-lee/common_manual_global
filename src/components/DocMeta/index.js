@@ -1,18 +1,18 @@
 import React from 'react';
-import {useDocusaurusContext} from '@docusaurus/theme-common';
-import useDocusaurusContextHook from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
+
+// "2026-10-03" → "26-10-03"
+const shortDate = (date) => String(date).replace(/^\d{2}(\d{2}-\d{2}-\d{2})$/, '$1');
 
 export default function DocMeta({author, created}) {
   if (!author && !created) return null;
 
-  const {i18n} = useDocusaurusContextHook();
-  const isEn = i18n.currentLocale === 'en';
-
   return (
     <div className={styles.docMeta}>
-      {created && <span>{isEn ? 'Created' : '작성일'}: {created}</span>}
-      {author && <span>{isEn ? 'Author' : '작성자'}: {author}</span>}
+      <span>
+        Update.{created && ` ${shortDate(created)}`}
+        {author && ` ${author}`}
+      </span>
     </div>
   );
 }

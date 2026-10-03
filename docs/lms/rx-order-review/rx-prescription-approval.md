@@ -1,18 +1,16 @@
 ---
-sidebar_label: RX Prescription 조회 및 승인 / 반려
+sidebar_label: Rx Prescription Review (처방 조회 및 승인 / 반려)
 sidebar_position: 1
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-27"
 countries: [us]
 ---
 
-# 📍 RX Prescription 조회 및 승인 / 반려
+# 📍 Rx Prescription Review (처방 조회 및 승인 / 반려)
 
 > 스토어 또는 온라인에서 접수된 RX 처방 정보를 검토하고, 작업 가능 여부에 따라 승인 또는 반려 처리하는 방법을 안내합니다.
 >
 > 경로 : <span className="path-badge">BO > RX Prescription Review</span>
-
----
 
 ## 1. 조회 조건
 
@@ -51,11 +49,10 @@ countries: [us]
 - **Optician이 없는 스토어** : US 법인 Lab에서 검토 및 처리합니다.
 :::
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-27 | 최초 작성 | 이우주(Landa) |
+| 2026-04-27 | 최초 작성 | Wooju(Landa) |

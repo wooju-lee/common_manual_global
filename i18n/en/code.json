@@ -6,49 +6,13 @@
     "message": "System Overview"
   },
   "home.overview.desc1a": {
-    "message": "IIC BO (Back Office) is"
+    "message": "IIC BO (Back Office) is a global retail operations platform designed to run the overseas business of IICOMBINED brands on a single system."
   },
   "home.overview.desc1b": {
-    "message": "an integrated operations system for IIC overseas subsidiaries, supporting"
-  },
-  "home.overview.desc1c": {
-    "message": "sales, inventory, store operations, and Rx management"
-  },
-  "home.overview.desc1d": {
-    "message": "and other end-to-end operational processes."
-  },
-  "home.overview.desc2": {
-    "message": "It enables HQ-level visibility into store and online sales, and supports inventory monitoring, inbound/outbound processing, and history management for offline stores."
-  },
-  "home.overview.desc3": {
-    "message": "It also provides warranty card printing, membership management, and Rx management — allowing lab technicians at each subsidiary to view prescription details and manage all online/offline lens work orders."
+    "message": "It is currently used by Gentle Monster, with plans to expand to other brands including Tamburins, Atiissu, Nuflaat, and Nudake."
   },
   "home.features.title": {
     "message": "Key Features"
-  },
-  "home.features.orders": {
-    "message": "Order Management"
-  },
-  "home.features.inventory": {
-    "message": "Inventory Management"
-  },
-  "home.features.sales": {
-    "message": "Sales Inquiry"
-  },
-  "home.features.rx": {
-    "message": "Rx Lab Management"
-  },
-  "home.features.warranty": {
-    "message": "Warranty Card Printing"
-  },
-  "home.features.membership": {
-    "message": "Membership"
-  },
-  "home.features.store": {
-    "message": "Store Operations"
-  },
-  "home.features.report": {
-    "message": "Global Report"
   },
   "home.integrations.title": {
     "message": "Integrated Systems"
@@ -63,7 +27,7 @@
     "message": "Development"
   },
   "home.server.note1": {
-    "message": "Please contact the Operation channel for account creation."
+    "message": "To request an account, please contact the Operation channel."
   },
   "home.server.note2": {
     "message": "We recommend changing the initial password of your issued account."
@@ -72,10 +36,7 @@
     "message": "For permission changes on your account, please contact the administrator."
   },
   "home.contact.title": {
-    "message": "System Operation Team"
-  },
-  "home.manuals.title": {
-    "message": "User Manuals"
+    "message": "IIC BO : IT"
   },
   "theme.ErrorPageContent.title": {
     "message": "This page crashed.",
@@ -403,5 +364,62 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "home.overview.card1.title": {
+    "message": "Unified Sales"
+  },
+  "home.overview.card1.desc": {
+    "message": "Collects and manages sales in real time through integration with each country's local POS and the in-house BO POS."
+  },
+  "home.overview.card2.title": {
+    "message": "Inventory Management"
+  },
+  "home.overview.card2.desc": {
+    "message": "Tracks inventory across every channel — 3PL, corporate offices, stores, and online — in one place."
+  },
+  "home.overview.card3.title": {
+    "message": "Lens (Rx) Management"
+  },
+  "home.overview.card3.desc": {
+    "message": "Supports lens work management and outsourcing processes tailored to each country's business."
+  },
+  "home.overview.card4.title": {
+    "message": "Store Operations"
+  },
+  "home.overview.card4.desc": {
+    "message": "Provides a wide range of operational features needed on the store floor."
+  },
+  "home.features.master": {
+    "message": "Master"
+  },
+  "home.features.orders": {
+    "message": "Order"
+  },
+  "home.features.sales": {
+    "message": "Sales"
+  },
+  "home.features.inventory": {
+    "message": "Inventory"
+  },
+  "home.features.inventoryTx": {
+    "message": "Inventory Transactions"
+  },
+  "home.features.rx": {
+    "message": "RX"
+  },
+  "home.features.membership": {
+    "message": "Online/Offline Membership"
+  },
+  "home.features.store": {
+    "message": "Store Operations"
+  },
+  "home.features.report": {
+    "message": "Global Report"
+  },
+  "home.features.pos": {
+    "message": "POS"
+  },
+  "home.features.master.sub": {
+    "message": "(Store / Product / Price)"
   }
 }

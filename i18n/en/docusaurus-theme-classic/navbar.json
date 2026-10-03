@@ -7,40 +7,40 @@
     "message": "IIC BO Logo",
     "description": "The alt text of navbar logo"
   },
-  "item.label.공통": {
-    "message": "Common",
-    "description": "Navbar item with label 공통"
-  },
   "item.label.POS": {
     "message": "POS",
     "description": "Navbar item with label POS"
   },
-  "item.label.재고": {
+  "item.label.Common": {
+    "message": "Common",
+    "description": "Navbar item with label Common"
+  },
+  "item.label.Inventory": {
     "message": "Inventory",
-    "description": "Navbar item with label 재고"
+    "description": "Navbar item with label Inventory"
   },
-  "item.label.렌즈 작업 관리": {
+  "item.label.LMS": {
     "message": "LMS",
-    "description": "Navbar item with label 렌즈 작업 관리"
+    "description": "Navbar item with label LMS"
   },
-  "item.label.매출": {
+  "item.label.Sales": {
     "message": "Sales",
-    "description": "Navbar item with label 매출"
+    "description": "Navbar item with label Sales"
   },
-  "item.label.주문": {
+  "item.label.Order": {
     "message": "Order",
-    "description": "Navbar item with label 주문"
+    "description": "Navbar item with label Order"
   },
-  "item.label.데일리 리포트": {
+  "item.label.Report": {
     "message": "Report",
-    "description": "Navbar item with label 데일리 리포트"
+    "description": "Navbar item with label Report"
   },
-  "item.label.스토어 관리": {
+  "item.label.Store Management": {
     "message": "Store Management",
-    "description": "Navbar item with label 스토어 관리"
+    "description": "Navbar item with label Store Management"
   },
-  "item.label.시스템 설정": {
+  "item.label.System Setting": {
     "message": "System Setting",
-    "description": "Navbar item with label 시스템 설정"
+    "description": "Navbar item with label System Setting"
   }
 }

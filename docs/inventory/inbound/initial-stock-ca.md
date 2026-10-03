@@ -1,18 +1,16 @@
 ---
-sidebar_label: 법인 입고 (CA)
+sidebar_label: Corporate Inbound · CA (법인 입고)
 sidebar_position: 3
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-05-05"
 countries: [ca]
 ---
 
-# 🇨🇦 법인 물류 입고 (CA)
+# Corporate Inbound · CA (법인 입고)
 
 > 법인으로 입고되는 법인 입고 유형 프로세스를 의미합니다.
 >
 > 경로 : `Inventory > Inbound`
-
----
 
 ## 입고 처리 절차
 

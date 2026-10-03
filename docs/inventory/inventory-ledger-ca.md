@@ -1,9 +1,9 @@
 ---
-sidebar_label: 재고 원장 조회
+sidebar_label: Inventory Ledger (재고 원장 조회)
 sidebar_position: 8
 countries: [ca]
 ---
 
-# 📍 재고 원장 조회
+# 📍 Inventory Ledger (재고 원장 조회)
 
 > 이 문서는 준비 중입니다.

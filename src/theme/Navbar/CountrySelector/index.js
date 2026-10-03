@@ -73,6 +73,11 @@ export default function CountrySelector() {
     }, 50);
   }
 
+  // Expose the selected country on <html> so CSS can hide country-specific navbar items
+  useEffect(() => {
+    document.documentElement.dataset.country = selected;
+  }, [selected]);
+
   const current = COUNTRIES.find((c) => c.value === selected) || COUNTRIES[0];
 
   return (

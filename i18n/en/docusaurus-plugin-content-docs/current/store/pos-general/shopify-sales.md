@@ -1,7 +1,7 @@
 ---
 sidebar_label: Shopify 매출 처리
 sidebar_position: 1
-author: Wooju
+author: Wooju(Landa)
 created: "2026-04-21"
 ---
 

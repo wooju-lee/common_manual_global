@@ -1,18 +1,16 @@
 ---
-sidebar_label: POS 스토어 픽업
+sidebar_label: Store Pickup (스토어 픽업)
 sidebar_position: 8
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
 ---
 
-# POS 스토어 픽업
+# Store Pickup (스토어 픽업)
 
 > 온라인에서 발생한 스토어 픽업 주문 목록을 조회하고, 픽업 처리 / 취소 / 반품 처리를 할 수 있는 메뉴입니다.
 >
 > 경로 : <span className="path-badge">IIC BO > POS > Store Pickup List</span>
-
----
 
 ## 👉 온라인 스토어 픽업 Status Flow
 
@@ -141,11 +139,10 @@ SCM에서 출고 지시 완료 후 스토어에 입고되면, 아래 흐름대�
 
 </div>
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-21 | 최초 작성 | 이우주(Landa) |
+| 2026-04-21 | 최초 작성 | Wooju(Landa) |

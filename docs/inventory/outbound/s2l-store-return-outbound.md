@@ -1,18 +1,16 @@
 ---
-sidebar_label: S2L 스토어 반품 출고
+sidebar_label: S2L Store Return Outbound (S2L 스토어 반품 출고)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-09-15"
 countries: [us]
 ---
 
-# S2L 스토어 반품 출고
+# S2L Store Return Outbound (S2L 스토어 반품 출고)
 
 > S2L : Store To Logistics로, 스토어에서 물류센터로 반품하는 출고 유형을 의미합니다.
 >
 > 경로 : `Inventory > Outbound`
-
----
 
 ## 1. 출고 유형
 
@@ -22,7 +20,6 @@ countries: [us]
 | **S2S** | 스토어 간 이동 | 스토어 → 스토어 <span className="info-badge">같은 법인 내에서만 허용</span> | 전산 상 '스토어'로 설정된 구간에서 재고 이동이 필요한 경우 |
 | **L2S** | 물류 → 스토어 | 물류 창고 → 스토어 <span className="info-badge">같은 법인 내에서만 허용</span> | 물류 재고를 스토어로 분배(출고)가 필요한 경우 |
 | **S2L** | 스토어 → 물류 | 스토어 → 물류 창고 <span className="info-badge">같은 법인 내에서만 허용</span> | 스토어 재고를 물류로 회송이 필요한 경우 (e.g : 스토어 반품) |
-
 
 ---
 
@@ -60,4 +57,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-09-15 | 최초 작성 | 이우주(Landa) |
+| 2026-09-15 | 최초 작성 | Wooju(Landa) |

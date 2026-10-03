@@ -1,18 +1,16 @@
 ---
-sidebar_label: C2C 법인 입고
+sidebar_label: C2C Corporate Inbound (C2C 법인 입고)
 sidebar_position: 2
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-05-05"
 countries: [us]
 ---
 
-# C2C 법인 입고
+# C2C Corporate Inbound (C2C 법인 입고)
 
 > 법인으로 입고되는 법인 입고 유형 프로세스를 의미합니다.
 >
 > 경로 : `Inventory > Inbound`
-
----
 
 ## 입고 처리 절차
 
@@ -89,11 +87,10 @@ IIC BO에서 상태를 변경하면 Netsuite로 연동되지만, NS에서만 처
 | **2** | +10개 추가 수기 입고 등록 *(소통 후 처리)* |
 | **3** | +10개 추가 등록에 대한 US 검토 및 ERP 수기 생성 |
 
-
 ---
 
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-05-05 | 최초 작성 | 이우주(Landa) |
+| 2026-05-05 | 최초 작성 | Wooju(Landa) |

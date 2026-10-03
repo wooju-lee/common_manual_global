@@ -1,7 +1,7 @@
 ---
 sidebar_label: Online To W.H (L2L)
 sidebar_position: 4
-author: 이우주(Landa)
+author: Wooju(Landa)
 created: "2026-04-16"
 countries: [us]
 ---
@@ -25,4 +25,4 @@ countries: [us]
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
-| 2026-04-16 | 최초 작성 | 이우주(Landa) |
+| 2026-04-16 | 최초 작성 | Wooju(Landa) |
