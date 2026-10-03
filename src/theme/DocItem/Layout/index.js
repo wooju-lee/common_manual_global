@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import clsx from 'clsx';
 import {useHistory} from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -34,14 +34,20 @@ function isVisibleFor(item, country) {
 }
 
 // When the selected country doesn't match the open doc, move to that
-// country's version of the doc (or the first doc visible for that country)
+// country's version of the doc. If the country was switched and no matching doc
+// exists, go home; if a doc of another country was opened (e.g. navbar link),
+// fall back to the first doc visible for the selected country
 function useCountryRedirect(metadata, frontMatter) {
   const country = useCountry();
   const sidebar = useDocsSidebar();
   const history = useHistory();
   const homeUrl = useBaseUrl('/');
+  const prevCountry = useRef(country);
 
   useEffect(() => {
+    // Country switched via selector (vs. landing on a doc of another country, e.g. navbar link)
+    const switched = prevCountry.current !== country;
+    prevCountry.current = country;
     const countries = frontMatter.countries;
     if (!Array.isArray(countries) || countries.includes(country)) return;
     const links = flattenLinks(sidebar?.items).filter((l) => isVisibleFor(l, country));
@@ -50,8 +56,8 @@ function useCountryRedirect(metadata, frontMatter) {
       links.find((l) => baseDocId(l.docId) === baseDocId(metadata.id)) ??
       // Country variant may live in a different folder (e.g. AU-only groups)
       links.find((l) => fileName(l.docId) === fileName(metadata.id)) ??
-      links[0];
-    // No doc for this country in the current menu (e.g. POS for KR) → go home
+      (switched ? undefined : links[0]);
+    // Switched country and no matching doc, or no doc for this country in the menu → go home
     if (!target) history.replace(homeUrl);
     else if (target.href !== metadata.permalink) history.replace(target.href);
   }, [country, metadata.id]);
