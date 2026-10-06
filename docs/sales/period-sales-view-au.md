@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Period Sales View (기간별 매출 조회)
+# 📍 Period Sales View (기간별 매출 조회)
 
 > 스토어에서 발생한 매출을 **시간대별 · 일별 · 월별**로 합산하여 조회하는 메뉴입니다.
 >

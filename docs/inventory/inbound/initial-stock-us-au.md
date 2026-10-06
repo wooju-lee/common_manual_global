@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# C2C Corporate Inbound (C2C 법인 입고)
+# 📍 C2C Corporate Inbound (C2C 법인 입고)
 
 > 한국 본사(SAP)에서 호주 법인으로 들어오는 **C2C(Corporation To Corporation)** 입고를 확인하고 확정하는 방법을 안내합니다.
 >

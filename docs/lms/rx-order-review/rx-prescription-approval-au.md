@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Rx Prescription Review (처방 조회 및 승인 / 반려)
+# 📍 Rx Prescription Review (처방 조회 및 승인 / 반려)
 
 > 온라인 RX 주문의 처방 정보를 검토하고 <strong>승인(Confirm) 또는 반려(Reject)</strong>하는 방법을 안내합니다.
 >

@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Daily Sales Summary (일일 매출 요약)
+# 📍 Daily Sales Summary (일일 매출 요약)
 
 > 선택한 일자에 매장에서 판매한 수량과 금액을 **제품군(카테고리)별**, **제품(SKU)별**로 확인하는 메뉴입니다.
 >

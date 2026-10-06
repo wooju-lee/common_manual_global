@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# To Customer (B2C 고객 배송)
+# 📍 To Customer (B2C 고객 배송)
 
 > 승인된 온라인 RX 주문의 렌즈 작업, 출고 검수, 배송 라벨 등록, 라벨·AC 카드 출력까지의 흐름을 안내합니다.
 >

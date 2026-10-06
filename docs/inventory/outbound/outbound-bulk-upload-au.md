@@ -6,7 +6,7 @@ created: "2026-10-04"
 countries: [au]
 ---
 
-# Outbound Bulk Upload (출고 일괄 등록)
+# 📍 Outbound Bulk Upload (출고 일괄 등록)
 
 > 출고 제품이 많을 때 엑셀 템플릿으로 C2C · S2S 출고를 한 번에 등록하는 방법을 안내합니다.
 >

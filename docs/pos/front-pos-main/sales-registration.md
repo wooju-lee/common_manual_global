@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Sales Registration & Inquiry (매출(판매) 등록 및 조회)
+# 📍 Sales Registration & Inquiry (매출(판매) 등록 및 조회)
 
 > 외부 POS(유통사 POS 또는 Bluebell POS)에서 결제를 완료한 뒤, IIC BO POS에서 **매출(판매)을 생성**하고 AC 카드를 출력하는 방법을 안내합니다.
 >

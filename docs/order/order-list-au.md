@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Order List (주문 리스트)
+# 📍 Order List (주문 리스트)
 
 > IIC BO에 수집된 주문을 조회하는 메뉴입니다.
 >

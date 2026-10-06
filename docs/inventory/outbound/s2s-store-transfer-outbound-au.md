@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# S2S Store Transfer Outbound (S2S 스토어 간 이동 출고)
+# 📍 S2S Store Transfer Outbound (S2S 스토어 간 이동 출고)
 
 > 호주는 마스터 정보가 모두 스토어로 이뤄져 있으며, 스토어 간 이동을 <strong>S2S(Store To Store)</strong>로 정의합니다.<br/>
 > S2S 출고를 등록하고 출고가 완료되는 과정을 안내합니다.

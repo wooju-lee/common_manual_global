@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Return Registration & Inquiry (매출(반품) 등록 및 조회)
+# 📍 Return Registration & Inquiry (매출(반품) 등록 및 조회)
 
 > 외부 POS(유통사 POS 또는 Bluebell POS)에서 환불을 완료한 뒤, IIC BO POS에서 **반품(매출 반품)을 등록**하는 방법을 안내합니다.
 >

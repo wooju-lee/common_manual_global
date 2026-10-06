@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Inventory Movement (로케이션 이동)
+# 📍 Inventory Movement (로케이션 이동)
 
 > 하나의 스토어 안에서 로케이션 간 재고를 이동하는 방법을 안내합니다.
 >

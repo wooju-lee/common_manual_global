@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Inventory Transfer SALES → DP (매장 재고 이동)
+# 📍 Inventory Transfer SALES → DP (매장 재고 이동)
 
 > 매장에서 **SALES(판매) 재고를 DP(전시) 재고로** 손쉽게 이동하는 방법을 안내합니다.
 >

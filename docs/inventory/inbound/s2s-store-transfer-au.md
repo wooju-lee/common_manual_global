@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# S2S Store Transfer Inbound (S2S 스토어 간 입고)
+# 📍 S2S Store Transfer Inbound (S2S 스토어 간 입고)
 
 > 호주는 마스터 정보가 모두 스토어로 이뤄져 있으며, 스토어 간 이동을 <strong>S2S(Store To Store)</strong>로 정의합니다.<br/>
 > 다른 스토어에서 출고한 제품을 받아 입고를 확정하는 과정을 안내합니다.

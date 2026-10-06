@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Product Sales View (제품별 매출 조회)
+# 📍 Product Sales View (제품별 매출 조회)
 
 > 일자별 · 스토어별로 **제품 단위**의 판매·반품 합계를 조회하는 메뉴입니다.
 >

@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# C2C Corporate Outbound (C2C 법인 출고)
+# 📍 C2C Corporate Outbound (C2C 법인 출고)
 
 > 호주 법인에서 한국 본사로 반품하는 **C2C(Corporation To Corporation)** 출고를 등록하는 방법을 안내합니다.
 >

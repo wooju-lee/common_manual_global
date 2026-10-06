@@ -6,7 +6,7 @@ created: "2026-10-03"
 countries: [au]
 ---
 
-# Refund List (반품 리스트)
+# 📍 Refund List (반품 리스트)
 
 > IIC BO에 수집된 반품 주문을 조회하는 메뉴입니다.
 >
