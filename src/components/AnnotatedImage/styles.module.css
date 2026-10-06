@@ -1,0 +1,52 @@
+/* Same frame as `.markdown img`, moved to the wrapper so boxes align with the image */
+.frame {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  padding: 4px;
+  margin: 0.8rem 0;
+}
+
+.canvas {
+  position: relative;
+  line-height: 0;
+}
+
+.frame .image {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Annotation, not UI: dashed outline drawn a little outside the target area */
+.box {
+  position: absolute;
+  pointer-events: none;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 2px dashed #e53935;
+  border-radius: 8px;
+  background: rgba(229, 57, 53, 0.08);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #e53935;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 14px;
+  text-align: center;
+}
