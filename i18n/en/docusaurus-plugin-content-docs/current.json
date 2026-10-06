@@ -3,28 +3,44 @@
     "message": "Next",
     "description": "The label for version current"
   },
-  "sidebar.inventorySidebar.category.📥 입고": {
-    "message": "📥 입고",
-    "description": "The label for category '📥 입고' in sidebar 'inventorySidebar'"
+  "sidebar.posSidebar.category.Front POS Main": {
+    "message": "Front POS Main",
+    "description": "The label for category 'Front POS Main' in sidebar 'posSidebar'"
   },
-  "sidebar.inventorySidebar.category.📤 출고": {
-    "message": "📤 출고",
-    "description": "The label for category '📤 출고' in sidebar 'inventorySidebar'"
+  "sidebar.posSidebar.category.Offline RX Order (오프라인 RX 주문)": {
+    "message": "Offline RX Order",
+    "description": "The label for category 'Offline RX Order (오프라인 RX 주문)' in sidebar 'posSidebar'"
   },
-  "sidebar.inventorySidebar.category.🔀 이동": {
-    "message": "🔀 이동",
-    "description": "The label for category '🔀 이동' in sidebar 'inventorySidebar'"
+  "sidebar.posSidebar.category.RX Operation": {
+    "message": "RX Operation",
+    "description": "The label for category 'RX Operation' in sidebar 'posSidebar'"
   },
-  "sidebar.lmsSidebar.category.📝 오프라인 RX 주문": {
-    "message": "📝 오프라인 RX 주문",
-    "description": "The label for category '📝 오프라인 RX 주문' in sidebar 'lmsSidebar'"
+  "sidebar.inventorySidebar.category.Inbound (입고)": {
+    "message": "Inbound",
+    "description": "The label for category 'Inbound (입고)' in sidebar 'inventorySidebar'"
   },
-  "sidebar.lmsSidebar.category.RX 처방 검토 (온·오프라인)": {
-    "message": "RX 처방 검토 (온·오프라인)",
-    "description": "The label for category 'RX 처방 검토 (온·오프라인)' in sidebar 'lmsSidebar'"
+  "sidebar.inventorySidebar.category.Outbound (출고)": {
+    "message": "Outbound",
+    "description": "The label for category 'Outbound (출고)' in sidebar 'inventorySidebar'"
   },
-  "sidebar.lmsSidebar.category.📦 RX 주문 관리": {
-    "message": "📦 RX 주문 관리",
-    "description": "The label for category '📦 RX 주문 관리' in sidebar 'lmsSidebar'"
+  "sidebar.inventorySidebar.category.Movement (이동)": {
+    "message": "Movement",
+    "description": "The label for category 'Movement (이동)' in sidebar 'inventorySidebar'"
+  },
+  "sidebar.inventorySidebar.category.Inventory Snapshot (재고 스냅샷)": {
+    "message": "Inventory Snapshot",
+    "description": "The label for category 'Inventory Snapshot (재고 스냅샷)' in sidebar 'inventorySidebar'"
+  },
+  "sidebar.lmsSidebar.category.Offline RX Order (오프라인 RX 주문)": {
+    "message": "Offline RX Order",
+    "description": "The label for category 'Offline RX Order (오프라인 RX 주문)' in sidebar 'lmsSidebar'"
+  },
+  "sidebar.lmsSidebar.category.Rx Prescription Review (RX 처방 검토)": {
+    "message": "Rx Prescription Review",
+    "description": "The label for category 'Rx Prescription Review (RX 처방 검토)' in sidebar 'lmsSidebar'"
+  },
+  "sidebar.lmsSidebar.category.Rx Work Management (RX 주문 관리)": {
+    "message": "Rx Work Management",
+    "description": "The label for category 'Rx Work Management (RX 주문 관리)' in sidebar 'lmsSidebar'"
   }
 }
