@@ -6,6 +6,8 @@ created: "2026-10-06"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Daily Report Register (데일리 리포트 등록)
 
 > 스토어의 하루 운영 결과(방문객 수, 매출 지표, 특이사항, 고객 피드백 등)를 데일리 리포트로 등록하는 방법을 안내합니다.
@@ -34,7 +36,15 @@ countries: [au]
 
 ## 1. 기본 정보 입력
 
-<div className="img-placeholder">📷 [Image] Report Basic Information 영역</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/daily-report-register-01.png').default}
+  alt="Report Basic Information — Record Date, Corporation, Store, Visitor Count"
+  boxes={[
+    {x: 5.0, y: 34.6, w: 37.0, h: 7.2},
+    {x: 5.0, y: 47.8, w: 72.4, h: 8.0},
+  ]}
+/>
 
 | 항목 | 설명 | 입력 방식 | 비고 |
 |---|---|---|---|
@@ -46,7 +56,15 @@ countries: [au]
 
 ## 2. 일일 지표 확인 (자동)
 
-<div className="img-placeholder">📷 [Image] Daily Metrics (Auto) 영역</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/daily-report-register-01.png').default}
+  alt="Daily Metrics (Auto) — Visitor Count 입력 후 자동 집계"
+  boxes={[
+    {x: 54.8, y: 48.0, w: 22.6, h: 7.6},
+    {x: 1.8, y: 67.6, w: 98.2, h: 29.0},
+  ]}
+/>
 
 스토어와 기록 일자를 선택하면 <mark>**BO에 저장된 매출 기준으로 일일 지표가 자동 집계**</mark>되며, 직접 수정할 수 없습니다.
 
@@ -63,7 +81,15 @@ countries: [au]
 
 ## 3. 특이사항 입력 (필수)
 
-<div className="img-placeholder">📷 [Image] 특이사항 입력 영역 및 File Upload</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/daily-report-register-03.png').default}
+  alt="Daily Report Register 전체 화면 — 특이사항 입력, File Upload"
+  boxes={[
+    {x: 0.3, y: 31.5, w: 95.6, h: 21.5},
+    {x: 0.3, y: 55.3, w: 95.6, h: 9.1},
+  ]}
+/>
 
 - 특이사항 내용을 작성한 뒤, 화면 하단의 <mark>**Save**(임시 저장) 또는 **Submit**(저장)</mark>으로 저장합니다.
   - 특이사항에 텍스트가 없으면 저장되지 않습니다. (이미지만 넣은 경우 포함)
@@ -74,7 +100,16 @@ countries: [au]
 
 ## 4. 추가 정보 입력 (선택)
 
-<div className="img-placeholder">📷 [Image] Product Feedback / Sales Loss / Celebrity / Other Issues 영역</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/daily-report-register-04.png').default}
+  alt="Product Feedback / Sales Loss / Celebrity / Other Issues"
+  boxes={[
+    {x: 30.0, y: 30.5, w: 38.0, h: 3.5},
+    {x: 78.4, y: 30.6, w: 15.2, h: 3.0},
+    {x: 90.2, y: 46.2, w: 6.6, h: 2.4},
+  ]}
+/>
 
 | 구분 | 입력 내용 |
 |---|---|
@@ -89,7 +124,15 @@ countries: [au]
 
 ## 5. Save / Submit
 
-<div className="img-placeholder">📷 [Image] Save / Submit 버튼 및 저장 확인 팝업</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/daily-report-register-05.png').default}
+  alt="Submit 확인 팝업 — SAVE 클릭 시 저장"
+  boxes={[
+    {x: 14.8, y: 29.4, w: 63.0, h: 21.6},
+    {x: 73.8, y: 57.6, w: 16.0, h: 10.0},
+  ]}
+/>
 
 | 버튼 | 결과 | 이후 수정 |
 |---|---|---|
@@ -123,3 +166,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-06 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

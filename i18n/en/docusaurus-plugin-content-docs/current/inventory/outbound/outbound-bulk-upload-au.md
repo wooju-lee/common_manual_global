@@ -1,11 +1,13 @@
 ---
-source_hash: "33baedb393"
+source_hash: "cac3277982"
 sidebar_label: Outbound Bulk Upload
 sidebar_position: 5
 author: Wooju(Landa)
 created: "2026-10-04"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Outbound Bulk Upload
 
@@ -19,14 +21,31 @@ countries: [au]
 
 ## 1. Download the template
 
-<div className="img-placeholder">📷 [Image] Outbound Registration / Request — Bulk Upload (BULK) tab</div>
-
 Click **Outbound Registration / Request** → on the **Bulk Upload (BULK)** tab, click **Download Upload Template**.<br/>
 Always use the downloaded template (`Outbound_upload_form_V3.xlsx`).
 
+<AnnotatedImage
+  src={require('@site/docs/inventory/outbound/img/outbound-bulk-upload-01.png').default}
+  alt="Bulk Upload (BULK) tab and Download Upload Template in the Outbound Registration / Request popup"
+  boxes={[
+    {x: 42.3, y: 33.3, w: 17, h: 7},
+    {x: 80.4, y: 47, w: 12, h: 4.5},
+  ]}
+/>
+
 ## 2. Fill in the template
 
-<div className="img-placeholder">📷 [Image] Outbound upload template (Excel)</div>
+Enter the outbound details in the downloaded template as described below.
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/outbound/img/outbound-bulk-upload-02.png').default}
+  alt="Example of a filled-in outbound upload template (Excel)"
+  boxes={[
+    {x: 4, y: 5, w: 10.3, h: 90},
+    {x: 24.5, y: 5, w: 38.5, h: 90},
+    {x: 65.2, y: 5, w: 14.1, h: 90},
+  ]}
+/>
 
 | Column | Required | How to enter | Options / Notes |
 |---|:---:|---|---|

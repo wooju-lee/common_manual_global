@@ -1,5 +1,6 @@
 /* Same frame as `.markdown img`, moved to the wrapper so boxes align with the image */
 .frame {
+  max-width: 720px;
   border: 1px solid var(--ifm-color-emphasis-200);
   border-radius: 6px;
   padding: 4px;
@@ -14,6 +15,7 @@
 .frame .image {
   display: block;
   width: 100%;
+  max-width: none;
   margin: 0;
   padding: 0;
   border: 0;

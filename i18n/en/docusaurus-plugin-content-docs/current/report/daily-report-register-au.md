@@ -1,11 +1,13 @@
 ---
-source_hash: "c44e8fca8c"
+source_hash: "6bc8f0d8f8"
 sidebar_label: Daily Report Register
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-06"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Daily Report Register
 
@@ -35,7 +37,15 @@ countries: [au]
 
 ## 1. Enter basic information
 
-<div className="img-placeholder">📷 [Image] Report Basic Information section</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/daily-report-register-01.png').default}
+  alt="Report Basic Information — Record Date, Corporation, Store, Visitor Count"
+  boxes={[
+    {x: 5.0, y: 34.6, w: 37.0, h: 7.2},
+    {x: 5.0, y: 47.8, w: 72.4, h: 8.0},
+  ]}
+/>
 
 | Field | Description | Input | Notes |
 |---|---|---|---|
@@ -47,7 +57,15 @@ countries: [au]
 
 ## 2. Check daily metrics (automatic)
 
-<div className="img-placeholder">📷 [Image] Daily Metrics (Auto) section</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/daily-report-register-01.png').default}
+  alt="Daily Metrics (Auto) — calculated after entering Visitor Count"
+  boxes={[
+    {x: 54.8, y: 48.0, w: 22.6, h: 7.6},
+    {x: 1.8, y: 67.6, w: 98.2, h: 29.0},
+  ]}
+/>
 
 When you select the store and Record Date, <mark>**daily metrics are aggregated automatically based on sales stored in BO**</mark>. They cannot be edited manually.
 
@@ -64,7 +82,15 @@ When you select the store and Record Date, <mark>**daily metrics are aggregated 
 
 ## 3. Enter notes (required)
 
-<div className="img-placeholder">📷 [Image] Note input section and File Upload</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/daily-report-register-03.png').default}
+  alt="Daily Report Register full screen — notes, File Upload"
+  boxes={[
+    {x: 0.3, y: 31.5, w: 95.6, h: 21.5},
+    {x: 0.3, y: 55.3, w: 95.6, h: 9.1},
+  ]}
+/>
 
 - After writing the notes, save the report with <mark>**Save** (draft) or **Submit**</mark> at the bottom of the screen.
   - The report cannot be saved without text in the notes (including when only images are added).
@@ -75,7 +101,16 @@ When you select the store and Record Date, <mark>**daily metrics are aggregated 
 
 ## 4. Enter additional information (optional)
 
-<div className="img-placeholder">📷 [Image] Product Feedback / Sales Loss / Celebrity / Other Issues section</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/daily-report-register-04.png').default}
+  alt="Product Feedback / Sales Loss / Celebrity / Other Issues"
+  boxes={[
+    {x: 30.0, y: 30.5, w: 38.0, h: 3.5},
+    {x: 78.4, y: 30.6, w: 15.2, h: 3.0},
+    {x: 90.2, y: 46.2, w: 6.6, h: 2.4},
+  ]}
+/>
 
 | Type | Input |
 |---|---|
@@ -90,7 +125,15 @@ When you select the store and Record Date, <mark>**daily metrics are aggregated 
 
 ## 5. Save / Submit
 
-<div className="img-placeholder">📷 [Image] Save / Submit buttons and save confirmation popup</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/daily-report-register-05.png').default}
+  alt="Submit confirmation popup — click SAVE to save"
+  boxes={[
+    {x: 14.8, y: 29.4, w: 63.0, h: 21.6},
+    {x: 73.8, y: 57.6, w: 16.0, h: 10.0},
+  ]}
+/>
 
 | Button | Result | Editing afterward |
 |---|---|---|
@@ -124,3 +167,4 @@ When you select the store and Record Date, <mark>**daily metrics are aggregated 
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-06 | AU initial version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

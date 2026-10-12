@@ -1,11 +1,13 @@
 ---
-source_hash: "c9a7f9d6a3"
+source_hash: "9a0e9a3dd7"
 sidebar_label: C2C Corporate Inbound
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 C2C Corporate Inbound
 
@@ -39,10 +41,17 @@ countries: [au]
 
 ## 1. Check pending inbound
 
-<div className="img-placeholder">📷 [Image] Inbound List — C2C / SAP pending inbound</div>
-
 Check pending inbound records in the **Inbound List**.<br/>
 C2C inbound is shown with Type `C2C` and Channel `SAP`, and the status is `Pending Inbound`.
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/inbound/img/inbound-list-01.png').default}
+  alt="Inbound List — pending inbound"
+  boxes={[
+    {x: 12, y: 29.1, w: 40.2, h: 3.3},
+    {x: 2.1, y: 82.2, w: 96.8, h: 10.7},
+  ]}
+/>
 
 - Click a row in the list to open the inbound detail screen.
 - **Inbound Registration** at the top of the list is not used in AU.

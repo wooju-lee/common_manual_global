@@ -1,11 +1,13 @@
 ---
-source_hash: "d6692a21d4"
+source_hash: "db870e35f5"
 sidebar_label: Return Registration & Inquiry
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Return Registration & Inquiry
 
@@ -39,18 +41,34 @@ countries: [au]
 
 ### Step 1. Look up the original sale
 
-<div className="img-placeholder">📷 [Image] Look up the original sale by Invoice No. — lookup mode screen</div>
-
 Scan or enter the original sale's **receipt ID** in the `Invoice No.` field and press Enter.<br/>
 The original sale details are shown, and `Qty` shows the quantity available for return.
 
-### Step 2. Select products to return
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/return-registration-01.png').default}
+  alt="Look up the original sale by Invoice No. — lookup mode screen"
+  boxes={[
+    {x: 6.4, y: 16.6, w: 23.5, h: 2.8},
+    {x: 1.55, y: 24.8, w: 72, h: 7.3},
+    {x: 39.8, y: 27.2, w: 1.5, h: 2.4},
+  ]}
+/>
 
-<div className="img-placeholder">📷 [Image] Move products to the return list with the ▼ button</div>
+### Step 2. Select products to return
 
 - Click the **▼** button on a product row to move it to the return list below, **one unit at a time**. (Partial returns are possible.)
 - Products linked to a package move together with the package.
 - If you moved a product by mistake, use the **▲** button in the return list to move it back.
+
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/return-registration-02.png').default}
+  alt="Products moved to the return list with the ▼ button, then Confirm Refund"
+  boxes={[
+    {x: 1.6, y: 44.2, w: 72.1, h: 7.3},
+    {x: 39.9, y: 46.6, w: 1.5, h: 2.4},
+    {x: 68.75, y: 59, w: 4.95, h: 2.6},
+  ]}
+/>
 
 ### Step 3. Confirm Refund
 
@@ -58,6 +76,16 @@ The original sale details are shown, and `Qty` shows the quantity available for 
 2. In the `Would you like to create a New Return?` popup, click <strong>Yes.</strong>
 3. The return is complete when the `Return has been successfully created.` message appears.<br/>
    The return is created as a new invoice.
+
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/return-registration-04.png').default}
+  alt="Confirm Refund button enabled after selecting a cashier"
+  boxes={[
+    {x: 1.45, y: 44.4, w: 72.15, h: 7.4},
+    {x: 78.2, y: 10.8, w: 10.35, h: 2.7},
+    {x: 68.65, y: 59.4, w: 4.95, h: 2.5},
+  ]}
+/>
 
 <div className="blockquote-warning">
 
@@ -84,7 +112,16 @@ In AU, the original sale may be missing in the following cases.
 | **BO sale not created** | The external POS and BO are not integrated, so the sale was not registered in BO after payment on the external POS |
 | **Sale from before BO was introduced** | Sales from the system used before BO are not migrated to BO, so the return is for a past sale |
 
-<div className="img-placeholder">📷 [Image] Manual Refund button</div>
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/return-registration-03.png').default}
+  alt="After adding products, click Manual Refund — new return confirmation popup"
+  boxes={[
+    {x: 1.45, y: 24.8, w: 72.1, h: 7.3},
+    {x: 78.15, y: 11, w: 10.3, h: 2.6},
+    {x: 68.6, y: 39.7, w: 5, h: 2.5},
+    {x: 40.85, y: 45.8, w: 18.25, h: 12.2},
+  ]}
+/>
 
 | Step | Action |
 |:---:|---|

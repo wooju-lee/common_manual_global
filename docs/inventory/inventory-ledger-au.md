@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory Ledger (재고 원장 조회)
 
 > 시스템 내에서 발생하는 입고, 출고, 판매, 반품, 조정, 실사(조정), 이동에 대한 **재고 원장 이력을 모두 조회**하는 방법을 안내합니다.
@@ -19,7 +21,14 @@ countries: [au]
 
 ## 1. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Inventory Ledger 검색 조건</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/inventory-ledger-01.png').default}
+  alt="Inventory Ledger 검색 조건 — Inventory Transaction Type 드롭다운"
+  boxes={[
+    {x: 1.2, y: 37.0, w: 12.0, h: 45.6},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -32,7 +41,15 @@ countries: [au]
 
 ## 2. 리스트 컬럼
 
-<div className="img-placeholder">📷 [Image] Inventory Ledger 목록 — Include Reversal History / Excel Export</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/inventory-ledger-02.png').default}
+  alt="Inventory Ledger 목록 — Inventory Transaction Type, Include Reversal History / Excel Export"
+  boxes={[
+    {x: 79.0, y: 51.2, w: 9.8, h: 42.6},
+    {x: 83.7, y: 43.4, w: 15.4, h: 3.0},
+  ]}
+/>
 
 | 컬럼 | 설명 |
 |---|---|
@@ -77,3 +94,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

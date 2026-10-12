@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Stocktaking (실사)
 
 > 스토어 로케이션의 실물 재고를 카운트해 전산 재고와 비교하고, 차이를 재고에 반영하는 방법을 안내합니다.
@@ -39,10 +41,20 @@ countries: [au]
 
 ## 1. 실사 시작
 
-<div className="img-placeholder">📷 [Image] Start Stocktaking 팝업</div>
-
 **Start Stocktaking** 버튼을 클릭하고, 대상 스토어를 선택한 뒤 **Start Stocktaking**을 클릭합니다.<br/>
 로케이션은 <mark>**스토어의 `1000 / SALES` 또는 `1110 / AVAILABLE` 로케이션 중 등록된 로케이션으로 자동 적용**</mark>되며, 실사 대상 제품 목록이 생성됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-01.png').default}
+  alt="Start Stocktaking 팝업에서 브랜드·법인·스토어 선택 후 실사 시작"
+  boxes={[
+    {x: 86.9, y: 53.6, w: 6.7, h: 2.9},
+    {x: 13.0, y: 63.6, w: 21.3, h: 3.6},
+    {x: 54.0, y: 73.0, w: 6.6, h: 2.4},
+    {x: 68.8, y: 81.1, w: 7.8, h: 3.4},
+  ]}
+/>
 
 <div className="blockquote-warning">
 
@@ -53,8 +65,6 @@ countries: [au]
 
 ## 2. 실사 수량 입력
 
-<div className="img-placeholder">📷 [Image] Stocktaking Detail — 실사 수량 입력 목록</div>
-
 목록에서 실사 건을 클릭해 상세 화면으로 이동한 뒤, 아래 두 방법 중 하나로 실사 수량을 입력합니다.
 
 | 방법 | 처리 내용 |
@@ -62,7 +72,28 @@ countries: [au]
 | **화면에서 직접 입력** | 제품별 **Stocktaking Qty**(실제 카운트 수량)를 화면에 바로 입력 |
 | **엑셀 업로드** | 해당 실사 건의 양식을 받아 수량을 작성한 뒤 업로드 (👉 3. 실사 수량 엑셀 업로드 참고) |
 
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-02.png').default}
+  alt="Stocktaking Detail (In Progress) — Stocktaking Qty 입력 후 Save"
+  boxes={[
+    {x: 11.0, y: 4.8, w: 3.8, h: 2.9},
+    {x: 25.5, y: 46.5, w: 6.9, h: 43.6},
+    {x: 93.7, y: 37.5, w: 5.2, h: 2.8},
+  ]}
+/>
+
 - 실사 목록에 없는 제품을 발견한 경우, <mark>**화면에서는 추가할 수 없고 엑셀 업로드로만 추가**</mark>할 수 있습니다.
+- 실사 수량을 입력하지 않은 제품이 있으면 저장 시 `This field is required.`가 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-03.png').default}
+  alt="실사 수량 미입력 시 This field is required. 표시"
+  boxes={[
+    {x: 42.8, y: 81.0, w: 11.6, h: 18.5},
+  ]}
+/>
 
 ### ⚖️ 재고 차이 발생 시
 
@@ -71,6 +102,16 @@ countries: [au]
 | **실물이 적은 경우** | `99` | `-1` (파란색) | `STK002` 자동 설정 |
 | **실물이 많은 경우** | `101` | `+1` (빨간색) | `STK002` 자동 설정 |
 | **같은 경우** | `100` | `0` | 설정 없음 |
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-04.png').default}
+  alt="실사 수량 입력 시 Adjustment Qty 자동 계산 및 STK002 자동 설정"
+  boxes={[
+    {x: 32.3, y: 21.5, w: 5, h: 72},
+    {x: 39.6, y: 21.5, w: 8.2, h: 72},
+  ]}
+/>
 
 - 전산 재고와 실사 수량에 차이가 있으면, <mark>**조정 수량(Adjustment Qty)이 자동 계산되고, 실사 조정 사유(Stocktaking Reason)가 자동 설정**</mark>됩니다.
   - 자동 설정된 사유는 필요 시 드롭다운에서 변경할 수 있습니다.
@@ -86,6 +127,29 @@ countries: [au]
 | **2** | **Download Upload Template** 클릭 → 해당 실사 건의 양식(`stocktaking_upload_template_form.xlsx`) 다운로드 |
 | **3** | 실제 카운트 수량과 다른 제품의 **Stocktaking Qty** 수정 |
 | **4** | 작성한 파일(.xlsx / .xls, 최대 5MB)을 끌어다 놓거나 선택한 뒤 **Register** 클릭 |
+
+- 다운로드한 양식에는 **Stocktaking Qty**가 전산 재고(**Stock Qty**)와 같은 값으로 채워져 있습니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-08.png').default}
+  alt="다운로드한 실사 업로드 양식 — Stocktaking Qty가 Stock Qty와 같은 값으로 표시"
+  boxes={[
+    {x: 52.6, y: 7.0, w: 17.0, h: 88.5},
+  ]}
+/>
+
+- 업로드가 완료되면 상세 화면의 실사 수량이 업로드한 값으로 바뀝니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-09.png').default}
+  alt="업로드 후 Stocktaking Detail — 업로드한 실사 수량 반영"
+  boxes={[
+    {x: 77.0, y: 37.3, w: 8.4, h: 3.0},
+    {x: 31.0, y: 46.0, w: 8.4, h: 44.0},
+  ]}
+/>
 
 ### 📝 양식 작성 방법
 
@@ -117,25 +181,114 @@ countries: [au]
 
 </div>
 
+### ⚠️ 전산 재고가 마이너스인 경우
+
+- 전산 재고가 마이너스인 제품은 양식의 **Stocktaking Qty**에도 마이너스 값이 그대로 표시됩니다.
+- <mark>**실사 수량은 0 이상만 저장**</mark>할 수 있어, 그대로 업로드하면 **Save** 시 `Stocktaking quantity must be at least 0.` 오류가 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-10.png').default}
+  alt="마이너스 실사 수량 저장 시 Stocktaking quantity must be at least 0. 오류"
+  boxes={[
+    {x: 83.3, y: 1.4, w: 16.6, h: 14.6},
+    {x: 31.5, y: 47.3, w: 8.6, h: 38.8},
+  ]}
+/>
+
+- 마이너스로 표시된 제품의 **Stocktaking Qty**를 실제 수량(실물이 없으면 `0`)으로 수정해 다시 업로드합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-11.png').default}
+  alt="마이너스 제품의 Stocktaking Qty를 0으로 수정한 양식"
+  boxes={[
+    {x: 52.3, y: 7.0, w: 17.2, h: 89.5},
+  ]}
+/>
+
+- 다시 업로드하면 차이 수량만큼 조정 수량이 계산되고, 사유가 설정됩니다. 이후 **Save**로 저장합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-12.png').default}
+  alt="재업로드 후 조정 수량 및 실사 사유 반영"
+  boxes={[
+    {x: 40.6, y: 46, w: 5.6, h: 44},
+    {x: 48.5, y: 46, w: 10.2, h: 44},
+  ]}
+/>
+
 ## 4. 실사 확정 / 반려
 
-<div className="img-placeholder">📷 [Image] Confirm / Rejected 버튼 및 확인 팝업</div>
-
 **승인 권한**이 있는 계정이 `Saved` 상태의 실사 건을 확정하거나 반려합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-05.png').default}
+  alt="저장 완료 상태의 Stocktaking Detail — Rejected / Confirm 버튼"
+  boxes={[
+    {x: 11.2, y: 10.2, w: 5.0, h: 3.0},
+    {x: 70.4, y: 43.4, w: 10.6, h: 2.9},
+  ]}
+/>
 
 | 버튼 | 결과 |
 |---|---|
 | **Confirm** | <mark>**실사 수량으로 재고가 업데이트**</mark>되고, 차이 수량만큼 Adjustment의 `Stocktaking Adjustment` 탭에 조정 내역이 생성됩니다 |
 | **Rejected** | 재고 반영 없이 결과만 기록으로 남습니다 |
 
-- 처리 내역은 재고 원장에 기록됩니다. 👉 **[Inventory Ledger 바로가기](/docs/inventory/inventory-ledger-au)**
+### 확정 (Confirm)
+
+- **Confirm** 클릭 → 확인 팝업에서 **Confirm**을 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-06.png').default}
+  alt="Confirm Stocktaking 확인 팝업"
+  boxes={[
+    {x: 62.7, y: 61.7, w: 5.4, h: 5.3},
+  ]}
+/>
+
+### 반려 (Rejected)
+
+- **Rejected** 클릭 → 확인 팝업에서 **Rejected**를 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-07.png').default}
+  alt="Rejected 확인 팝업"
+  boxes={[
+    {x: 58.2, y: 61.3, w: 6.6, h: 4.4},
+  ]}
+/>
+
+- 확정되면 재고 원장에 `Stocktaking Adjustment` 유형으로 처리 전 · 처리 · 처리 후 수량이 기록됩니다. 👉 **[Inventory Ledger 바로가기](/docs/inventory/inventory-ledger-au)**
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-13.png').default}
+  alt="확정 후 재고 원장의 Stocktaking Adjustment 이력"
+  boxes={[
+    {x: 58.2, y: 51.8, w: 8.4, h: 41.0},
+    {x: 69.6, y: 51.8, w: 21.0, h: 41.0},
+  ]}
+/>
 
 ## 5. 실사 취소
 
-<div className="img-placeholder">📷 [Image] Cancel Stocktaking 버튼 및 확인 팝업</div>
-
 `In Progress` 상태에서만 **Cancel Stocktaking**으로 취소할 수 있습니다.<br/>
 취소하면 <mark>**재고에 반영되지 않고 `Canceled` 상태로 종료**</mark>되며, 입력한 내용은 목록에서 조회만 가능합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/stocktaking-02.png').default}
+  alt="Stocktaking Detail 하단 Cancel Stocktaking 버튼"
+  boxes={[
+    {x: 93.1, y: 95.6, w: 6.6, h: 2.9},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -154,7 +307,7 @@ countries: [au]
 
 > **Q. Save를 눌렀는데 저장되지 않아요.**
 >
-> A. 모든 제품에 <u>실사 수량</u>이 입력되었는지 확인해 주세요.
+> A. 모든 제품에 <u>실사 수량</u>이 입력되었는지, <u>마이너스 값</u>이 없는지 확인해 주세요. 실사 수량은 0 이상만 저장할 수 있습니다.
 
 > **Q. 엑셀 업로드 시 오류가 발생해요.**
 >
@@ -178,3 +331,4 @@ countries: [au]
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-04 | 순서 요약 추가, 매뉴얼 형식 정리, 엑셀 업로드 방법 · 운영 주의사항 추가, 실사 취소 기준 수정 | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가, 확정 / 반려 팝업 안내 추가, 마이너스 재고 업로드 케이스 추가 | Wooju(Landa) |

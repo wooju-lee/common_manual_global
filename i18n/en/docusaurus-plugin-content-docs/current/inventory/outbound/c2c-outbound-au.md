@@ -1,11 +1,13 @@
 ---
-source_hash: "e77d7db072"
+source_hash: "62f12f3173"
 sidebar_label: C2C Corporate Outbound
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 C2C Corporate Outbound
 
@@ -34,8 +36,6 @@ countries: [au]
 
 ## 1. Register outbound
 
-<div className="img-placeholder">📷 [Image] Outbound Registration / Request — Corporate Outbound tab</div>
-
 Click **Outbound Registration / Request** → on the **Corporate Outbound** tab, register in 3 steps.
 
 | Step | Screen | What to enter |
@@ -44,11 +44,45 @@ Click **Outbound Registration / Request** → on the **Corporate Outbound** tab,
 | **2** | Select Outbound Product | Select the products to ship out (only products with stock in the outbound location are shown) |
 | **3** | Enter Outbound Information | Enter the outbound quantity per product, then click **Register** |
 
+### Step 1. Select the outbound store
+
+- Select the **Corporate Outbound** tab, choose the outbound Brand · BP · Store · Location, then click **Next**.
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/outbound/img/c2c-outbound-01.png').default}
+  alt="Select the Corporate Outbound tab, then select the outbound store and location"
+  boxes={[
+    {x: 21.5, y: 22.5, w: 16.0, h: 7.0},
+    {x: 6.3, y: 56.5, w: 87.8, h: 9.8},
+    {x: 86.7, y: 83.5, w: 8.8, h: 4.6},
+  ]}
+/>
+
+### Step 2. Select outbound products
+
+- The Inbound Store is automatically set to Korea HQ and shows `It will be processed as an HQ return.`; the outbound type is shown as `C2C`.
+- Only products with stock in the outbound location are shown. Check the products to ship out, then click **Next**.
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/outbound/img/c2c-outbound-02.png').default}
+  alt="Step 2. Confirm the inbound store is set to HQ return, then select outbound products"
+  boxes={[
+    {x: 3.9, y: 51.4, w: 92.2, h: 7.9},
+    {x: 5.5, y: 62.9, w: 4.0, h: 19.8},
+    {x: 87.2, y: 91.7, w: 8.8, h: 2.8},
+  ]}
+/>
+
+### Step 3. Enter outbound quantities
+
+- Enter the outbound quantity per product, then click **Register**.
 - The outbound quantity must be **1 or more**, and **registration is not possible if available stock is insufficient**.
+
+A C2C outbound becomes <mark>**Outbound Completed**</mark> immediately on registration and is reflected in stock right away, and the outbound history (`Outbound (Confirmed)`) is recorded in the inventory ledger. 👉 **[Go to Inventory Ledger](/docs/inventory/inventory-ledger-au)**
 
 <div className="blockquote-warning">
 
-> <mark>**C2C outbound is completed immediately on registration and cannot be canceled.**</mark><br/>
+> <mark>**C2C outbound cannot be canceled after registration.**</mark><br/>
 > Double-check the outbound store, products, and quantities before registering. C2C outbound cannot use the approval request (Request Outbound) method.
 
 </div>

@@ -1,5 +1,5 @@
 ---
-source_hash: "5dfd557bbf"
+source_hash: "7bcbf14af5"
 sidebar_label: Sales Registration & Inquiry
 sidebar_position: 1
 author: Wooju(Landa)
@@ -36,6 +36,9 @@ You can create a sale only after products, membership, and customer profile info
 
 ## 1. Enter the Receipt Number
 
+Scan or enter the **receipt number** issued by the external POS after payment in the `Invoice No.` field.<br/>
+The BO sale is **created with the same number**.
+
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-04.png').default}
   alt="Invoice No. field — enter the receipt number"
@@ -44,9 +47,6 @@ You can create a sale only after products, membership, and customer profile info
     {x: 23.1, y: 29.7, w: 69.6, h: 10},
   ]}
 />
-
-Scan or enter the **receipt number** issued by the external POS after payment in the `Invoice No.` field.<br/>
-The BO sale is **created with the same number**.
 
 **Input rules**
 
@@ -65,6 +65,8 @@ The BO sale is **created with the same number**.
 
 ## 2. Add Products
 
+Place the cursor in the **Product Barcode** field and enter product information (code, product name, barcode), or scan the physical barcode to add the product.
+
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-05.png').default}
   alt="Product Barcode search — search by product code / product name / barcode and select"
@@ -73,8 +75,6 @@ The BO sale is **created with the same number**.
     {x: 1.9, y: 25.3, w: 47.6, h: 16.1},
   ]}
 />
-
-Place the cursor in the **Product Barcode** field and enter product information (code, product name, barcode), or scan the physical barcode to add the product.
 
 - Gentle Monster products are **mapped to a package**, so the package is also shown in the list when you add the product.
 - The list shows the **sale amount** (Customer Price, Discount Price, Total) and **Stock (SALES)** (available stock in the store's Sales location).
@@ -99,6 +99,8 @@ Place the cursor in the **Product Barcode** field and enter product information 
 
 ## 4. Set Membership (Required)
 
+**Membership is required** to create a sale. Set it using one of the methods below.
+
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-02.png').default}
   alt="Customer Member Search area"
@@ -110,8 +112,6 @@ Place the cursor in the **Product Barcode** field and enter product information 
   ]}
 />
 
-**Membership is required** to create a sale. Set it using one of the methods below.
-
 | Method | Description |
 |---|---|
 | **Email / phone number search** | The country defaults to the POS store's country.<br/>Enter an email (`ID@` format) or phone number (at least 8 digits) in `Search by Email OR Phone` and search |
@@ -119,6 +119,8 @@ Place the cursor in the **Product Barcode** field and enter product information 
 | **Non-Member** | For customers who do not sign up, select **Non-Member** |
 
 ## 5. Select Customer Profile Information (Required)
+
+You must select **all** customer profile information fields at the bottom right of the screen.
 
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-07.png').default}
@@ -133,8 +135,6 @@ Place the cursor in the **Product Barcode** field and enter product information 
   ]}
 />
 
-You must select **all** customer profile information fields at the bottom right of the screen.
-
 | Field | Values |
 |---|---|
 | **Country** | Customer's country |
@@ -144,6 +144,8 @@ You must select **all** customer profile information fields at the bottom right 
 | **Usage Type** | `N/A` / `Normal` / `Gift` |
 
 ## 6. Confirm Sales (Create Sale)
+
+When all required values (product, membership, customer profile information) are set, the **Confirm Sales** button is enabled. Click it to create the sale.
 
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-03.png').default}
@@ -155,8 +157,6 @@ You must select **all** customer profile information fields at the bottom right 
     {x: 76.1, y: 73.5, w: 22.1, h: 24.1},
   ]}
 />
-
-When all required values (product, membership, customer profile information) are set, the **Confirm Sales** button is enabled. Click it to create the sale.
 
 <div className="blockquote-gray">
 

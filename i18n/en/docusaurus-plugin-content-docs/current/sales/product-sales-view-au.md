@@ -1,11 +1,13 @@
 ---
-source_hash: "ab3d1caada"
+source_hash: "2b6e022866"
 sidebar_label: Product Sales View
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Product Sales View
 
@@ -20,7 +22,15 @@ countries: [au]
 
 ## 1. Search sales
 
-<div className="img-placeholder">📷 [Image] Product Sales View search and list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/product-sales-view-01.png').default}
+  alt="Product Sales View — keyword search, Sales Type"
+  boxes={[
+    {x: 1.4, y: 36.2, w: 64.2, h: 4.4},
+    {x: 70.8, y: 64.6, w: 5.0, h: 35.0},
+  ]}
+/>
 
 Select the period and store. To view specific products only, enter a product code or product name in **Keyword**, then click **Search**.
 
@@ -32,7 +42,7 @@ Select the period and store. To view specific products only, enter a product cod
 
 ## 2. What you can see in the list
 
-- Each row is a total per **date · store · product**. If the same product has returns on the same day, `NORMAL` (sales) and `REFUND` (returns) are shown on separate rows.
+- Each row is a total per **date · store · product**. If the same product has returns on the same day, `Sales` and `Refund` are shown on separate rows.
 - **Product Category 1 / 2** shows the product classification (e.g. `OPTICAL` / `OPTICAL COMBI`).
 - **Total** is the amount including VAT, and **Net** is the amount excluding VAT.
 - Unlike other sales menus, **there is no Total Sum area.** If you need totals, download the list with **Excel Export**.
@@ -42,3 +52,4 @@ Select the period and store. To view specific products only, enter a product cod
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Created AU menu, added search instructions | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

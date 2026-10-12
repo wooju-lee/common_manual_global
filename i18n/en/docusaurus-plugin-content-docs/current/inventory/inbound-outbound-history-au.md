@@ -1,11 +1,13 @@
 ---
-source_hash: "4d76b078e8"
+source_hash: "a617435127"
 sidebar_label: Inventory In/Out History
 sidebar_position: 10
 author: Wooju(Landa)
 created: "2026-10-04"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Inventory In/Out History
 
@@ -20,7 +22,15 @@ countries: [au]
 
 ## 1. List search
 
-<div className="img-placeholder">📷 [Image] Inventory In/Out History search filters</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/inbound-outbound-history-01.png').default}
+  alt="Inventory In/Out History search filters and list — Confirmed Inbound Date / Qty"
+  boxes={[
+    {x: 8.4, y: 45.4, w: 6.0, h: 54.0},
+    {x: 90.6, y: 45.4, w: 5.8, h: 54.0},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -39,8 +49,6 @@ countries: [au]
 </div>
 
 ## 2. List columns
-
-<div className="img-placeholder">📷 [Image] Inventory In/Out History list</div>
 
 | Column | Description |
 |---|---|
@@ -71,3 +79,4 @@ countries: [au]
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-04 | AU menu created | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

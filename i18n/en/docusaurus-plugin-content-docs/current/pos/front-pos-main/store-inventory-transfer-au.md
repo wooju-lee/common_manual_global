@@ -1,11 +1,13 @@
 ---
-source_hash: "e249dcb607"
+source_hash: "7ad9e9ea16"
 sidebar_label: Inventory Transfer SALES → DP
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Inventory Transfer SALES → DP
 
@@ -21,10 +23,17 @@ The movement is fixed to <strong>SALES(1000) → DP(1010)</strong> in the logged
 
 ## 1. Switch to INVENTORY Mode
 
-<div className="img-placeholder">📷 [Image] Front POS Main — INVENTORY mode screen</div>
-
 Switch the toggle at the top of Front POS Main to **INVENTORY** to change the screen to inventory transfer mode.<br/>
 The **(SALES → DP)** button appears on the right, and <mark>**the membership and customer profile information areas are not used.**</mark>
+
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/store-inventory-transfer-01.png').default}
+  alt="Front POS Main — INVENTORY mode screen"
+  boxes={[
+    {x: 0.5, y: 14, w: 9.6, h: 4.4},
+    {x: 76, y: 26.4, w: 22.5, h: 8},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -34,10 +43,18 @@ The **(SALES → DP)** button appears on the right, and <mark>**the membership a
 
 ## 2. Add Products
 
-<div className="img-placeholder">📷 [Image] List of products to move and the enabled (SALES → DP) button</div>
-
 Scan a product in **Product Barcode**, or search and select it from the dropdown to add it to the list.<br/>
 Once a product is added, the **(SALES → DP)** button is enabled.
+
+<AnnotatedImage
+  src={require('@site/docs/pos/front-pos-main/img/store-inventory-transfer-01.png').default}
+  alt="Products added to the list and the enabled (SALES → DP) button"
+  boxes={[
+    {x: 30.95, y: 23.5, w: 42.65, h: 3.7},
+    {x: 1.55, y: 34.8, w: 72, h: 5.1},
+    {x: 76, y: 26.4, w: 22.5, h: 8},
+  ]}
+/>
 
 - Adjust quantity with the `-` / `+` buttons, and check the SALES stock available to move in `Stock (SALES)`.
 

@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory Snapshot (재고 스냅샷 조회)
 
 > 특정 날짜 기준의 재고 현황을 조회하는 방법을 안내합니다. 스냅샷은 **스토어 현지 시간 기준 매일 23:00**에 자동 저장됩니다.
@@ -29,7 +31,15 @@ countries: [au]
 
 ## 1. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Inventory Snapshot 검색 조건</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/inventory-snapshot-01.png').default}
+  alt="Inventory Snapshot 검색 조건 및 IIC BO 재고 수량 컬럼"
+  boxes={[
+    {x: 1.2, y: 16.0, w: 65.6, h: 14.5},
+    {x: 71.4, y: 51.6, w: 27.8, h: 41.6},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -40,8 +50,6 @@ countries: [au]
 | **검색어** | 제품 코드/명, 바코드 | 2자 이상 입력 |
 
 ## 2. 리스트 컬럼 및 조회 방법
-
-<div className="img-placeholder">📷 [Image] Inventory Snapshot 목록</div>
 
 | 컬럼 | 설명 |
 |---|---|
@@ -70,3 +78,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

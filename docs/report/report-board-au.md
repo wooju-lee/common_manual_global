@@ -6,6 +6,8 @@ created: "2026-10-06"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Report Board (리포트 게시판)
 
 > 등록된 데일리 리포트를 조회 · 수정 · 승인하고, 엑셀로 다운로드하는 방법을 안내합니다.
@@ -20,7 +22,17 @@ countries: [au]
 
 ## 1. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Report Board 검색 조건</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/report-board-01.png').default}
+  alt="Report Board 검색 조건 — BP, Store, Approve Status, Search Period"
+  boxes={[
+    {x: 2, y: 27.2, w: 41.6, h: 5.2},
+    {x: 45.8, y: 27.2, w: 18, h: 5.4},
+    {x: 2, y: 37.6, w: 33.8, h: 5.2},
+    {x: 78.2, y: 59.6, w: 6.4, h: 3.4},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -33,7 +45,15 @@ countries: [au]
 
 ## 2. 리스트 컬럼
 
-<div className="img-placeholder">📷 [Image] Report Board 목록</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/report-board-01.png').default}
+  alt="Report Board 목록 — BP / Store Information, Image Attached, Approve Status"
+  boxes={[
+    {x: 24.0, y: 73.6, w: 24.6, h: 13.4},
+    {x: 57.8, y: 73.6, w: 14.0, h: 13.4},
+  ]}
+/>
 
 | 컬럼 | 설명 |
 |---|---|
@@ -55,7 +75,16 @@ countries: [au]
 
 ## 3. 리포트 수정
 
-<div className="img-placeholder">📷 [Image] 리포트 상세 화면</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/report-board-03.png').default}
+  alt="리포트 상세 — 리포트 상태, 첨부 파일 다운로드 / 삭제"
+  boxes={[
+    {x: 0.3, y: 3.2, w: 25.2, h: 2.2},
+    {x: 1.9, y: 59.6, w: 95.4, h: 7.1},
+    {x: 84.2, y: 97.1, w: 14.5, h: 2.4},
+  ]}
+/>
 
 상세 화면에서 내용을 확인하고, 수정 권한이 있으면 바로 수정할 수 있습니다.
 
@@ -70,7 +99,16 @@ countries: [au]
 
 ## 4. 리포트 승인
 
-<div className="img-placeholder">📷 [Image] 목록 체크박스 선택 후 Approval 버튼</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/report-board-02.png').default}
+  alt="승인 대상 체크 후 APPROVAL 클릭"
+  boxes={[
+    {x: 1.8, y: 64.5, w: 2.7, h: 11.0},
+    {x: 85.2, y: 56.6, w: 6.3, h: 3.6},
+    {x: 2.4, y: 87.6, w: 5.4, h: 2.8},
+  ]}
+/>
 
 **승인 권한 계정**이 목록에서 승인 여부 `N`인 리포트를 체크한 뒤 **Approval**을 클릭합니다. 여러 건을 한 번에 승인할 수 있습니다.
 
@@ -115,3 +153,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-06 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

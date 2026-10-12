@@ -1,11 +1,13 @@
 ---
-source_hash: "31b710e3b4"
+source_hash: "5e1145b5bf"
 sidebar_label: Daily Sales Summary
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Daily Sales Summary
 
@@ -20,9 +22,18 @@ countries: [au]
 
 ## 1. Look Up Sales
 
-<div className="img-placeholder">📷 [Image] Daily Sales Summary screen</div>
-
 Select one date to look up in **SALES DATE**. When you open the menu, it shows **today's date** by default.
+
+<AnnotatedImage
+  src={require('@site/docs/pos/img/daily-sales-summary-01.png').default}
+  alt="Daily Sales Summary screen"
+  boxes={[
+    {x: 5, y: 0.8, w: 18.6, h: 8.6},
+    {x: 0.5, y: 23, w: 11.4, h: 9.3},
+    {x: 0.5, y: 38.9, w: 48.2, h: 56.1},
+    {x: 50.85, y: 38.2, w: 48.3, h: 47.9},
+  ]}
+/>
 
 <div className="blockquote-gray">
 

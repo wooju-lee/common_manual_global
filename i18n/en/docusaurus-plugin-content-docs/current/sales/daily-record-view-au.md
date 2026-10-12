@@ -1,11 +1,13 @@
 ---
-source_hash: "734d932263"
+source_hash: "8c0fe0b0ba"
 sidebar_label: Daily Record View
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Daily Record View
 
@@ -20,7 +22,15 @@ countries: [au]
 
 ## 1. Search sales
 
-<div className="img-placeholder">📷 [Image] Daily Record View search and list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/daily-record-view-01.png').default}
+  alt="Daily Record View list — Receipt No. / Original Receipt No., Sales Type"
+  boxes={[
+    {x: 26.4, y: 52.0, w: 9.4, h: 45.0},
+    {x: 38.0, y: 52.0, w: 4.2, h: 45.0},
+  ]}
+/>
 
 Select the period and store, then click **Search**.
 
@@ -30,6 +40,16 @@ Select the period and store, then click **Search**.
 > - The <strong>Total Sum</strong> at the top is shown only when a **Currency** is selected.
 
 </div>
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/daily-record-view-02.png').default}
+  alt="Total Sum shown when a Currency is selected"
+  boxes={[
+    {x: 26.0, y: 25.6, w: 6.8, h: 5.2},
+    {x: 1.2, y: 62.4, w: 97.8, h: 33.0},
+  ]}
+/>
 
 ## 2. What you can see in the list
 
@@ -42,9 +62,25 @@ Select the period and store, then click **Search**.
 
 Click <strong>Receipt No.</strong> in the list to open the receipt detail popup, where you can check the sales information, customer information, and purchased products at once.
 
-<div className="img-placeholder">📷 [Image] Sales (NORMAL) receipt detail popup</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/daily-record-view-03.png').default}
+  alt="Sales receipt detail popup"
+  boxes={[
+    {x: 60.6, y: 25.4, w: 6.2, h: 6.4},
+    {x: 7.5, y: 46.6, w: 80.8, h: 36.2},
+  ]}
+/>
 
-<div className="img-placeholder">📷 [Image] Return (REFUND) receipt detail popup</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/daily-record-view-04.png').default}
+  alt="Return receipt detail popup — negative qty and amounts"
+  boxes={[
+    {x: 63.6, y: 25.2, w: 6.0, h: 7.0},
+    {x: 59.2, y: 59.6, w: 32.0, h: 20.6},
+  ]}
+/>
 
 Return receipts show the **Original Receipt No.** (original sales receipt number), and instead of customer information, the message `Customer information is recorded on sales receipts only.` is shown.
 
@@ -53,3 +89,4 @@ Return receipts show the **Original Receipt No.** (original sales receipt number
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Created AU menu, added search instructions | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

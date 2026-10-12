@@ -1,11 +1,13 @@
 ---
-source_hash: "016e77adc4"
+source_hash: "ff54f16fed"
 sidebar_label: Period Sales View
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Period Sales View
 
@@ -30,11 +32,37 @@ Select the view unit in the top tabs. When you open the menu, the **DAILY TOTAL*
 
 ## 2. Search sales
 
-<div className="img-placeholder">📷 [Image] Period Sales View — DAILY TOTAL search and list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/period-sales-view-01.png').default}
+  alt="Period Sales View — DAILY TOTAL"
+  boxes={[
+    {x: 11.4, y: 10.8, w: 11.0, h: 3.6},
+    {x: 28.2, y: 20.4, w: 7.4, h: 3.4},
+    {x: 77.0, y: 57.4, w: 14.4, h: 41.0},
+  ]}
+/>
 
-<div className="img-placeholder">📷 [Image] Period Sales View — HOURLY TOTAL list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/period-sales-view-02.png').default}
+  alt="Period Sales View — HOURLY TOTAL, Time Slot"
+  boxes={[
+    {x: 1.4, y: 8.1, w: 12.0, h: 2.4},
+    {x: 16.0, y: 42.6, w: 6.0, h: 54.0},
+  ]}
+/>
 
-<div className="img-placeholder">📷 [Image] Period Sales View — MONTHLY TOTAL list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/sales/img/period-sales-view-03.png').default}
+  alt="Period Sales View — MONTHLY TOTAL, monthly Sales Date"
+  boxes={[
+    {x: 21.6, y: 11.5, w: 10.4, h: 3.5},
+    {x: 1.6, y: 27.3, w: 24.2, h: 3.8},
+    {x: 10.8, y: 63.8, w: 5.0, h: 31.4},
+  ]}
+/>
 
 To view a different period or store, change the filters and click **Search**.
 
@@ -47,10 +75,10 @@ To view a different period or store, change the filters and click **Search**.
 
 ## 3. What you can see in the list
 
-- Each row is a total per **date (or time slot / month) · store · currency**. If there are returns, `NORMAL` (sales) and `REFUND` (returns) are shown on two separate rows.
+- Each row is a total per **date (or time slot / month) · store · currency**. If there are returns, `Sales` and `Refund` are shown on two separate rows.
 - **HOURLY TOTAL** shows totals per `Time Slot` (e.g. `09:00 ~ 09:59`) for each date.
 - For **MONTHLY TOTAL**, select the period **by month** (e.g. September ~ October 2026), and `Sales Date` is shown as a month, such as `2026-10`.
-- **Net Qty** is the **net sales quantity** (sales quantity minus return quantity), and **Net Amount** is the **net sales amount** (sales amount minus return amount).
+- The bold **Total Qty** at the right end is the **net sales quantity** (sales quantity minus return quantity), and **Total Amount** is the **net sales amount** (sales amount minus return amount).
 - **Average Unit** is the average amount per product (amount ÷ quantity).
 - **Customer Type / Continent** (customer profile) is shown as a ratio and count based on the number of sales. e.g. `37.5% (3)` = 3 out of 8 sales
 - Click **Excel Export** to download the search results.
@@ -60,3 +88,4 @@ To view a different period or store, change the filters and click **Search**.
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Created AU menu, added search instructions | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

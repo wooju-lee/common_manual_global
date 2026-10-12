@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Adjustment (조정)
 
 > 스토어 로케이션의 전산 재고를 증감 조정하는 방법을 안내합니다. 조정은 **등록 → 권한 계정 승인(Confirm)** 후 재고에 반영됩니다.
@@ -37,7 +39,15 @@ countries: [au]
 
 ## 1. 조정 목록 조회
 
-<div className="img-placeholder">📷 [Image] Inventory Adjustment 목록 화면</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-01.png').default}
+  alt="Inventory Adjustment 목록 — 탭 및 Adjustment Registration 버튼"
+  boxes={[
+    {x: 12.6, y: 12.2, w: 30.4, h: 4.6},
+    {x: 84.4, y: 49.3, w: 9.0, h: 2.7},
+  ]}
+/>
 
 | 탭 | 설명 |
 |---|---|
@@ -60,15 +70,55 @@ countries: [au]
 
 **Adjustment Registration** 버튼 → `Single Registration` 탭에서 3단계로 등록합니다.
 
-<div className="img-placeholder">📷 [Image] Inventory Adjustment Registration — Single Registration 3단계</div>
-
 | Step | 화면 | 입력 내용 |
 |:---:|---|---|
 | **1** | Select Adjustment Store / Location | `BP`, `Store`, `Location` 선택 |
 | **2** | Select Adjustment Product | 브랜드·카테고리·제품 코드/명으로 검색 후 조정할 제품 선택 (`Inventory Qty` 확인) |
 | **3** | Enter Adjustment Information | 제품별 조정 정보 입력 후 **Register** |
 
-**Step 3 입력 항목**
+### Step 1. 스토어 / 로케이션 선택
+
+`BP` → `Store` → `Location`을 선택하고 **Next**를 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-02.png').default}
+  alt="Step 1 — BP / Store / Location 선택 후 Next"
+  boxes={[
+    {x: 11.3, y: 58.8, w: 29.0, h: 5.6},
+    {x: 83.3, y: 76.9, w: 8.0, h: 4.6},
+  ]}
+/>
+
+### Step 2. 조정할 제품 선택
+
+브랜드 · 카테고리 · 제품 코드/명으로 검색한 뒤, 조정할 제품을 체크하고 **Next**를 클릭합니다.<br/>
+`Inventory Qty`에서 현재 재고를 확인할 수 있습니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-03.png').default}
+  alt="Step 2 — 제품 검색 후 조정할 제품 체크, Inventory Qty 확인"
+  boxes={[
+    {x: 5.0, y: 27.6, w: 69.5, h: 9.8},
+    {x: 5.6, y: 49.2, w: 3.1, h: 43.5},
+    {x: 59.5, y: 49.2, w: 8.0, h: 43.5},
+  ]}
+/>
+
+### Step 3. 조정 사유 · 수량 입력 후 등록
+
+선택한 제품별로 조정 정보를 입력합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-04.png').default}
+  alt="Step 3 — Adjustment Reason Code / Adjustment Qty 입력"
+  boxes={[
+    {x: 37.8, y: 52.2, w: 24.8, h: 28.0},
+    {x: 87.6, y: 86.3, w: 9.0, h: 4.6},
+  ]}
+/>
 
 | 항목 | 필수 여부 | 설명 |
 |---|:---:|---|
@@ -78,7 +128,40 @@ countries: [au]
 | **Billing Store / Location** | 선택 | 비용 귀속 스토어 / 로케이션 |
 | **Remarks** | 선택 | 비고 |
 
-- 등록이 완료되면 `Pending` 상태로 목록에 표시됩니다.
+조정 사유는 드롭다운에서 선택합니다.
+
+<AnnotatedImage
+  maxWidth="320px"
+  src={require('./img/adjustment-05.png').default}
+  alt="Adjustment Reason Code 드롭다운"
+  boxes={[
+    {x: 23.0, y: 21.8, w: 57.5, h: 70.8},
+  ]}
+/>
+
+입력을 마치면 **Register**를 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-06.png').default}
+  alt="조정 사유 · 수량 · Remarks 입력 후 Register"
+  boxes={[
+    {x: 15.8, y: 59.5, w: 24.1, h: 18.1},
+    {x: 85.9, y: 84.3, w: 8.5, h: 4.3},
+  ]}
+/>
+
+등록이 완료되면 `Pending` 상태로 목록에 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-07.png').default}
+  alt="등록 후 목록에 Pending 상태로 표시"
+  boxes={[
+    {x: 7.2, y: 38.2, w: 6.5, h: 4.0},
+    {x: 17.4, y: 75.5, w: 5.0, h: 17.5},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -90,7 +173,17 @@ countries: [au]
 
 조정 제품이 많은 경우 엑셀 파일로 일괄 등록합니다.
 
-<div className="img-placeholder">📷 [Image] Bulk Registration 탭 — 템플릿 다운로드 및 파일 업로드</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-11.png').default}
+  alt="Bulk Registration 탭 — Download Upload Template, File Upload, Adjustment Registration"
+  boxes={[
+    {x: 21.8, y: 61, w: 12.2, h: 4.4},
+    {x: 68.2, y: 67, w: 8.6, h: 2.6},
+    {x: 36.2, y: 70.6, w: 14.8, h: 4.1},
+    {x: 37.7, y: 78.4, w: 12, h: 3.4},
+  ]}
+/>
 
 | Step | 처리 내용 |
 |:---:|---|
@@ -101,7 +194,11 @@ countries: [au]
 
 ### 📝 양식 작성 방법
 
-<div className="img-placeholder">📷 [Image] Adjustment_upload_form.xlsx — 첫 번째 탭(입력 양식) / 두 번째 탭(조정 사유 코드)</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-09.png').default}
+  alt="Adjustment_upload_form.xlsx 작성 예시"
+/>
 
 | 컬럼 | 필수 여부 | 입력 내용 |
 |---|:---:|---|
@@ -158,11 +255,30 @@ countries: [au]
 - 양식이 다르면 `The upload format is invalid.` 메시지가 표시됩니다. 반드시 다운로드한 템플릿을 사용하세요.
 - 같은 제품에 승인 대기(`Pending`) 중인 조정이 있거나, 해당 로케이션이 실사 중이면 업로드할 수 없습니다.
 
+등록이 완료되면 업로드한 제품이 `Pending` 상태로 목록에 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-10.png').default}
+  alt="엑셀 업로드로 등록된 조정이 목록에 Pending 상태로 표시"
+  boxes={[
+    {x: 1.6, y: 88.0, w: 97.6, h: 8.8},
+  ]}
+/>
+
 ## 4. 조정 승인 / 반려
 
 **Approve** 권한이 있는 계정만 승인·반려할 수 있으며, `Pending` 상태의 건만 처리 가능합니다.
 
-<div className="img-placeholder">📷 [Image] 목록 체크박스 선택 후 하단 Confirm / Rejected 바</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/adjustment-08.png').default}
+  alt="목록에서 Pending 건 체크 후 하단 바에서 Confirm / Rejected"
+  boxes={[
+    {x: 1.6, y: 20.8, w: 2.6, h: 14.8},
+    {x: 53.8, y: 92.0, w: 14.0, h: 5.6},
+  ]}
+/>
 
 | 방법 | 처리 내용 |
 |---|---|
@@ -203,3 +319,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가, 등록 Step별 설명 분리 | Wooju(Landa) |

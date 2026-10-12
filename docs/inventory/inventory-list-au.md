@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory List (실시간 재고 조회)
 
 > 법인(BP) > 스토어 > 로케이션별로 제품의 실시간 재고 수량을 확인하는 방법을 안내합니다.
@@ -20,7 +22,15 @@ countries: [au]
 
 ## 1. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Inventory List 검색 조건 및 목록</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/inventory-list-01.png').default}
+  alt="Inventory List 검색 조건 및 재고 수량 컬럼"
+  boxes={[
+    {x: 1.2, y: 13.2, w: 65.8, h: 18.0},
+    {x: 64.9, y: 43.2, w: 33.6, h: 52.8},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -63,3 +73,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

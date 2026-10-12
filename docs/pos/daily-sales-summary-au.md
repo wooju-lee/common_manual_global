@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Daily Sales Summary (일일 매출 요약)
 
 > 선택한 일자에 매장에서 판매한 수량과 금액을 **제품군(카테고리)별**, **제품(SKU)별**로 확인하는 메뉴입니다.
@@ -19,9 +21,18 @@ countries: [au]
 
 ## 1. 매출 조회
 
-<div className="img-placeholder">📷 [Image] Daily Sales Summary 화면</div>
-
 **SALES DATE**에서 조회할 일자 하나를 선택합니다. 메뉴에 들어가면 **오늘 날짜**로 바로 조회됩니다.
+
+<AnnotatedImage
+  src={require('./img/daily-sales-summary-01.png').default}
+  alt="Daily Sales Summary 화면"
+  boxes={[
+    {x: 5, y: 0.8, w: 18.6, h: 8.6},
+    {x: 0.5, y: 23, w: 11.4, h: 9.3},
+    {x: 0.5, y: 38.9, w: 48.2, h: 56.1},
+    {x: 50.85, y: 38.2, w: 48.3, h: 47.9},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -36,7 +47,7 @@ countries: [au]
 | **SALES VIEW - PRODUCT CATEGORY 1 (MODEL)** | 제품군(예: `OPTICAL`, `PACKAGE`)별 판매 수량과 금액 |
 | **SALES VIEW - SKU** | 제품별 판매 수량과 금액 |
 
-- 제품군 영역의 **Total (Exclude package)**는 패키지를 제외한 합계, **Total**은 패키지를 포함한 전체 합계입니다.
+- 제품군 영역의 <strong>Total (Exclude package)</strong>는 패키지를 제외한 합계, **Total**은 패키지를 포함한 전체 합계입니다.
 - 제품에 포함된 **패키지**는 판매 수량에서 제외되므로, 수량과 금액이 `0`으로 표시됩니다.
 
 ## 📋 수정 이력

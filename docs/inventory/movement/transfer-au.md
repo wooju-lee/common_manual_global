@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory Movement (로케이션 이동)
 
 > 하나의 스토어 안에서 로케이션 간 재고를 이동하는 방법을 안내합니다.
@@ -33,15 +35,70 @@ countries: [au]
 
 ## 1. 이동 등록
 
-<div className="img-placeholder">📷 [Image] Movement Registration — Location Inventory Movement 탭</div>
+**Inventory Movement** 목록에서 **Movement Registration** 버튼 → **Location Inventory Movement** 탭에서 3단계로 등록합니다.
 
-**Movement Registration** 버튼 → **Location Inventory Movement** 탭에서 3단계로 등록합니다.
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/transfer-01.png').default}
+  alt="Inventory Movement 목록에서 Movement Registration 클릭"
+  boxes={[
+    {x: 85.2, y: 71.5, w: 8.6, h: 5.2},
+  ]}
+/>
 
 | Step | 화면 | 입력 내용 |
 |:---:|---|---|
 | **1** | Set Before / After Movement Location | 스토어 선택 후 출발 로케이션(`Location (Before Movement)`)과 도착 로케이션(`Location (After Movement)`) 선택 |
 | **2** | Processed Inventory Search | 이동할 제품 검색 · 선택 (`Inventory Qty` 확인) |
 | **3** | Enter Movement Information | 제품별 이동 수량 입력, 필요 시 `Remarks` 선택 후 **Register** |
+
+### Step 1. 출발 / 도착 로케이션 선택
+
+- **Location Inventory Movement** 탭에서 Brand → BP → Store를 선택한 뒤, 출발 로케이션(`Location (Before Movement)`)과 도착 로케이션(`Location (After Movement)`)을 선택하고 **Next**를 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/transfer-02.png').default}
+  alt="Step 1. 스토어 및 출발/도착 로케이션 선택"
+  boxes={[
+    {x: 8.9, y: 22.6, w: 19.0, h: 4.2},
+    {x: 9.2, y: 51.8, w: 37.2, h: 17.6},
+    {x: 84.8, y: 85.8, w: 8.9, h: 4.0},
+  ]}
+/>
+
+### Step 2. 이동할 제품 선택
+
+- 제품 코드 · 제품명으로 검색한 뒤, 이동할 제품을 체크하고 **Next**를 클릭합니다.
+- `Inventory Qty`는 출발 로케이션의 재고 수량입니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/transfer-03.png').default}
+  alt="Step 2. 이동할 제품 검색 및 선택"
+  boxes={[
+    {x: 4.5, y: 34.0, w: 71.5, h: 14.5},
+    {x: 5.9, y: 76.8, w: 2.0, h: 7.2},
+    {x: 87.3, y: 92.8, w: 9.7, h: 3.4},
+  ]}
+/>
+
+### Step 3. 이동 수량 · Remarks 입력 후 등록
+
+- 제품별 `Movement Qty`를 입력하고, `Remarks`를 선택한 뒤 **Register**를 클릭합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/transfer-04.png').default}
+  alt="Step 3. 이동 수량 및 Remarks 입력 후 Register"
+  boxes={[
+    {x: 64.1, y: 67.6, w: 11.7, h: 11.6},
+    {x: 78.9, y: 67.2, w: 13.2, h: 5.4},
+    {x: 85.9, y: 88.2, w: 9.4, h: 4.4},
+  ]}
+/>
+
+### 이동 수량 · Remarks 기준
 
 - 이동 수량은 <mark>**출발 로케이션의 가용 재고 기준**</mark>으로 입력하며, 가용 재고를 초과하면 등록할 수 없습니다.
 - `Remarks` 선택값
@@ -67,9 +124,13 @@ countries: [au]
 
 ## 2. 엑셀 일괄 등록
 
-<div className="img-placeholder">📷 [Image] Movement Registration — Inventory Bulk Upload 탭</div>
-
 **Movement Registration** 버튼 → **Inventory Bulk Upload** 탭에서 **Download Upload Template**으로 양식(`Inventory_movement_upload_form_V2.xlsx`)을 받아 작성한 뒤 업로드합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/transfer-05.png').default}
+  alt="Inventory Movement 업로드 양식 작성 예시"
+/>
 
 | 컬럼 | 필수 여부 | 입력 방법 |
 |---|:---:|---|
@@ -113,3 +174,4 @@ countries: [au]
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-04 | 순서 요약 · 엑셀 업로드 기준 추가, 매뉴얼 형식 정리 | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가, 등록 Step별 설명 분리 | Wooju(Landa) |

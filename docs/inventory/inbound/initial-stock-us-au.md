@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 C2C Corporate Inbound (C2C 법인 입고)
 
 > 한국 본사(SAP)에서 호주 법인으로 들어오는 **C2C(Corporation To Corporation)** 입고를 확인하고 확정하는 방법을 안내합니다.
@@ -38,10 +40,17 @@ countries: [au]
 
 ## 1. 입고 예정 확인
 
-<div className="img-placeholder">📷 [Image] Inbound List — C2C / SAP 입고 예정 건</div>
-
 **Inbound List**에서 입고 예정 건을 확인합니다.<br/>
 C2C 입고는 Type `C2C`, Channel `SAP`으로 표시되며, 상태는 `Pending Inbound`입니다.
+
+<AnnotatedImage
+  src={require('./img/inbound-list-01.png').default}
+  alt="Inbound List — 입고 예정 건"
+  boxes={[
+    {x: 12, y: 29.1, w: 40.2, h: 3.3},
+    {x: 2.1, y: 82.2, w: 96.8, h: 10.7},
+  ]}
+/>
 
 - 목록의 행을 클릭하면 입고 상세 화면으로 이동합니다.
 - 목록 상단의 **Inbound Registration**(수기 입고 등록)은 AU에서 사용하지 않습니다.

@@ -1,11 +1,13 @@
 ---
-source_hash: "c8f19d8370"
+source_hash: "e38f3f3c8b"
 sidebar_label: Order List
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Order List
 
@@ -20,7 +22,16 @@ countries: [au]
 
 ## 1. Search orders
 
-<div className="img-placeholder">📷 [Image] Order List search and list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/order/img/order-list-01.png').default}
+  alt="Order List — quick period buttons, Status, Order No."
+  boxes={[
+    {x: 1.4, y: 26.0, w: 19.4, h: 3.4},
+    {x: 14.2, y: 52.4, w: 6.6, h: 47.0},
+    {x: 23.2, y: 52.4, w: 11.8, h: 47.0},
+  ]}
+/>
 
 Select the period and store, then click **Search**.<br/>
 Use the `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` buttons to quickly select a period.
@@ -54,7 +65,16 @@ Use the `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` buttons to quickly select a 
 
 Click <strong>Order No.</strong> in the list to open the order detail popup. The top of the popup shows the order number and the current **order status**. The popup layout is the same regardless of status.
 
-<div className="img-placeholder">📷 [Image] Order detail popup — Order Information / Product List</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/order/img/order-list-02.png').default}
+  alt="Order detail popup — order status, Order Information, Product List"
+  boxes={[
+    {x: 67.2, y: 54.4, w: 7.0, h: 3.0},
+    {x: 36.2, y: 63.6, w: 58.2, h: 6.6},
+    {x: 36.2, y: 74.2, w: 58.2, h: 20.6},
+  ]}
+/>
 
 - **Order Information** shows the order date/time, store, location, and currency.
 - **Product List** shows the quantity and amounts (Unit, Net, VAT, Total) for each ordered product.
@@ -66,3 +86,4 @@ Click <strong>Order No.</strong> in the list to open the order detail popup. The
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Created menu, added search instructions | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Order List (주문 리스트)
 
 > IIC BO에 수집된 주문을 조회하는 메뉴입니다.
@@ -19,7 +21,16 @@ countries: [au]
 
 ## 1. 주문 조회
 
-<div className="img-placeholder">📷 [Image] Order List 검색 및 목록 화면</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/order-list-01.png').default}
+  alt="Order List — 기간 빠른 선택, Status, Order No."
+  boxes={[
+    {x: 1.4, y: 26.0, w: 19.4, h: 3.4},
+    {x: 14.2, y: 52.4, w: 6.6, h: 47.0},
+    {x: 23.2, y: 52.4, w: 11.8, h: 47.0},
+  ]}
+/>
 
 조회할 기간과 스토어를 선택한 뒤 **Search**를 클릭합니다.<br/>
 기간은 `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` 버튼으로 빠르게 선택할 수 있습니다.
@@ -53,7 +64,16 @@ countries: [au]
 
 목록의 <strong>Order No.</strong>를 클릭하면 주문 상세 팝업이 열립니다. 팝업 상단에는 주문번호와 현재 **주문 상태**가 표시되며, 팝업 구성은 상태와 관계없이 동일합니다.
 
-<div className="img-placeholder">📷 [Image] 주문 상세 팝업 — Order Information / Product List</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/order-list-02.png').default}
+  alt="주문 상세 팝업 — 주문 상태, Order Information, Product List"
+  boxes={[
+    {x: 67.2, y: 54.4, w: 7.0, h: 3.0},
+    {x: 36.2, y: 63.6, w: 58.2, h: 6.6},
+    {x: 36.2, y: 74.2, w: 58.2, h: 20.6},
+  ]}
+/>
 
 - **Order Information**에서 주문 일시, 스토어, 로케이션, 통화를 확인할 수 있습니다.
 - **Product List**에서 주문 제품별 수량과 금액(Unit, Net, VAT, Total)을 확인할 수 있습니다.
@@ -65,3 +85,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | 메뉴 생성, 조회 방법 작성 | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

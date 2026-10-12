@@ -1,11 +1,13 @@
 ---
-source_hash: "bf589ad6be"
+source_hash: "0fa865d582"
 sidebar_label: Refund List
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Refund List
 
@@ -21,7 +23,16 @@ countries: [au]
 
 ## 1. Search returns
 
-<div className="img-placeholder">📷 [Image] Refund List search and list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/order/img/refund-list-01.png').default}
+  alt="Refund List — quick period buttons, Refund No., Original Order No."
+  boxes={[
+    {x: 1.4, y: 26.6, w: 19.4, h: 3.4},
+    {x: 23.2, y: 52.6, w: 10.5, h: 46.8},
+    {x: 35.9, y: 52.6, w: 9.9, h: 46.8},
+  ]}
+/>
 
 Select the period and store, then click **Search**.<br/>
 Use the `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` buttons to quickly select a period.
@@ -53,7 +64,15 @@ Use the `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` buttons to quickly select a 
 
 Click <strong>Refund No.</strong> in the list to open the return detail popup. The top of the popup shows the original order number, the BO refund number, and the **refund type**.
 
-<div className="img-placeholder">📷 [Image] Return detail popup — Refund Information / Refund Products</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/order/img/refund-list-02.png').default}
+  alt="Return detail popup — refund type, Store / Location per product"
+  boxes={[
+    {x: 49.2, y: 54.6, w: 5.8, h: 2.8},
+    {x: 34.6, y: 78.4, w: 22.4, h: 11.4},
+  ]}
+/>
 
 - **Refund Information** shows the return date/time, store, and currency.
 - **Refund Products** shows the quantity and amounts (Unit, Net, VAT, Total Price) for each returned product.
@@ -71,3 +90,4 @@ Click <strong>Refund No.</strong> in the list to open the return detail popup. T
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Created menu, added search instructions | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

@@ -1,11 +1,13 @@
 ---
-source_hash: "0148db1772"
+source_hash: "606bb563e1"
 sidebar_label: Report Board
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-06"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Report Board
 
@@ -21,7 +23,17 @@ countries: [au]
 
 ## 1. List search
 
-<div className="img-placeholder">📷 [Image] Report Board search filters</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/report-board-01.png').default}
+  alt="Report Board search filters — BP, Store, Approve Status, Search Period"
+  boxes={[
+    {x: 2, y: 27.2, w: 41.6, h: 5.2},
+    {x: 45.8, y: 27.2, w: 18, h: 5.4},
+    {x: 2, y: 37.6, w: 33.8, h: 5.2},
+    {x: 78.2, y: 59.6, w: 6.4, h: 3.4},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -34,7 +46,15 @@ countries: [au]
 
 ## 2. List columns
 
-<div className="img-placeholder">📷 [Image] Report Board list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/report-board-01.png').default}
+  alt="Report Board list — BP / Store Information, Image Attached, Approve Status"
+  boxes={[
+    {x: 24.0, y: 73.6, w: 24.6, h: 13.4},
+    {x: 57.8, y: 73.6, w: 14.0, h: 13.4},
+  ]}
+/>
 
 | Column | Description |
 |---|---|
@@ -56,7 +76,16 @@ countries: [au]
 
 ## 3. Edit a report
 
-<div className="img-placeholder">📷 [Image] Report details screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/report-board-03.png').default}
+  alt="Report details — report status, attachment download / delete"
+  boxes={[
+    {x: 0.3, y: 3.2, w: 25.2, h: 2.2},
+    {x: 1.9, y: 59.6, w: 95.4, h: 7.1},
+    {x: 84.2, y: 97.1, w: 14.5, h: 2.4},
+  ]}
+/>
 
 Review the content on the details screen. If you have edit permission, you can edit it directly.
 
@@ -71,7 +100,16 @@ Review the content on the details screen. If you have edit permission, you can e
 
 ## 4. Approve a report
 
-<div className="img-placeholder">📷 [Image] Approval button after selecting checkboxes in the list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/report/img/report-board-02.png').default}
+  alt="Select reports and click APPROVAL"
+  boxes={[
+    {x: 1.8, y: 64.5, w: 2.7, h: 11.0},
+    {x: 85.2, y: 56.6, w: 6.3, h: 3.6},
+    {x: 2.4, y: 87.6, w: 5.4, h: 2.8},
+  ]}
+/>
 
 The **approver account** checks reports with Approve Status `N` in the list, then clicks **Approval**. You can approve multiple reports at once.
 
@@ -116,3 +154,4 @@ Click **Excel Export**, select the information to download, then click **Downloa
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-06 | AU initial version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

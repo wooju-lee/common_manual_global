@@ -35,6 +35,9 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 ## 1. 영수증 번호 입력
 
+외부 POS에서 결제 후 발행된 **영수증 번호**를 `Invoice No.` 입력란에 스캔하거나 입력합니다.<br/>
+BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
+
 <AnnotatedImage
   src={require('./img/sales-registration-04.png').default}
   alt="Invoice No. 입력란 — 영수증 번호 입력"
@@ -43,9 +46,6 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
     {x: 23.1, y: 29.7, w: 69.6, h: 10},
   ]}
 />
-
-외부 POS에서 결제 후 발행된 **영수증 번호**를 `Invoice No.` 입력란에 스캔하거나 입력합니다.<br/>
-BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 
 **입력 규칙**
 
@@ -64,6 +64,8 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 
 ## 2. 제품 담기
 
+**Product Barcode** 입력란에 커서를 두고 제품 정보(코드, 제품명, 바코드)를 입력하거나, 실물 바코드를 스캔해 제품을 담습니다.
+
 <AnnotatedImage
   src={require('./img/sales-registration-05.png').default}
   alt="Product Barcode 검색 — 제품 코드 / 제품명 / 바코드로 검색 후 선택"
@@ -72,8 +74,6 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
     {x: 1.9, y: 25.3, w: 47.6, h: 16.1},
   ]}
 />
-
-**Product Barcode** 입력란에 커서를 두고 제품 정보(코드, 제품명, 바코드)를 입력하거나, 실물 바코드를 스캔해 제품을 담습니다.
 
 - 젠틀몬스터 제품은 **패키지와 매핑**되어 있어, 제품을 담으면 패키지가 함께 목록에 표시됩니다.
 - 목록에서 **판매 금액**(Customer Price, Discount Price, Total)과 **Stock (SALES)**(매장 Sales 로케이션의 가용 재고)를 확인할 수 있습니다.
@@ -98,6 +98,8 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 
 ## 4. 멤버십 설정 (필수)
 
+매출을 생성하려면 **멤버십 설정이 필수**입니다. 아래 방법 중 하나로 설정합니다.
+
 <AnnotatedImage
   src={require('./img/sales-registration-02.png').default}
   alt="Customer Member Search 영역"
@@ -109,8 +111,6 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
   ]}
 />
 
-매출을 생성하려면 **멤버십 설정이 필수**입니다. 아래 방법 중 하나로 설정합니다.
-
 | 방법 | 설명 |
 |---|---|
 | **이메일 / 전화번호 검색** | 국가는 POS 스토어 기준으로 기본 설정됩니다.<br/>`Search by Email OR Phone`에 이메일(`ID@` 형식) 또는 전화번호(최소 8자리)를 입력해 검색합니다 |
@@ -118,6 +118,8 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 | **Non-Member** | 회원가입을 하지 않는 고객은 **Non-Member**를 선택합니다 |
 
 ## 5. 고객 객층 정보 선택 (필수)
+
+화면 우측 하단의 고객 객층 정보를 **모두 선택**해야 합니다.
 
 <AnnotatedImage
   src={require('./img/sales-registration-07.png').default}
@@ -132,8 +134,6 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
   ]}
 />
 
-화면 우측 하단의 고객 객층 정보를 **모두 선택**해야 합니다.
-
 | 항목 | 선택값 |
 |---|---|
 | **Country** | 고객 국가 |
@@ -143,6 +143,8 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 | **Usage Type** | `N/A` / `Normal` / `Gift` |
 
 ## 6. Confirm Sales (매출 생성)
+
+필수값(제품, 멤버십, 고객 객층 정보)을 모두 설정하면 **Confirm Sales** 버튼이 활성화됩니다. 버튼을 클릭하면 매출이 생성됩니다.
 
 <AnnotatedImage
   src={require('./img/sales-registration-03.png').default}
@@ -154,8 +156,6 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
     {x: 76.1, y: 73.5, w: 22.1, h: 24.1},
   ]}
 />
-
-필수값(제품, 멤버십, 고객 객층 정보)을 모두 설정하면 **Confirm Sales** 버튼이 활성화됩니다. 버튼을 클릭하면 매출이 생성됩니다.
 
 <div className="blockquote-gray">
 

@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory Transfer SALES → DP (매장 재고 이동)
 
 > 매장에서 **SALES(판매) 재고를 DP(전시) 재고로** 손쉽게 이동하는 방법을 안내합니다.
@@ -20,10 +22,17 @@ countries: [au]
 
 ## 1. INVENTORY 모드 전환
 
-<div className="img-placeholder">📷 [Image] Front POS Main — INVENTORY 모드 화면</div>
-
 Front POS Main 상단의 토글을 **INVENTORY**로 전환하면, 화면이 재고 이동용으로 바뀝니다.<br/>
 우측에 **(SALES → DP)** 버튼이 표시되며, <mark>**멤버십·고객 객층 정보 영역은 사용하지 않습니다.**</mark>
+
+<AnnotatedImage
+  src={require('./img/store-inventory-transfer-01.png').default}
+  alt="Front POS Main — INVENTORY 모드 화면"
+  boxes={[
+    {x: 0.5, y: 14, w: 9.6, h: 4.4},
+    {x: 76, y: 26.4, w: 22.5, h: 8},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -33,10 +42,18 @@ Front POS Main 상단의 토글을 **INVENTORY**로 전환하면, 화면이 재�
 
 ## 2. 제품 담기
 
-<div className="img-placeholder">📷 [Image] 이동할 제품을 담은 목록 및 활성화된 (SALES → DP) 버튼</div>
-
 **Product Barcode**에서 제품을 스캔하거나, 드롭다운에서 검색·선택해 목록에 담습니다.<br/>
 제품이 담기면 **(SALES → DP)** 버튼이 활성화됩니다.
+
+<AnnotatedImage
+  src={require('./img/store-inventory-transfer-01.png').default}
+  alt="이동할 제품을 담은 목록 및 활성화된 (SALES → DP) 버튼"
+  boxes={[
+    {x: 30.95, y: 23.5, w: 42.65, h: 3.7},
+    {x: 1.55, y: 34.8, w: 72, h: 5.1},
+    {x: 76, y: 26.4, w: 22.5, h: 8},
+  ]}
+/>
 
 - 수량은 `-` / `+` 버튼으로 조정하고, `Stock (SALES)`에서 이동 가능한 SALES 재고를 확인할 수 있습니다.
 

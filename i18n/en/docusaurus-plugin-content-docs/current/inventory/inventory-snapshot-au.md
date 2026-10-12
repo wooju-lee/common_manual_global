@@ -1,11 +1,13 @@
 ---
-source_hash: "9c75ff3a42"
+source_hash: "44696be00a"
 sidebar_label: Inventory Snapshot
 sidebar_position: 9
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Inventory Snapshot
 
@@ -30,7 +32,15 @@ countries: [au]
 
 ## 1. List search
 
-<div className="img-placeholder">📷 [Image] Inventory Snapshot search filters</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/inventory-snapshot-01.png').default}
+  alt="Inventory Snapshot search filters and IIC BO quantity columns"
+  boxes={[
+    {x: 1.2, y: 16.0, w: 65.6, h: 14.5},
+    {x: 71.4, y: 51.6, w: 27.8, h: 41.6},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -41,8 +51,6 @@ countries: [au]
 | **Keyword** | Product code/name, barcode | Enter 2+ characters |
 
 ## 2. List columns and how to search
-
-<div className="img-placeholder">📷 [Image] Inventory Snapshot list</div>
 
 | Column | Description |
 |---|---|
@@ -71,3 +79,4 @@ countries: [au]
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

@@ -1,11 +1,13 @@
 ---
-source_hash: "b133764deb"
+source_hash: "63bd526b95"
 sidebar_label: Inventory List
 sidebar_position: 6
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Inventory List
 
@@ -21,7 +23,15 @@ countries: [au]
 
 ## 1. List search
 
-<div className="img-placeholder">📷 [Image] Inventory List search filters and list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/inventory-list-01.png').default}
+  alt="Inventory List search filters and quantity columns"
+  boxes={[
+    {x: 1.2, y: 13.2, w: 65.8, h: 18.0},
+    {x: 64.9, y: 43.2, w: 33.6, h: 52.8},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -64,3 +74,4 @@ countries: [au]
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

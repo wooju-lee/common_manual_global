@@ -1,11 +1,13 @@
 ---
-source_hash: "4e8cccf320"
+source_hash: "cc849d11e4"
 sidebar_label: Adjustment
 sidebar_position: 5
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Adjustment
 
@@ -38,7 +40,15 @@ countries: [au]
 
 ## 1. View the adjustment list
 
-<div className="img-placeholder">📷 [Image] Inventory Adjustment list screen</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-01.png').default}
+  alt="Inventory Adjustment list — tabs and Adjustment Registration button"
+  boxes={[
+    {x: 12.6, y: 12.2, w: 30.4, h: 4.6},
+    {x: 84.4, y: 49.3, w: 9.0, h: 2.7},
+  ]}
+/>
 
 | Tab | Description |
 |---|---|
@@ -61,15 +71,55 @@ countries: [au]
 
 Click **Adjustment Registration** → register in 3 steps on the `Single Registration` tab.
 
-<div className="img-placeholder">📷 [Image] Inventory Adjustment Registration — Single Registration 3 steps</div>
-
 | Step | Screen | Input |
 |:---:|---|---|
 | **1** | Select Adjustment Store / Location | Select `BP`, `Store`, `Location` |
 | **2** | Select Adjustment Product | Search by brand · category · product code/name and select the products to adjust (check `Inventory Qty`) |
 | **3** | Enter Adjustment Information | Enter adjustment information per product, then click **Register** |
 
-**Step 3 fields**
+### Step 1. Select store / location
+
+Select `BP` → `Store` → `Location`, then click **Next**.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-02.png').default}
+  alt="Step 1 — select BP / Store / Location, then Next"
+  boxes={[
+    {x: 11.3, y: 58.8, w: 29.0, h: 5.6},
+    {x: 83.3, y: 76.9, w: 8.0, h: 4.6},
+  ]}
+/>
+
+### Step 2. Select products to adjust
+
+Search by brand · category · product code/name, check the products to adjust, then click **Next**.<br/>
+You can check the current stock in `Inventory Qty`.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-03.png').default}
+  alt="Step 2 — search and check products, check Inventory Qty"
+  boxes={[
+    {x: 5.0, y: 27.6, w: 69.5, h: 9.8},
+    {x: 5.6, y: 49.2, w: 3.1, h: 43.5},
+    {x: 59.5, y: 49.2, w: 8.0, h: 43.5},
+  ]}
+/>
+
+### Step 3. Enter reason · qty and register
+
+Enter the adjustment information for each selected product.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-04.png').default}
+  alt="Step 3 — enter Adjustment Reason Code / Adjustment Qty"
+  boxes={[
+    {x: 37.8, y: 52.2, w: 24.8, h: 28.0},
+    {x: 87.6, y: 86.3, w: 9.0, h: 4.6},
+  ]}
+/>
 
 | Field | Required | Description |
 |---|:---:|---|
@@ -79,7 +129,40 @@ Click **Adjustment Registration** → register in 3 steps on the `Single Registr
 | **Billing Store / Location** | Optional | Store / location the cost is charged to |
 | **Remarks** | Optional | Remarks |
 
-- Once registered, the adjustment appears in the list with `Pending` status.
+Select the adjustment reason from the dropdown.
+
+<AnnotatedImage
+  maxWidth="320px"
+  src={require('@site/docs/inventory/img/adjustment-05.png').default}
+  alt="Adjustment Reason Code dropdown"
+  boxes={[
+    {x: 23.0, y: 21.8, w: 57.5, h: 70.8},
+  ]}
+/>
+
+When done, click **Register**.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-06.png').default}
+  alt="Enter reason · qty · Remarks, then Register"
+  boxes={[
+    {x: 15.8, y: 59.5, w: 24.1, h: 18.1},
+    {x: 85.9, y: 84.3, w: 8.5, h: 4.3},
+  ]}
+/>
+
+Once registered, the adjustment appears in the list with `Pending` status.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-07.png').default}
+  alt="Registered adjustments shown as Pending in the list"
+  boxes={[
+    {x: 7.2, y: 38.2, w: 6.5, h: 4.0},
+    {x: 17.4, y: 75.5, w: 5.0, h: 17.5},
+  ]}
+/>
 
 <div className="blockquote-gray">
 
@@ -91,7 +174,17 @@ Click **Adjustment Registration** → register in 3 steps on the `Single Registr
 
 If you have many products to adjust, register them in bulk with an Excel file.
 
-<div className="img-placeholder">📷 [Image] Bulk Registration tab — template download and file upload</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-11.png').default}
+  alt="Bulk Registration tab — Download Upload Template, File Upload, Adjustment Registration"
+  boxes={[
+    {x: 21.8, y: 61, w: 12.2, h: 4.4},
+    {x: 68.2, y: 67, w: 8.6, h: 2.6},
+    {x: 36.2, y: 70.6, w: 14.8, h: 4.1},
+    {x: 37.7, y: 78.4, w: 12, h: 3.4},
+  ]}
+/>
 
 | Step | Action |
 |:---:|---|
@@ -102,7 +195,11 @@ If you have many products to adjust, register them in bulk with an Excel file.
 
 ### 📝 How to fill in the template
 
-<div className="img-placeholder">📷 [Image] Adjustment_upload_form.xlsx — first tab (input form) / second tab (adjustment reason codes)</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-09.png').default}
+  alt="Adjustment_upload_form.xlsx example"
+/>
 
 | Column | Required | Input |
 |---|:---:|---|
@@ -159,11 +256,30 @@ If you have many products to adjust, register them in bulk with an Excel file.
 - If the format differs, the message `The upload format is invalid.` is displayed. Always use the downloaded template.
 - You cannot upload if the same product has an adjustment awaiting approval (`Pending`) or if the location is under stocktaking.
 
+Once registered, the uploaded products appear in the list with `Pending` status.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-10.png').default}
+  alt="Adjustments registered via Excel upload shown as Pending in the list"
+  boxes={[
+    {x: 1.6, y: 88.0, w: 97.6, h: 8.8},
+  ]}
+/>
+
 ## 4. Approve / reject an adjustment
 
 Only accounts with **Approve** permission can approve or reject, and only items in `Pending` status can be processed.
 
-<div className="img-placeholder">📷 [Image] Confirm / Rejected bar at the bottom after selecting list checkboxes</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/adjustment-08.png').default}
+  alt="Check Pending items in the list, then Confirm / Rejected on the bottom bar"
+  boxes={[
+    {x: 1.6, y: 20.8, w: 2.6, h: 14.8},
+    {x: 53.8, y: 92.0, w: 14.0, h: 5.6},
+  ]}
+/>
 
 | Method | Action |
 |---|---|
@@ -204,3 +320,4 @@ Only accounts with **Approve** permission can approve or reject, and only items 
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images, split registration into steps | Wooju(Landa) |

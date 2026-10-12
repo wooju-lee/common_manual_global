@@ -1,11 +1,13 @@
 ---
-source_hash: "455d356713"
+source_hash: "7e1022abfd"
 sidebar_label: Inventory Ledger
 sidebar_position: 8
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Inventory Ledger
 
@@ -20,7 +22,14 @@ countries: [au]
 
 ## 1. List search
 
-<div className="img-placeholder">📷 [Image] Inventory Ledger search filters</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/inventory-ledger-01.png').default}
+  alt="Inventory Ledger search filters — Inventory Transaction Type dropdown"
+  boxes={[
+    {x: 1.2, y: 37.0, w: 12.0, h: 45.6},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -33,7 +42,15 @@ countries: [au]
 
 ## 2. List columns
 
-<div className="img-placeholder">📷 [Image] Inventory Ledger list — Include Reversal History / Excel Export</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/inventory/img/inventory-ledger-02.png').default}
+  alt="Inventory Ledger list — Inventory Transaction Type, Include Reversal History / Excel Export"
+  boxes={[
+    {x: 79.0, y: 51.2, w: 9.8, h: 42.6},
+    {x: 83.7, y: 43.4, w: 15.4, h: 3.0},
+  ]}
+/>
 
 | Column | Description |
 |---|---|
@@ -78,3 +95,4 @@ The transaction types below are recorded in the ledger for each operation. The q
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

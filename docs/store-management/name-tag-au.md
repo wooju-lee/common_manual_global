@@ -6,6 +6,8 @@ created: "2026-10-07"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Offline Name Tag (오프라인 네임택)
 
 > 스토어 진열용 네임택(모델명 · 판매가 · QR)을 등록하고, A4 용지로 출력하는 방법을 안내합니다.
@@ -31,7 +33,15 @@ countries: [au]
 
 ## 1. 네임택 구성
 
-<div className="img-placeholder">📷 [Image] 출력된 네임택 예시</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-01.png').default}
+  alt="출력된 네임택 예시 — 모델명 / 추가 메모, 판매가, QR"
+  boxes={[
+    {x: 32.6, y: 35.4, w: 4.8, h: 7.4},
+    {x: 40, y: 36, w: 7.2, h: 6.8},
+  ]}
+/>
 
 | 항목 | 내용 |
 |---|---|
@@ -46,7 +56,15 @@ countries: [au]
 
 ## 2. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Offline Name Tag 검색 조건</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-08.png').default}
+  alt="Offline Name Tag 검색 조건 — Registration Date, 검색어"
+  boxes={[
+    {x: 1.6, y: 28.2, w: 24.2, h: 7.4},
+    {x: 1.6, y: 39.8, w: 64.2, h: 3.2},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -56,7 +74,16 @@ countries: [au]
 
 ## 3. 리스트 컬럼
 
-<div className="img-placeholder">📷 [Image] Offline Name Tag 목록</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-08.png').default}
+  alt="Offline Name Tag 목록 — ID, Total Model, Register NameTAG"
+  boxes={[
+    {x: 1.6, y: 67.0, w: 9.5, h: 21.8},
+    {x: 44.8, y: 67.0, w: 6.0, h: 21.8},
+    {x: 91.4, y: 56.8, w: 7.4, h: 3.0},
+  ]}
+/>
 
 | 컬럼 | 설명 |
 |---|---|
@@ -75,9 +102,29 @@ countries: [au]
 
 ### Step 1. 상품 선택
 
-<div className="img-placeholder">📷 [Image] Step 1 — 브랜드 / 법인 / 스토어 선택 및 상품 목록</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-02.png').default}
+  alt="Register NameTAG — Individual Print 탭, Brand / BP / Store"
+  boxes={[
+    {x: 16.4, y: 47.0, w: 19.8, h: 3.2},
+    {x: 15.3, y: 59.8, w: 81.0, h: 5.2},
+  ]}
+/>
 
 - **Brand → BP → Store** 순서로 모두 선택해야 상품 목록이 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-03.png').default}
+  alt="상품 목록 — 같은 모델도 판매가별로 별도 행"
+  boxes={[
+    {x: 3.3, y: 18.6, w: 91.4, h: 4.2},
+    {x: 4.8, y: 51.1, w: 88.4, h: 6.3},
+    {x: 4.8, y: 69.9, w: 88.4, h: 6.3},
+  ]}
+/>
+
 - 모델 코드 또는 모델명으로 검색(2자 이상)한 뒤, 출력할 모델을 체크합니다.
   - <mark>**최대 50개 모델**</mark>까지 선택할 수 있으며, 페이지를 넘겨도 선택이 유지됩니다.
   - 같은 모델이라도 판매가가 다르면 가격별로 여러 행에 표시되니, 맞는 가격을 선택해 주세요.
@@ -91,7 +138,16 @@ countries: [au]
 
 ### Step 2. 추가 메모 · 수량 입력
 
-<div className="img-placeholder">📷 [Image] Step 2 — 추가 메모 / 렌즈 가능 여부 / 출력 수량</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-04.png').default}
+  alt="Step 2 — Additional Note, Prescription, Print Qty"
+  boxes={[
+    {x: 48.6, y: 63.8, w: 14.1, h: 20.2},
+    {x: 64.9, y: 63.8, w: 6.7, h: 20.2},
+    {x: 73.8, y: 63.8, w: 8, h: 20.2},
+  ]}
+/>
 
 | 항목 | 설명 | 비고 |
 |---|---|---|
@@ -102,13 +158,42 @@ countries: [au]
 - 여러 모델을 체크해 **일괄 수정**할 수 있습니다.
   - Prescription **On** / **Off**는 클릭 즉시 적용됩니다.
   - Print Qty는 수량 입력 후 **Apply**를 클릭해야 적용됩니다.
+- 상단 **Total**에는 네임택 총 출력 수량(sheets)과 모델 수(items)가 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-05.png').default}
+  alt="모델 체크 후 Bulk edit"
+  boxes={[
+    {x: 4.6, y: 47.2, w: 90.6, h: 6.2},
+    {x: 5.6, y: 63.0, w: 2.2, h: 11.6},
+  ]}
+/>
 
 ### Step 3. 미리보기 및 출력
 
-<div className="img-placeholder">📷 [Image] A4 Print Preview</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-06.png').default}
+  alt="A4 Print Preview — Include product QR 해제 시"
+  boxes={[
+    {x: 67.6, y: 1.8, w: 12.4, h: 5.4},
+    {x: 89.8, y: 1.0, w: 9.2, h: 6.8},
+  ]}
+/>
 
 - **Include product QR**(기본 체크)로 QR 코드 포함 여부를 선택합니다.
 - **Preview**로 A4 출력 화면을 확인한 뒤, **Print & Save**를 클릭하면 브라우저 인쇄 창이 열립니다.
+- 저장되면 `name tag print saved successfully` 메시지가 표시됩니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/name-tag-07.png').default}
+  alt="Print & Save 저장 완료 메시지"
+  boxes={[
+    {x: 80.6, y: 1.8, w: 18.6, h: 11.6},
+  ]}
+/>
 
 <div className="blockquote-warning">
 
@@ -192,3 +277,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-07 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

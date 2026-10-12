@@ -6,6 +6,8 @@ created: "2026-10-04"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Outbound Bulk Upload (출고 일괄 등록)
 
 > 출고 제품이 많을 때 엑셀 템플릿으로 C2C · S2S 출고를 한 번에 등록하는 방법을 안내합니다.
@@ -18,14 +20,31 @@ countries: [au]
 
 ## 1. 템플릿 다운로드
 
-<div className="img-placeholder">📷 [Image] Outbound Registration / Request — Bulk Upload (BULK) 탭</div>
-
 **Outbound Registration / Request** 버튼 → **Bulk Upload (BULK)** 탭에서 **Download Upload Template**을 클릭합니다.<br/>
 반드시 다운로드한 템플릿(`Outbound_upload_form_V3.xlsx`)으로 작성해 주세요.
 
+<AnnotatedImage
+  src={require('./img/outbound-bulk-upload-01.png').default}
+  alt="Outbound Registration / Request 팝업의 Bulk Upload (BULK) 탭과 Download Upload Template"
+  boxes={[
+    {x: 42.3, y: 33.3, w: 17, h: 7},
+    {x: 80.4, y: 47, w: 12, h: 4.5},
+  ]}
+/>
+
 ## 2. 템플릿 작성
 
-<div className="img-placeholder">📷 [Image] 출고 업로드 템플릿 (엑셀)</div>
+다운로드한 템플릿에 아래 기준으로 출고 정보를 입력합니다.
+
+<AnnotatedImage
+  src={require('./img/outbound-bulk-upload-02.png').default}
+  alt="출고 업로드 템플릿(엑셀) 작성 예시"
+  boxes={[
+    {x: 4, y: 5, w: 10.3, h: 90},
+    {x: 24.5, y: 5, w: 38.5, h: 90},
+    {x: 65.2, y: 5, w: 14.1, h: 90},
+  ]}
+/>
 
 | 컬럼 | 필수 여부 | 입력 방법 | 선택값 / 비고 |
 |---|:---:|---|---|

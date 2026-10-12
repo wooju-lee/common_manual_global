@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Return Registration & Inquiry (매출(반품) 등록 및 조회)
 
 > 외부 POS(유통사 POS 또는 Bluebell POS)에서 환불을 완료한 뒤, IIC BO POS에서 **반품(매출 반품)을 등록**하는 방법을 안내합니다.
@@ -38,18 +40,34 @@ countries: [au]
 
 ### Step 1. 원 매출 조회
 
-<div className="img-placeholder">📷 [Image] Invoice No.로 원 매출 조회 — 조회 모드 화면</div>
-
 `Invoice No.` 입력란에 원 매출의 **영수증 ID**를 스캔하거나 입력한 뒤 Enter를 누릅니다.<br/>
 원 매출 내역이 표시되며, `Qty`에는 반품 가능한 수량이 표시됩니다.
 
-### Step 2. 반품할 제품 선택
+<AnnotatedImage
+  src={require('./img/return-registration-01.png').default}
+  alt="Invoice No.로 원 매출 조회 — 조회 모드 화면"
+  boxes={[
+    {x: 6.4, y: 16.6, w: 23.5, h: 2.8},
+    {x: 1.55, y: 24.8, w: 72, h: 7.3},
+    {x: 39.8, y: 27.2, w: 1.5, h: 2.4},
+  ]}
+/>
 
-<div className="img-placeholder">📷 [Image] ▼ 버튼으로 반품 목록에 제품 이동</div>
+### Step 2. 반품할 제품 선택
 
 - 반품할 제품 행의 **▼** 버튼을 누르면 **1개씩** 아래 반품 목록으로 이동합니다. (부분 반품 가능)
 - 패키지가 연결된 제품은 패키지와 함께 이동합니다.
 - 잘못 이동한 경우 반품 목록의 **▲** 버튼으로 되돌립니다.
+
+<AnnotatedImage
+  src={require('./img/return-registration-02.png').default}
+  alt="▼ 버튼으로 반품 목록에 제품 이동 후 Confirm Refund"
+  boxes={[
+    {x: 1.6, y: 44.2, w: 72.1, h: 7.3},
+    {x: 39.9, y: 46.6, w: 1.5, h: 2.4},
+    {x: 68.75, y: 59, w: 4.95, h: 2.6},
+  ]}
+/>
 
 ### Step 3. Confirm Refund
 
@@ -57,6 +75,16 @@ countries: [au]
 2. `Would you like to create a New Return?` 팝업에서 <strong>Yes.</strong>를 클릭합니다.
 3. `Return has been successfully created.` 메시지가 표시되면 완료입니다.<br/>
    반품 내역은 새로운 Invoice로 생성됩니다.
+
+<AnnotatedImage
+  src={require('./img/return-registration-04.png').default}
+  alt="Cashier 선택 후 활성화된 Confirm Refund 버튼"
+  boxes={[
+    {x: 1.45, y: 44.4, w: 72.15, h: 7.4},
+    {x: 78.2, y: 10.8, w: 10.35, h: 2.7},
+    {x: 68.65, y: 59.4, w: 4.95, h: 2.5},
+  ]}
+/>
 
 <div className="blockquote-warning">
 
@@ -83,7 +111,16 @@ AU에서 원 매출이 없을 경우는 다음과 같습니다.
 | **BO 매출 생성 누락** | 외부 POS와 BO는 연동되지 않으므로, 외부 POS 결제 후 BO에서 매출(판매) 등록을 하지 않은 경우 |
 | **BO 도입 이전 매출** | BO 사용 이전 시스템의 매출은 BO로 이전(마이그레이션)하지 않으므로, 과거 매출에 대한 반품인 경우 |
 
-<div className="img-placeholder">📷 [Image] Manual Refund 버튼</div>
+<AnnotatedImage
+  src={require('./img/return-registration-03.png').default}
+  alt="제품 등록 후 Manual Refund 클릭 — 신규 반품 생성 확인 팝업"
+  boxes={[
+    {x: 1.45, y: 24.8, w: 72.1, h: 7.3},
+    {x: 78.15, y: 11, w: 10.3, h: 2.6},
+    {x: 68.6, y: 39.7, w: 5, h: 2.5},
+    {x: 40.85, y: 45.8, w: 18.25, h: 12.2},
+  ]}
+/>
 
 | Step | 처리 내용 |
 |:---:|---|

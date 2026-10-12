@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 C2C Corporate Outbound (C2C 법인 출고)
 
 > 호주 법인에서 한국 본사로 반품하는 **C2C(Corporation To Corporation)** 출고를 등록하는 방법을 안내합니다.
@@ -33,8 +35,6 @@ countries: [au]
 
 ## 1. 출고 등록
 
-<div className="img-placeholder">📷 [Image] Outbound Registration / Request — Corporate Outbound 탭</div>
-
 **Outbound Registration / Request** 버튼 → **Corporate Outbound** 탭에서 3단계로 등록합니다.
 
 | Step | 화면 | 입력 내용 |
@@ -43,11 +43,45 @@ countries: [au]
 | **2** | Select Outbound Product | 출고할 제품 선택 (출고 로케이션에 재고가 있는 제품만 조회) |
 | **3** | Enter Outbound Information | 제품별 출고 수량 입력 후 **Register** |
 
+### Step 1. 출고 스토어 선택
+
+- **Corporate Outbound** 탭을 선택하고, 출고할 Brand · BP · Store · Location을 선택한 뒤 **Next**를 클릭합니다.
+
+<AnnotatedImage
+  src={require('./img/c2c-outbound-01.png').default}
+  alt="Corporate Outbound 탭 선택 후 출고 스토어·로케이션 선택"
+  boxes={[
+    {x: 21.5, y: 22.5, w: 16.0, h: 7.0},
+    {x: 6.3, y: 56.5, w: 87.8, h: 9.8},
+    {x: 86.7, y: 83.5, w: 8.8, h: 4.6},
+  ]}
+/>
+
+### Step 2. 출고 제품 선택
+
+- 입고 스토어(Inbound Store)는 한국 본사로 자동 지정되어 `It will be processed as an HQ return.`이 표시되고, 출고 유형은 `C2C`로 표시됩니다.
+- 출고 로케이션에 재고가 있는 제품만 조회되며, 출고할 제품을 체크한 뒤 **Next**를 클릭합니다.
+
+<AnnotatedImage
+  src={require('./img/c2c-outbound-02.png').default}
+  alt="Step 2. 입고 스토어 HQ 반품 자동 지정 확인 후 출고 제품 선택"
+  boxes={[
+    {x: 3.9, y: 51.4, w: 92.2, h: 7.9},
+    {x: 5.5, y: 62.9, w: 4.0, h: 19.8},
+    {x: 87.2, y: 91.7, w: 8.8, h: 2.8},
+  ]}
+/>
+
+### Step 3. 출고 수량 입력
+
+- 제품별 출고 수량을 입력한 뒤 **Register**를 클릭합니다.
 - 출고 수량은 **1 이상**, **가용 재고 부족 시 등록이 불가**합니다.
+
+C2C 출고는 등록 즉시 <mark>**출고 완료 상태**</mark>가 되어 재고에 바로 반영되며, 재고 원장에 출고 이력(`Outbound (Confirmed)`)이 남습니다. 👉 **[Inventory Ledger 바로가기](/docs/inventory/inventory-ledger-au)**
 
 <div className="blockquote-warning">
 
-> <mark>**C2C 출고는 등록 즉시 완료되며 취소할 수 없습니다.**</mark><br/>
+> <mark>**C2C 출고는 등록 후 취소할 수 없습니다.**</mark><br/>
 > 출고 스토어·제품·수량을 반드시 확인한 뒤 등록해 주세요. C2C 출고는 승인 요청(Request Outbound) 방식을 사용할 수 없습니다.
 
 </div>

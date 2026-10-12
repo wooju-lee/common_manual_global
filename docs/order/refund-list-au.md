@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Refund List (반품 리스트)
 
 > IIC BO에 수집된 반품 주문을 조회하는 메뉴입니다.
@@ -20,7 +22,16 @@ countries: [au]
 
 ## 1. 반품 조회
 
-<div className="img-placeholder">📷 [Image] Refund List 검색 및 목록 화면</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/refund-list-01.png').default}
+  alt="Refund List — 기간 빠른 선택, Refund No., Original Order No."
+  boxes={[
+    {x: 1.4, y: 26.6, w: 19.4, h: 3.4},
+    {x: 23.2, y: 52.6, w: 10.5, h: 46.8},
+    {x: 35.9, y: 52.6, w: 9.9, h: 46.8},
+  ]}
+/>
 
 조회할 기간과 스토어를 선택한 뒤 **Search**를 클릭합니다.<br/>
 기간은 `TODAY` / `1 WEEK` / `1 MONTH` / `3 MONTHS` 버튼으로 빠르게 선택할 수 있습니다.
@@ -52,7 +63,15 @@ countries: [au]
 
 목록의 <strong>Refund No.</strong>를 클릭하면 반품 상세 팝업이 열립니다. 팝업 상단에는 원 주문번호, BO 반품번호, **반품 유형**이 표시됩니다.
 
-<div className="img-placeholder">📷 [Image] 반품 상세 팝업 — Refund Information / Refund Products</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/refund-list-02.png').default}
+  alt="반품 상세 팝업 — 반품 유형, 제품별 Store / Location"
+  boxes={[
+    {x: 49.2, y: 54.6, w: 5.8, h: 2.8},
+    {x: 34.6, y: 78.4, w: 22.4, h: 11.4},
+  ]}
+/>
 
 - **Refund Information**에서 반품 일시, 스토어, 통화를 확인할 수 있습니다.
 - **Refund Products**에서 반품 제품별 수량과 금액(Unit, Net, VAT, Total Price)을 확인할 수 있습니다.
@@ -70,3 +89,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | 메뉴 생성, 조회 방법 작성 | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

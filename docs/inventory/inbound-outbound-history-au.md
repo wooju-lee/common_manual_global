@@ -6,6 +6,8 @@ created: "2026-10-04"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 Inventory In/Out History (입/출고 내역)
 
 > 스토어 간 재고 이동 건의 **출고 요청 → 출고 → 입고 확정** 진행 현황을 제품별로 한 화면에서 확인하는 메뉴입니다.
@@ -19,7 +21,15 @@ countries: [au]
 
 ## 1. 리스트 검색
 
-<div className="img-placeholder">📷 [Image] Inventory In/Out History 검색 조건</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/inbound-outbound-history-01.png').default}
+  alt="Inventory In/Out History 검색 조건 및 목록 — Confirmed Inbound Date / Qty"
+  boxes={[
+    {x: 8.4, y: 45.4, w: 6.0, h: 54.0},
+    {x: 90.6, y: 45.4, w: 5.8, h: 54.0},
+  ]}
+/>
 
 | 검색 조건 | 설명 | 비고 |
 |---|---|---|
@@ -38,8 +48,6 @@ countries: [au]
 </div>
 
 ## 2. 리스트 컬럼
-
-<div className="img-placeholder">📷 [Image] Inventory In/Out History 목록</div>
 
 | 컬럼 | 설명 |
 |---|---|
@@ -70,3 +78,4 @@ countries: [au]
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-04 | AU 메뉴 생성 | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

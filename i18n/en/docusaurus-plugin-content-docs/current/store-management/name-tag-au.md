@@ -1,11 +1,13 @@
 ---
-source_hash: "a3ee643a95"
+source_hash: "43e2a6944a"
 sidebar_label: Offline Name Tag
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-07"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 Offline Name Tag
 
@@ -32,7 +34,15 @@ countries: [au]
 
 ## 1. Name tag layout
 
-<div className="img-placeholder">📷 [Image] Printed name tag example</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-01.png').default}
+  alt="Printed name tag example — model name / note, price, QR"
+  boxes={[
+    {x: 32.6, y: 35.4, w: 4.8, h: 7.4},
+    {x: 40, y: 36, w: 7.2, h: 6.8},
+  ]}
+/>
 
 | Item | Description |
 |---|---|
@@ -47,7 +57,15 @@ countries: [au]
 
 ## 2. List search
 
-<div className="img-placeholder">📷 [Image] Offline Name Tag search filters</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-08.png').default}
+  alt="Offline Name Tag search filters — Registration Date, keyword"
+  boxes={[
+    {x: 1.6, y: 28.2, w: 24.2, h: 7.4},
+    {x: 1.6, y: 39.8, w: 64.2, h: 3.2},
+  ]}
+/>
 
 | Search filter | Description | Notes |
 |---|---|---|
@@ -57,7 +75,16 @@ countries: [au]
 
 ## 3. List columns
 
-<div className="img-placeholder">📷 [Image] Offline Name Tag list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-08.png').default}
+  alt="Offline Name Tag list — ID, Total Model, Register NameTAG"
+  boxes={[
+    {x: 1.6, y: 67.0, w: 9.5, h: 21.8},
+    {x: 44.8, y: 67.0, w: 6.0, h: 21.8},
+    {x: 91.4, y: 56.8, w: 7.4, h: 3.0},
+  ]}
+/>
 
 | Column | Description |
 |---|---|
@@ -76,9 +103,29 @@ Click the **Register NameTAG** button → register on the **Individual Print** t
 
 ### Step 1. Select products
 
-<div className="img-placeholder">📷 [Image] Step 1 — Brand / BP / Store selection and product list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-02.png').default}
+  alt="Register NameTAG — Individual Print tab, Brand / BP / Store"
+  boxes={[
+    {x: 16.4, y: 47.0, w: 19.8, h: 3.2},
+    {x: 15.3, y: 59.8, w: 81.0, h: 5.2},
+  ]}
+/>
 
 - Select **Brand → BP → Store** in this order. The product list appears only after all three are selected.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-03.png').default}
+  alt="Product list — same model listed per sales price"
+  boxes={[
+    {x: 3.3, y: 18.6, w: 91.4, h: 4.2},
+    {x: 4.8, y: 51.1, w: 88.4, h: 6.3},
+    {x: 4.8, y: 69.9, w: 88.4, h: 6.3},
+  ]}
+/>
+
 - Search by Model Code or model name (at least 2 characters), then check the models to print.
   - You can select <mark>**up to 50 models**</mark>. Selections are kept when you move between pages.
   - The same model may appear in multiple rows if it has different sale prices. Select the correct price.
@@ -92,7 +139,16 @@ Click the **Register NameTAG** button → register on the **Individual Print** t
 
 ### Step 2. Enter Additional Note · Qty
 
-<div className="img-placeholder">📷 [Image] Step 2 — Additional Note / Prescription / Print Qty</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-04.png').default}
+  alt="Step 2 — Additional Note, Prescription, Print Qty"
+  boxes={[
+    {x: 48.6, y: 63.8, w: 14.1, h: 20.2},
+    {x: 64.9, y: 63.8, w: 6.7, h: 20.2},
+    {x: 73.8, y: 63.8, w: 8, h: 20.2},
+  ]}
+/>
 
 | Item | Description | Notes |
 |---|---|---|
@@ -103,13 +159,42 @@ Click the **Register NameTAG** button → register on the **Individual Print** t
 - Check multiple models to **bulk edit** them.
   - Prescription **On** / **Off** is applied immediately on click.
   - Print Qty is applied only after you enter the quantity and click **Apply**.
+- **Total** at the top shows the total number of name tags to print (sheets) and the number of models (items).
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-05.png').default}
+  alt="Bulk edit after checking models"
+  boxes={[
+    {x: 4.6, y: 47.2, w: 90.6, h: 6.2},
+    {x: 5.6, y: 63.0, w: 2.2, h: 11.6},
+  ]}
+/>
 
 ### Step 3. Preview and print
 
-<div className="img-placeholder">📷 [Image] A4 Print Preview</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-06.png').default}
+  alt="A4 Print Preview — Include product QR unchecked"
+  boxes={[
+    {x: 67.6, y: 1.8, w: 12.4, h: 5.4},
+    {x: 89.8, y: 1.0, w: 9.2, h: 6.8},
+  ]}
+/>
 
 - Use **Include product QR** (checked by default) to choose whether to include the QR code.
 - Check the A4 print layout with **Preview**, then click **Print & Save** to open the browser print dialog.
+- When saved, the message `name tag print saved successfully` is shown.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/store-management/img/name-tag-07.png').default}
+  alt="Print & Save completion message"
+  boxes={[
+    {x: 80.6, y: 1.8, w: 18.6, h: 11.6},
+  ]}
+/>
 
 <div className="blockquote-warning">
 
@@ -193,3 +278,4 @@ When you have many models to print, register them all at once with an Excel file
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-07 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |

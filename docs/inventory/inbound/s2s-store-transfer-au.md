@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 S2S Store Transfer Inbound (S2S 스토어 간 입고)
 
 > 호주는 마스터 정보가 모두 스토어로 이뤄져 있으며, 스토어 간 이동을 <strong>S2S(Store To Store)</strong>로 정의합니다.<br/>
@@ -39,19 +41,33 @@ countries: [au]
 
 ## 1. 입고 예정 확인
 
-<div className="img-placeholder">📷 [Image] Inbound List — S2S / TO_INBOUND 입고 예정 건</div>
-
 **Inbound List**에서 입고 예정 건을 확인합니다.<br/>
 S2S 입고는 Type `S2S`, Channel `TO_INBOUND`(출고 등록으로 생성된 입고)로 표시됩니다.
+
+<AnnotatedImage
+  src={require('./img/inbound-list-01.png').default}
+  alt="Inbound List — 입고 예정 건"
+  boxes={[
+    {x: 12, y: 29.1, w: 40.2, h: 3.3},
+    {x: 2.1, y: 82.2, w: 96.8, h: 10.7},
+  ]}
+/>
 
 - 입고 상세 화면에서 출고 스토어가 입력한 출고 정보(`Outbound Method`, `Carrier / Tracking No.`)를 함께 확인할 수 있습니다.
 
 ## 2. 입고 확정
 
-<div className="img-placeholder">📷 [Image] 입고 상세 — Inbound Confirmed 버튼 및 확인 팝업</div>
-
 실물 수량이 `Expected Inbound Qty`와 같은지 확인한 뒤, **Inbound Confirmed** → **Confirm**을 클릭합니다.<br/>
 확정하면 입고 스토어 기준으로 재고가 가산되고, 상태가 `Inbound Confirmed`로 바뀝니다.
+
+<AnnotatedImage
+  src={require('./img/inbound-list-02.png').default}
+  alt="Inbound List — 체크 후 하단 Inbound Confirmed로 입고 확정"
+  boxes={[
+    {x: 15.5, y: 75.1, w: 82.7, h: 4.6},
+    {x: 55.9, y: 95.3, w: 7.9, h: 2.6},
+  ]}
+/>
 
 - 입고 확정 시 재고가 가산되고, <mark>**재고 원장에 오더 넘버 기준으로 입고 이력**</mark>(`Inbound (Manual)`)이 남습니다. 👉 **[Inventory Ledger 바로가기](/docs/inventory/inventory-ledger-au)**
 - 여러 건은 목록에서 체크박스로 선택한 뒤 하단 **Inbound Confirmed**로 한 번에 확정할 수 있습니다.

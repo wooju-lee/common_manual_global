@@ -1,11 +1,13 @@
 ---
-source_hash: "16b99f29b7"
+source_hash: "9f54612a25"
 sidebar_label: S2S Store Transfer Inbound
 sidebar_position: 4
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 S2S Store Transfer Inbound
 
@@ -40,19 +42,33 @@ countries: [au]
 
 ## 1. Check pending inbound
 
-<div className="img-placeholder">📷 [Image] Inbound List — S2S / TO_INBOUND pending inbound</div>
-
 Check pending inbound records in the **Inbound List**.<br/>
 S2S inbound is shown with Type `S2S` and Channel `TO_INBOUND` (inbound created from an outbound registration).
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/inbound/img/inbound-list-01.png').default}
+  alt="Inbound List — pending inbound"
+  boxes={[
+    {x: 12, y: 29.1, w: 40.2, h: 3.3},
+    {x: 2.1, y: 82.2, w: 96.8, h: 10.7},
+  ]}
+/>
 
 - On the inbound detail screen, you can also see the outbound information entered by the outbound store (`Outbound Method`, `Carrier / Tracking No.`).
 
 ## 2. Confirm inbound
 
-<div className="img-placeholder">📷 [Image] Inbound detail — Inbound Confirmed button and confirmation popup</div>
-
 Check that the physical quantity matches `Expected Inbound Qty`, then click **Inbound Confirmed** → **Confirm**.<br/>
 Once confirmed, stock is added to the inbound store and the status changes to `Inbound Confirmed`.
+
+<AnnotatedImage
+  src={require('@site/docs/inventory/inbound/img/inbound-list-02.png').default}
+  alt="Inbound List — select rows, then confirm with Inbound Confirmed at the bottom"
+  boxes={[
+    {x: 15.5, y: 75.1, w: 82.7, h: 4.6},
+    {x: 55.9, y: 95.3, w: 7.9, h: 2.6},
+  ]}
+/>
 
 - On inbound confirmation, stock is added and <mark>**an inbound record is logged in the inventory ledger by order number**</mark> (`Inbound (Manual)`). 👉 **[Go to Inventory Ledger](/docs/inventory/inventory-ledger-au)**
 - To confirm multiple records at once, select them with the checkboxes in the list and click **Inbound Confirmed** at the bottom.
