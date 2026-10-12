@@ -6,6 +6,8 @@ created: "2026-10-03"
 countries: [au]
 ---
 
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
+
 # 📍 To Customer (B2C 고객 배송)
 
 > 승인된 온라인 RX 주문의 렌즈 작업, 출고 검수, 배송 라벨 등록, 라벨·AC 카드 출력까지의 흐름을 안내합니다.
@@ -32,7 +34,17 @@ countries: [au]
 
 ## 1. 작업 목록 조회
 
-<div className="img-placeholder">📷 [Image] Rx Work Management — To Customer 탭 목록</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-01.png').default}
+  alt="Rx Work Management — Work Status, Date Search, To Customer 탭"
+  boxes={[
+    {x: 9.1, y: 18.3, w: 7.0, h: 2.3},
+    {x: 1.4, y: 23.4, w: 30.1, h: 4.9},
+    {x: 1.4, y: 52.8, w: 5.0, h: 2.0},
+    {x: 36.0, y: 67.4, w: 8.0, h: 26.2},
+  ]}
+/>
 
 - 상단 탭에서 **To Customer**를 선택합니다. (AU 온라인 RX 주문은 모두 To Customer)
 - `Work Status`, `Date Search`(Order Date / Approval Date / Complete Date) 등으로 조회합니다.
@@ -69,13 +81,30 @@ countries: [au]
 
 ## 3. 작업 상태 관리
 
-<div className="img-placeholder">📷 [Image] Rx Work Management 상세 — Work Status Management 패널</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-02.png').default}
+  alt="Work Status Management 패널"
+  boxes={[
+    {x: 66.2, y: 9.2, w: 31.8, h: 22.6},
+  ]}
+/>
 
 상세 화면 우측 **Work Status Management**에서 `Worker`, `Work Status`, `Work Type`, `Processing Period`, `Work ETA`를 변경하고 **Save**합니다.
 
 - OWNDAYS에 전달 후 `In Progress`, 작업 완료 제품 수거·검수 후 `Outbound Inspection`으로 변경합니다.
 - 여러 건은 목록에서 체크 후 **Change Status**로 한 번에 변경할 수 있습니다.
 - `Completed`, `Finalized`는 시스템이 자동으로 변경하며 수기로 선택할 수 없습니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-03.png').default}
+  alt="Work Status 드롭다운 — Completed / Finalized 선택 불가"
+  boxes={[
+    {x: 66.2, y: 14.4, w: 31.6, h: 2.2},
+    {x: 66.4, y: 25.0, w: 10.0, h: 3.0},
+  ]}
+/>
 
 ## 4. 배송 라벨 등록
 
@@ -100,9 +129,37 @@ countries: [au]
 | **Serial Print** | AC 카드(시리얼 카드) 출력 |
 | **Print Picking List** / **Invoice Print** | 피킹 리스트, 인보이스 출력 |
 
-<div className="img-placeholder">📷 [Image] 상세 화면 상단 버튼 — Serial Print / Label Print</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-02.png').default}
+  alt="상세 화면 상단 버튼 — Serial Print / Label Print"
+  boxes={[
+    {x: 67.4, y: 4.7, w: 5.6, h: 1.6},
+    {x: 93.3, y: 4.7, w: 5.6, h: 1.6},
+  ]}
+/>
 
 라벨과 AC 카드를 출력해 제품과 함께 출고합니다. 이후 배송 상태는 TMS에서 자동으로 수신되어 `Finalized`로 변경되며, 배송 정보는 우측 **Delivery Tracking**에서 확인할 수 있습니다.
+
+**Print Picking List**, **Invoice Print**를 클릭하면 미리보기 팝업이 열리며, 팝업 하단 버튼으로 출력합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-04.png').default}
+  alt="Picking List Preview"
+  boxes={[
+    {x: 81.2, y: 87.5, w: 10.2, h: 2.4},
+  ]}
+/>
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-05.png').default}
+  alt="Invoice Preview"
+  boxes={[
+    {x: 79.5, y: 86.2, w: 9.7, h: 2.2},
+  ]}
+/>
 
 ## 6. 작업 취소 / 환불
 
@@ -111,8 +168,32 @@ countries: [au]
 | **Cancel Work** | `Pending` / `Inbound Inspection` / `In Progress` / `Outbound Inspection` |
 | **Refund** | `Finalized` (반품 사유 선택 후 처리) |
 
+**Cancel Work**를 클릭하면 사유 선택 팝업이 열립니다. 사유를 선택한 뒤 처리합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-06.png').default}
+  alt="Cancel Work 사유 선택"
+  boxes={[
+    {x: 8.4, y: 32.0, w: 28.2, h: 5.6},
+    {x: 9.0, y: 43.8, w: 16.0, h: 7.4},
+  ]}
+/>
+
+`Do Not Process`, `Prescription Information Needs Verification`은 세부 사유(**Sub Reason**)까지 선택해야 합니다.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('./img/to-customer-07.png').default}
+  alt="Sub Reason 선택"
+  boxes={[
+    {x: 4.5, y: 43.7, w: 29.2, h: 31.0},
+  ]}
+/>
+
 ## 📋 수정 이력
 
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |

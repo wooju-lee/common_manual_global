@@ -1,11 +1,13 @@
 ---
-source_hash: "6844e8a50d"
+source_hash: "2209db909d"
 sidebar_label: To Customer
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
 countries: [au]
 ---
+
+import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 # 📍 To Customer
 
@@ -33,7 +35,17 @@ countries: [au]
 
 ## 1. View the work list
 
-<div className="img-placeholder">📷 [Image] Rx Work Management — To Customer tab list</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-01.png').default}
+  alt="Rx Work Management — Work Status, Date Search, To Customer tab"
+  boxes={[
+    {x: 9.1, y: 18.3, w: 7.0, h: 2.3},
+    {x: 1.4, y: 23.4, w: 30.1, h: 4.9},
+    {x: 1.4, y: 52.8, w: 5.0, h: 2.0},
+    {x: 36.0, y: 67.4, w: 8.0, h: 26.2},
+  ]}
+/>
 
 - Select **To Customer** in the top tab. (All AU online RX orders are To Customer.)
 - Search by `Work Status`, `Date Search` (Order Date / Approval Date / Complete Date), and more.
@@ -70,13 +82,30 @@ Manually confirm the lab (AU_RX_LAB) inbound for the outbound that was automatic
 
 ## 3. Manage work status
 
-<div className="img-placeholder">📷 [Image] Rx Work Management detail — Work Status Management panel</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-02.png').default}
+  alt="Work Status Management panel"
+  boxes={[
+    {x: 66.2, y: 9.2, w: 31.8, h: 22.6},
+  ]}
+/>
 
 In **Work Status Management** on the right of the detail screen, change `Worker`, `Work Status`, `Work Type`, `Processing Period`, and `Work ETA`, then click **Save**.
 
 - Change to `In Progress` after handing over to OWNDAYS, and to `Outbound Inspection` after collecting and inspecting the finished product.
 - To change multiple orders at once, select them in the list and click **Change Status**.
 - `Completed` and `Finalized` are changed automatically by the system and cannot be selected manually.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-03.png').default}
+  alt="Work Status dropdown — Completed / Finalized cannot be selected"
+  boxes={[
+    {x: 66.2, y: 14.4, w: 31.6, h: 2.2},
+    {x: 66.4, y: 25.0, w: 10.0, h: 3.0},
+  ]}
+/>
 
 ## 4. Register the shipping label
 
@@ -101,9 +130,37 @@ Register the shipping label for orders in `Outbound Inspection` status.
 | **Serial Print** | Print the AC card (serial card) |
 | **Print Picking List** / **Invoice Print** | Print the picking list and invoice |
 
-<div className="img-placeholder">📷 [Image] Top buttons on the detail screen — Serial Print / Label Print</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-02.png').default}
+  alt="Top buttons on the detail screen — Serial Print / Label Print"
+  boxes={[
+    {x: 67.4, y: 4.7, w: 5.6, h: 1.6},
+    {x: 93.3, y: 4.7, w: 5.6, h: 1.6},
+  ]}
+/>
 
 Print the label and AC card and ship them with the product. After that, the shipping status is received automatically from TMS and changes to `Finalized`. Check shipping details in **Delivery Tracking** on the right.
+
+Click **Print Picking List** or **Invoice Print** to open a preview popup, then print with the button at the bottom of the popup.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-04.png').default}
+  alt="Picking List Preview"
+  boxes={[
+    {x: 81.2, y: 87.5, w: 10.2, h: 2.4},
+  ]}
+/>
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-05.png').default}
+  alt="Invoice Preview"
+  boxes={[
+    {x: 79.5, y: 86.2, w: 9.7, h: 2.2},
+  ]}
+/>
 
 ## 6. Cancel work / refund
 
@@ -112,8 +169,32 @@ Print the label and AC card and ship them with the product. After that, the ship
 | **Cancel Work** | `Pending` / `Inbound Inspection` / `In Progress` / `Outbound Inspection` |
 | **Refund** | `Finalized` (select a return reason, then process) |
 
+Click **Cancel Work** to open the reason popup. Select a reason, then proceed.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-06.png').default}
+  alt="Cancel Work reason selection"
+  boxes={[
+    {x: 8.4, y: 32.0, w: 28.2, h: 5.6},
+    {x: 9.0, y: 43.8, w: 16.0, h: 7.4},
+  ]}
+/>
+
+For `Do Not Process` and `Prescription Information Needs Verification`, you must also select a **Sub Reason**.
+
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/lms/rx-order-management/img/to-customer-07.png').default}
+  alt="Sub Reason selection"
+  boxes={[
+    {x: 4.5, y: 43.7, w: 29.2, h: 31.0},
+  ]}
+/>
+
 ## 📋 Revision history
 
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU draft (text) | Wooju(Landa) |
+| 2026-10-12 | Added screen images | Wooju(Landa) |
