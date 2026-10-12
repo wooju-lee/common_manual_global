@@ -712,7 +712,9 @@ html[data-country='kr'] .navbar-hide-kr {
   display: none !important;
 }
 
-/* KR Report is live — no TBD badge */
-html[data-country='kr'] .navbar-tbd-show-kr-off::after {
+/* Report is live for AU / KR — no TBD badge */
+html[data-country='au'] .navbar-report::after,
+html[data-country='kr'] .navbar-report::after,
+html[data-country='au'] .navbar-store-mgmt::after {
   display: none;
 }

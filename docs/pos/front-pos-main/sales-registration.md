@@ -16,7 +16,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 ## 👉 매출(판매) 생성 순서
 
-> **외부 POS 영수증 번호 입력** → **제품 담기** → **캐셔 / 셀러 확인** → **멤버십 설정** → **고객 객층 정보 선택** → **Confirm Sales** → **AC 카드 출력**
+> **영수증 번호 입력** → **제품 담기** → **캐셔 / 셀러 확인** → **멤버십 설정** → **고객 객층 정보 선택** → **Confirm Sales** → **AC 카드 출력**
 
 <AnnotatedImage
   src={require('./img/sales-registration-01.png').default}
@@ -33,11 +33,11 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 제품, 멤버십, 고객 객층 정보가 모두 설정되어야 매출을 생성할 수 있습니다.
 
-## 1. 외부 POS 영수증 번호 입력
+## 1. 영수증 번호 입력
 
 <AnnotatedImage
   src={require('./img/sales-registration-04.png').default}
-  alt="Invoice No. 입력란 — 외부 POS 영수증 번호 입력"
+  alt="Invoice No. 입력란 — 영수증 번호 입력"
   maxWidth="500px"
   boxes={[
     {x: 23.1, y: 29.7, w: 69.6, h: 10},
@@ -49,7 +49,7 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 
 **입력 규칙**
 
-- <mark>**영문 · 숫자 · 하이픈(`-`)만 입력하며, 숫자를 1개 이상 포함**</mark>해야 합니다.
+- <mark>**영문 · 숫자 · 하이픈(`-`)만 입력**</mark>할 수 있습니다.
   - 공백이나 `_`, `/` 등 특수문자가 들어간 번호는 이후 영수증 번호로 조회 · 반품할 수 없습니다.
 - 최대 25자까지 입력할 수 있습니다.
 - 같은 스토어에서 이미 사용한 번호는 입력할 수 없습니다.
@@ -142,7 +142,7 @@ BO 매출은 이 번호와 **동일한 번호로 생성**됩니다.
 | **Gender** | `N/A` / `MALE` / `FEMALE` |
 | **Usage Type** | `N/A` / `Normal` / `Gift` |
 
-## 6. Confirm Sales
+## 6. Confirm Sales (매출 생성)
 
 <AnnotatedImage
   src={require('./img/sales-registration-03.png').default}

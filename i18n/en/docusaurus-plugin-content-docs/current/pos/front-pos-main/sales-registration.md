@@ -1,5 +1,5 @@
 ---
-source_hash: "edbea3daa5"
+source_hash: "5dfd557bbf"
 sidebar_label: Sales Registration & Inquiry
 sidebar_position: 1
 author: Wooju(Landa)
@@ -17,7 +17,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 ## 👉 Sale creation process
 
-> **Enter external POS receipt number** → **Add products** → **Check cashier / seller** → **Set membership** → **Select customer profile information** → **Confirm Sales** → **Print AC card**
+> **Enter receipt number** → **Add products** → **Check cashier / seller** → **Set membership** → **Select customer profile information** → **Confirm Sales** → **Print AC card**
 
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-01.png').default}
@@ -34,11 +34,11 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 You can create a sale only after products, membership, and customer profile information are all set.
 
-## 1. Enter the External POS Receipt Number
+## 1. Enter the Receipt Number
 
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-04.png').default}
-  alt="Invoice No. field — enter the external POS receipt number"
+  alt="Invoice No. field — enter the receipt number"
   maxWidth="500px"
   boxes={[
     {x: 23.1, y: 29.7, w: 69.6, h: 10},
@@ -50,7 +50,7 @@ The BO sale is **created with the same number**.
 
 **Input rules**
 
-- <mark>**Use only letters, numbers, and hyphens (`-`), and include at least 1 number.**</mark>
+- <mark>**Use only letters, numbers, and hyphens (`-`).**</mark>
   - Numbers containing spaces or special characters such as `_` or `/` cannot be used later to look up or return the sale by receipt number.
 - Up to 25 characters.
 - A number already used in the same store cannot be entered.
@@ -143,7 +143,7 @@ You must select **all** customer profile information fields at the bottom right 
 | **Gender** | `N/A` / `MALE` / `FEMALE` |
 | **Usage Type** | `N/A` / `Normal` / `Gift` |
 
-## 6. Confirm Sales
+## 6. Confirm Sales (Create Sale)
 
 <AnnotatedImage
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-03.png').default}

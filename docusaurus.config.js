@@ -172,14 +172,14 @@ const config = {
             sidebarId: 'reportSidebar',
             position: 'left',
             label: 'Report',
-            className: 'navbar-tbd navbar-tbd-show-kr-off',
+            className: 'navbar-tbd navbar-report',
           },
           {
             type: 'docSidebar',
             sidebarId: 'storeManagementSidebar',
             position: 'left',
             label: 'Store Management',
-            className: 'navbar-tbd',
+            className: 'navbar-tbd navbar-store-mgmt',
           },
           {
             type: 'docSidebar',
