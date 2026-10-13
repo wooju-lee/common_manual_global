@@ -1,5 +1,5 @@
 ---
-source_hash: "7bcbf14af5"
+source_hash: "7e47fe984c"
 sidebar_label: Sales Registration & Inquiry
 sidebar_position: 1
 author: Wooju(Landa)
@@ -20,15 +20,16 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > **Enter receipt number** → **Add products** → **Check cashier / seller** → **Set membership** → **Select customer profile information** → **Confirm Sales** → **Print AC card**
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-01.png').default}
   alt="Front POS Main default screen (SALES mode)"
   boxes={[
-    {n: 1, x: 1.2, y: 15.6, w: 28.9, h: 3.6},
-    {n: 2, x: 30.8, y: 15.6, w: 42.7, h: 3.6},
-    {n: 3, x: 74.2, y: 8.6, w: 12.6, h: 5.2},
-    {n: 4, x: 75.8, y: 15.6, w: 23, h: 15.8},
-    {n: 5, x: 75.5, y: 70.2, w: 23.3, h: 25},
-    {n: 6, x: 75.9, y: 34.9, w: 22.5, h: 4.2},
+    {n: 1, x: 0.8, y: 9.9, w: 29.1, h: 3.6},
+    {n: 2, x: 35.1, y: 9.9, w: 38.0, h: 3.6},
+    {n: 3, x: 75.6, y: 6.6, w: 23.6, h: 5.0},
+    {n: 4, x: 75.6, y: 14.6, w: 23.6, h: 9.5},
+    {n: 5, x: 75.6, y: 27.4, w: 23.6, h: 19.3},
+    {n: 6, x: 75.7, y: 49.6, w: 23.4, h: 3.4},
   ]}
 />
 
@@ -36,17 +37,26 @@ You can create a sale only after products, membership, and customer profile info
 
 ## 1. Enter the Receipt Number
 
-Scan or enter the **receipt number** issued by the external POS after payment in the `Invoice No.` field.<br/>
+Select <mark>**Register**</mark> to the left of `Invoice No.`, then scan or enter the **receipt number** issued by the external POS after payment.<br/>
 The BO sale is **created with the same number**.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-04.png').default}
-  alt="Invoice No. field — enter the receipt number"
-  maxWidth="500px"
+  alt="Invoice No. — enter the receipt number in Register mode"
   boxes={[
-    {x: 23.1, y: 29.7, w: 69.6, h: 10},
+    {x: 5.5, y: 22.5, w: 34.4, h: 14.0},
   ]}
 />
+
+| Mode | Purpose |
+|---|---|
+| **Register** | Register a new sale — the sale is created with the entered number |
+| **Lookup** | Look up an existing sale — used for returns and AC card reprints |
+
+- Switching modes clears the entered number.
+- The default mode is `Lookup` only for **GM_Melbourne_MALL_Chadstone**; all other stores default to `Register`.
+  - At Chadstone, <mark>**switch to Register**</mark> before registering a sale.
 
 **Input rules**
 
@@ -57,7 +67,7 @@ The BO sale is **created with the same number**.
 
 <div className="blockquote-warning">
 
-> **Enter the receipt number before adding products.** Pressing Enter in `Invoice No.` clears the product list.
+> **Always enter a new sale in Register mode.** Pressing Enter in Lookup mode runs a sale lookup and clears the product list.
 >
 > If the field is left blank, BO generates a number automatically. <mark>**Always enter the receipt number so the sale matches the external POS.**</mark>
 
@@ -68,11 +78,12 @@ The BO sale is **created with the same number**.
 Place the cursor in the **Product Barcode** field and enter product information (code, product name, barcode), or scan the physical barcode to add the product.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-05.png').default}
   alt="Product Barcode search — search by product code / product name / barcode and select"
   boxes={[
-    {x: 49.75, y: 7.7, w: 48.65, h: 5.7},
-    {x: 1.9, y: 25.3, w: 47.6, h: 16.1},
+    {x: 47.2, y: 9.1, w: 51.4, h: 5.0},
+    {x: 1.0, y: 23.5, w: 45.8, h: 10.7},
   ]}
 />
 
@@ -83,12 +94,12 @@ Place the cursor in the **Product Barcode** field and enter product information 
 ## 3. Check Cashier / Seller
 
 <AnnotatedImage
+  maxWidth="420px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-06.png').default}
   alt="Cashier / Seller dropdowns"
-  maxWidth="420px"
   boxes={[
-    {x: 4.3, y: 12, w: 44.6, h: 10.5},
-    {x: 52.7, y: 12, w: 44.5, h: 24.6},
+    {x: 5.3, y: 30.6, w: 42.0, h: 18.8},
+    {x: 51.0, y: 30.6, w: 43.8, h: 43.1},
   ]}
 />
 
@@ -102,13 +113,13 @@ Place the cursor in the **Product Barcode** field and enter product information 
 **Membership is required** to create a sale. Set it using one of the methods below.
 
 <AnnotatedImage
+  maxWidth="640px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-02.png').default}
   alt="Customer Member Search area"
-  maxWidth="400px"
   boxes={[
-    {x: 6.4, y: 38.6, w: 86.4, h: 13.5},
-    {x: 78.5, y: 54.3, w: 14.8, h: 7},
-    {x: 6.4, y: 75.4, w: 86.4, h: 13.5},
+    {x: 6.6, y: 46.3, w: 88.9, h: 17.6},
+    {x: 6.6, y: 73.3, w: 69.0, h: 17.6},
+    {x: 79.0, y: 73.3, w: 16.6, h: 17.6},
   ]}
 />
 
@@ -116,22 +127,21 @@ Place the cursor in the **Product Barcode** field and enter product information 
 |---|---|
 | **Email / phone number search** | The country defaults to the POS store's country.<br/>Enter an email (`ID@` format) or phone number (at least 8 digits) in `Search by Email OR Phone` and search |
 | **Membership QR scan** | When the customer shows the membership QR provided on sign-up to the online store, scan it in `Scan Customer QR` to look it up immediately |
-| **Non-Member** | For customers who do not sign up, select **Non-Member** |
+| **Non-Member** | For customers who do not sign up, select **Non-Member**. Click it again to cancel |
 
 ## 5. Select Customer Profile Information (Required)
 
-You must select **all** customer profile information fields at the bottom right of the screen.
+You must select **all** **CUSTOMER INFO** fields below Customer Member Search.
 
 <AnnotatedImage
+  maxWidth="420px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-07.png').default}
-  alt="Customer profile information input area"
-  maxWidth="384px"
+  alt="CUSTOMER INFO — customer profile information input area"
   boxes={[
-    {x: 6, y: 14.8, w: 86.1, h: 9},
-    {x: 6, y: 32.3, w: 86.1, h: 9},
-    {x: 6, y: 48.7, w: 86.1, h: 9},
-    {x: 6, y: 65.2, w: 69.8, h: 9},
-    {x: 6, y: 81.6, w: 69.8, h: 9},
+    {x: 3.9, y: 56.1, w: 90.2, h: 6.1},
+    {x: 3.9, y: 67.4, w: 90.2, h: 6.2},
+    {x: 3.9, y: 78.9, w: 90.2, h: 5.9},
+    {x: 3.9, y: 90.0, w: 90.2, h: 5.9},
   ]}
 />
 
@@ -148,13 +158,14 @@ You must select **all** customer profile information fields at the bottom right 
 When all required values (product, membership, customer profile information) are set, the **Confirm Sales** button is enabled. Click it to create the sale.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/sales-registration-03.png').default}
   alt="Confirm Sales enabled after required information (product / membership / customer profile information) is set"
   boxes={[
-    {x: 1.8, y: 25.1, w: 71.5, h: 7.5},
-    {x: 76.1, y: 19, w: 22.1, h: 7.8},
-    {x: 76.1, y: 35, w: 22.1, h: 3.6},
-    {x: 76.1, y: 73.5, w: 22.1, h: 24.1},
+    {x: 0.9, y: 17.6, w: 72.0, h: 6.1},
+    {x: 75.7, y: 17.2, w: 23.0, h: 6.3},
+    {x: 75.7, y: 26.7, w: 23.0, h: 18.3},
+    {x: 75.7, y: 48.4, w: 23.0, h: 3.1},
   ]}
 />
 
@@ -179,9 +190,20 @@ When the sale is created, the **AC card is printed** and sales registration is c
 
 ## 8. Look Up Sales and Reprint the AC Card
 
-<div className="img-placeholder">📷 [Image] Purchased product history looked up by Invoice No.</div>
+<AnnotatedImage
+  maxWidth="720px"
+  src={require('@site/docs/pos/front-pos-main/img/return-registration-01.png').default}
+  alt="Purchased product history looked up by Invoice No. in Lookup mode — AC Card RE Print"
+  boxes={[
+    {x: 4.3, y: 10.0, w: 25.4, h: 2.9},
+    {x: 0.9, y: 18.3, w: 72.8, h: 6.3},
+    {x: 87.5, y: 61.4, w: 11.3, h: 2.7},
+  ]}
+/>
 
-Enter the sale's **Invoice No.** (external POS receipt number) in the `Invoice No.` field and search to load the purchased product history.
+Select **Lookup** to the left of `Invoice No.`, enter the sale's **Invoice No.** (external POS receipt number), and press Enter to load the purchased product history.
+
+- While a sale is looked up, Confirm Sales and the membership / customer profile inputs are disabled.
 
 - To print the AC card again, click **AC Card RE Print**.
 
@@ -212,3 +234,4 @@ Enter the sale's **Invoice No.** (external POS receipt number) in the `Invoice N
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
 | 2026-10-03 | Rewritten as a screen-based sale creation process | Wooju(Landa) |
+| 2026-10-13 | POS main UI change — replaced screen images, added Invoice No. Lookup / Register modes | Wooju(Landa) |

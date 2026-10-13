@@ -1,5 +1,5 @@
 ---
-source_hash: "7ad9e9ea16"
+source_hash: "39d695989a"
 sidebar_label: Inventory Transfer SALES → DP
 sidebar_position: 3
 author: Wooju(Landa)
@@ -27,11 +27,12 @@ Switch the toggle at the top of Front POS Main to **INVENTORY** to change the sc
 The **(SALES → DP)** button appears on the right, and <mark>**the membership and customer profile information areas are not used.**</mark>
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/store-inventory-transfer-01.png').default}
   alt="Front POS Main — INVENTORY mode screen"
   boxes={[
-    {x: 0.5, y: 14, w: 9.6, h: 4.4},
-    {x: 76, y: 26.4, w: 22.5, h: 8},
+    {x: 0.9, y: 3.5, w: 9.4, h: 5.8},
+    {x: 75.7, y: 65.7, w: 23.0, h: 6.0},
   ]}
 />
 
@@ -47,12 +48,13 @@ Scan a product in **Product Barcode**, or search and select it from the dropdown
 Once a product is added, the **(SALES → DP)** button is enabled.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/store-inventory-transfer-01.png').default}
-  alt="Products added to the list and the enabled (SALES → DP) button"
+  alt="List with products to transfer and the enabled (SALES → DP) button"
   boxes={[
-    {x: 30.95, y: 23.5, w: 42.65, h: 3.7},
-    {x: 1.55, y: 34.8, w: 72, h: 5.1},
-    {x: 76, y: 26.4, w: 22.5, h: 8},
+    {x: 35.4, y: 10.6, w: 38.2, h: 5.3},
+    {x: 1.0, y: 26.3, w: 72.7, h: 5.9},
+    {x: 75.7, y: 65.7, w: 23.0, h: 6.0},
   ]}
 />
 
@@ -92,3 +94,4 @@ Click **(SALES → DP)** to move the stock immediately.
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
 | 2026-10-03 | Rewritten as a screen-based inventory transfer process | Wooju(Landa) |
+| 2026-10-13 | POS main UI change — replaced screen images | Wooju(Landa) |

@@ -1,5 +1,5 @@
 ---
-source_hash: "db870e35f5"
+source_hash: "601413d0fc"
 sidebar_label: Return Registration & Inquiry
 sidebar_position: 2
 author: Wooju(Landa)
@@ -41,16 +41,17 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 ### Step 1. Look up the original sale
 
-Scan or enter the original sale's **receipt ID** in the `Invoice No.` field and press Enter.<br/>
+Select <mark>**Lookup**</mark> to the left of `Invoice No.`, then scan or enter the original sale's **receipt ID** and press Enter.<br/>
 The original sale details are shown, and `Qty` shows the quantity available for return.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/return-registration-01.png').default}
-  alt="Look up the original sale by Invoice No. — lookup mode screen"
+  alt="Look up the original sale by Invoice No. in Lookup mode"
   boxes={[
-    {x: 6.4, y: 16.6, w: 23.5, h: 2.8},
-    {x: 1.55, y: 24.8, w: 72, h: 7.3},
-    {x: 39.8, y: 27.2, w: 1.5, h: 2.4},
+    {x: 4.3, y: 10.0, w: 25.4, h: 2.9},
+    {x: 0.9, y: 18.3, w: 68.8, h: 6.3},
+    {x: 71.8, y: 20.4, w: 1.4, h: 2.0},
   ]}
 />
 
@@ -61,12 +62,13 @@ The original sale details are shown, and `Qty` shows the quantity available for 
 - If you moved a product by mistake, use the **▲** button in the return list to move it back.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/return-registration-02.png').default}
-  alt="Products moved to the return list with the ▼ button, then Confirm Refund"
+  alt="Move products to the refund list with ▼, then Confirm Refund"
   boxes={[
-    {x: 1.6, y: 44.2, w: 72.1, h: 7.3},
-    {x: 39.9, y: 46.6, w: 1.5, h: 2.4},
-    {x: 68.75, y: 59, w: 4.95, h: 2.6},
+    {x: 0.9, y: 60.8, w: 72.8, h: 6.2},
+    {x: 75.7, y: 7.8, w: 11.3, h: 2.7},
+    {x: 68.1, y: 95.4, w: 5.6, h: 2.6},
   ]}
 />
 
@@ -78,12 +80,12 @@ The original sale details are shown, and `Qty` shows the quantity available for 
    The return is created as a new invoice.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('@site/docs/pos/front-pos-main/img/return-registration-04.png').default}
-  alt="Confirm Refund button enabled after selecting a cashier"
+  alt="New return confirmation popup after clicking Confirm Refund"
   boxes={[
-    {x: 1.45, y: 44.4, w: 72.15, h: 7.4},
-    {x: 78.2, y: 10.8, w: 10.35, h: 2.7},
-    {x: 68.65, y: 59.4, w: 4.95, h: 2.5},
+    {x: 39.3, y: 41.8, w: 20.7, h: 12.4},
+    {x: 68.0, y: 95.4, w: 5.6, h: 2.7},
   ]}
 />
 
@@ -113,13 +115,13 @@ In AU, the original sale may be missing in the following cases.
 | **Sale from before BO was introduced** | Sales from the system used before BO are not migrated to BO, so the return is for a past sale |
 
 <AnnotatedImage
-  src={require('@site/docs/pos/front-pos-main/img/return-registration-03.png').default}
-  alt="After adding products, click Manual Refund — new return confirmation popup"
+  maxWidth="720px"
+  src={require('@site/docs/pos/front-pos-main/img/sales-registration-03.png').default}
+  alt="After adding products, click Manual Refund"
   boxes={[
-    {x: 1.45, y: 24.8, w: 72.1, h: 7.3},
-    {x: 78.15, y: 11, w: 10.3, h: 2.6},
-    {x: 68.6, y: 39.7, w: 5, h: 2.5},
-    {x: 40.85, y: 45.8, w: 18.25, h: 12.2},
+    {x: 0.9, y: 17.6, w: 72.0, h: 6.1},
+    {x: 75.7, y: 8.0, w: 11.3, h: 2.7},
+    {x: 68.1, y: 95.7, w: 5.6, h: 2.5},
   ]}
 />
 
@@ -187,3 +189,4 @@ Store staff follow the same steps in BO. Only the way the return is sent to Blue
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
+| 2026-10-13 | POS main UI change — replaced screen images, added Lookup mode lookup | Wooju(Landa) |

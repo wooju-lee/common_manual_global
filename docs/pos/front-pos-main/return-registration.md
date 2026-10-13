@@ -40,16 +40,17 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 ### Step 1. 원 매출 조회
 
-`Invoice No.` 입력란에 원 매출의 **영수증 ID**를 스캔하거나 입력한 뒤 Enter를 누릅니다.<br/>
+`Invoice No.` 왼쪽에서 <mark>**Lookup**</mark>을 선택한 뒤, 원 매출의 **영수증 ID**를 스캔하거나 입력하고 Enter를 누릅니다.<br/>
 원 매출 내역이 표시되며, `Qty`에는 반품 가능한 수량이 표시됩니다.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('./img/return-registration-01.png').default}
-  alt="Invoice No.로 원 매출 조회 — 조회 모드 화면"
+  alt="Lookup 모드에서 Invoice No.로 원 매출 조회"
   boxes={[
-    {x: 6.4, y: 16.6, w: 23.5, h: 2.8},
-    {x: 1.55, y: 24.8, w: 72, h: 7.3},
-    {x: 39.8, y: 27.2, w: 1.5, h: 2.4},
+    {x: 4.3, y: 10.0, w: 25.4, h: 2.9},
+    {x: 0.9, y: 18.3, w: 68.8, h: 6.3},
+    {x: 71.8, y: 20.4, w: 1.4, h: 2.0},
   ]}
 />
 
@@ -60,12 +61,13 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 - 잘못 이동한 경우 반품 목록의 **▲** 버튼으로 되돌립니다.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('./img/return-registration-02.png').default}
   alt="▼ 버튼으로 반품 목록에 제품 이동 후 Confirm Refund"
   boxes={[
-    {x: 1.6, y: 44.2, w: 72.1, h: 7.3},
-    {x: 39.9, y: 46.6, w: 1.5, h: 2.4},
-    {x: 68.75, y: 59, w: 4.95, h: 2.6},
+    {x: 0.9, y: 60.8, w: 72.8, h: 6.2},
+    {x: 75.7, y: 7.8, w: 11.3, h: 2.7},
+    {x: 68.1, y: 95.4, w: 5.6, h: 2.6},
   ]}
 />
 
@@ -77,12 +79,12 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
    반품 내역은 새로운 Invoice로 생성됩니다.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('./img/return-registration-04.png').default}
-  alt="Cashier 선택 후 활성화된 Confirm Refund 버튼"
+  alt="Confirm Refund 클릭 후 신규 반품 생성 확인 팝업"
   boxes={[
-    {x: 1.45, y: 44.4, w: 72.15, h: 7.4},
-    {x: 78.2, y: 10.8, w: 10.35, h: 2.7},
-    {x: 68.65, y: 59.4, w: 4.95, h: 2.5},
+    {x: 39.3, y: 41.8, w: 20.7, h: 12.4},
+    {x: 68.0, y: 95.4, w: 5.6, h: 2.7},
   ]}
 />
 
@@ -112,13 +114,13 @@ AU에서 원 매출이 없을 경우는 다음과 같습니다.
 | **BO 도입 이전 매출** | BO 사용 이전 시스템의 매출은 BO로 이전(마이그레이션)하지 않으므로, 과거 매출에 대한 반품인 경우 |
 
 <AnnotatedImage
-  src={require('./img/return-registration-03.png').default}
-  alt="제품 등록 후 Manual Refund 클릭 — 신규 반품 생성 확인 팝업"
+  maxWidth="720px"
+  src={require('./img/sales-registration-03.png').default}
+  alt="제품 등록 후 Manual Refund 클릭"
   boxes={[
-    {x: 1.45, y: 24.8, w: 72.1, h: 7.3},
-    {x: 78.15, y: 11, w: 10.3, h: 2.6},
-    {x: 68.6, y: 39.7, w: 5, h: 2.5},
-    {x: 40.85, y: 45.8, w: 18.25, h: 12.2},
+    {x: 0.9, y: 17.6, w: 72.0, h: 6.1},
+    {x: 75.7, y: 8.0, w: 11.3, h: 2.7},
+    {x: 68.1, y: 95.7, w: 5.6, h: 2.5},
   ]}
 />
 
@@ -186,3 +188,4 @@ AU에서 원 매출이 없을 경우는 다음과 같습니다.
 | 수정일자 | 내용 | 수정자 |
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
+| 2026-10-13 | POS 메인 UI 변경 — 화면 이미지 교체, Lookup 모드 조회 반영 | Wooju(Landa) |

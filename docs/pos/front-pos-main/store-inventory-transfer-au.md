@@ -26,11 +26,12 @@ Front POS Main 상단의 토글을 **INVENTORY**로 전환하면, 화면이 재�
 우측에 **(SALES → DP)** 버튼이 표시되며, <mark>**멤버십·고객 객층 정보 영역은 사용하지 않습니다.**</mark>
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('./img/store-inventory-transfer-01.png').default}
   alt="Front POS Main — INVENTORY 모드 화면"
   boxes={[
-    {x: 0.5, y: 14, w: 9.6, h: 4.4},
-    {x: 76, y: 26.4, w: 22.5, h: 8},
+    {x: 0.9, y: 3.5, w: 9.4, h: 5.8},
+    {x: 75.7, y: 65.7, w: 23.0, h: 6.0},
   ]}
 />
 
@@ -46,12 +47,13 @@ Front POS Main 상단의 토글을 **INVENTORY**로 전환하면, 화면이 재�
 제품이 담기면 **(SALES → DP)** 버튼이 활성화됩니다.
 
 <AnnotatedImage
+  maxWidth="720px"
   src={require('./img/store-inventory-transfer-01.png').default}
   alt="이동할 제품을 담은 목록 및 활성화된 (SALES → DP) 버튼"
   boxes={[
-    {x: 30.95, y: 23.5, w: 42.65, h: 3.7},
-    {x: 1.55, y: 34.8, w: 72, h: 5.1},
-    {x: 76, y: 26.4, w: 22.5, h: 8},
+    {x: 35.4, y: 10.6, w: 38.2, h: 5.3},
+    {x: 1.0, y: 26.3, w: 72.7, h: 5.9},
+    {x: 75.7, y: 65.7, w: 23.0, h: 6.0},
   ]}
 />
 
@@ -91,3 +93,4 @@ Front POS Main 상단의 토글을 **INVENTORY**로 전환하면, 화면이 재�
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-03 | 화면 기준 재고 이동 순서로 재작성 | Wooju(Landa) |
+| 2026-10-13 | POS 메인 UI 변경 — 화면 이미지 교체 | Wooju(Landa) |
