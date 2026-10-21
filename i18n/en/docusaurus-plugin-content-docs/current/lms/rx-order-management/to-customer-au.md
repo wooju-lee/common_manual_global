@@ -1,5 +1,5 @@
 ---
-source_hash: "464cc6ecde"
+source_hash: "b89282044f"
 sidebar_label: To Customer
 sidebar_position: 1
 author: Wooju(Landa)
@@ -36,7 +36,7 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
     {no: '5', title: 'Label register / print', desc: ['Register / print the customer shipping label', '• Labels can be registered only in Outbound Inspection', '• Once registered, the status changes to Completed automatically'], statuses: [
       {k: 'BO : Rx Work Management', v: ['Outbound Inspection', 'Completed']},
     ]},
-    {no: '6', title: 'Finalized', desc: ['Carrier pickup completed', '• Completed → Finalized (automatic)', '• ONLINE RX Sales created and AU_RX_LAB pending-outbound quantity deducted'], statuses: [
+    {no: '6', title: 'Finalized', desc: ['Carrier pickup completed', '• Completed → Finalized (automatic)', '• ONLINE RX Sales created and AU_RX_LAB pending-outbound quantity deducted (automatic)'], statuses: [
       {k: 'BO : Rx Work Management', v: ['Completed', 'Finalized']},
     ]},
   ]}

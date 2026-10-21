@@ -35,7 +35,7 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
     {no: '5', title: '라벨 등록 / 출력', desc: ['고객 배송 라벨 등록 / 출력', '• Outbound Inspection 상태에서만 라벨 등록 가능', '• 라벨 등록 완료 시, Completed 자동 변경'], statuses: [
       {k: 'BO : Rx Work Management', v: ['Outbound Inspection', 'Completed']},
     ]},
-    {no: '6', title: '종결', desc: ['배송사 픽업 완료', '• Completed → Finalized 업데이트 (자동)', '• ONLINE RX Sales 생성 및 AU_RX_LAB 출고대기 수량 차감 완료'], statuses: [
+    {no: '6', title: '종결', desc: ['배송사 픽업 완료', '• Completed → Finalized 업데이트 (자동)', '• ONLINE RX Sales 생성 및 AU_RX_LAB 출고대기 수량 차감 완료 (자동)'], statuses: [
       {k: 'BO : Rx Work Management', v: ['Completed', 'Finalized']},
     ]},
   ]}
