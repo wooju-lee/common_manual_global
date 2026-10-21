@@ -53,7 +53,7 @@ html {
 
 /* Sidebar */
 :root {
-  --doc-sidebar-width: 260px;
+  --doc-sidebar-width: 240px;
 }
 
 
@@ -400,6 +400,24 @@ svg[class*='iconLanguage'] {
   background: #2a2a2a;
 }
 
+/* Narrow right TOC column so the doc body gets more width */
+@media (min-width: 997px) {
+  .row > .col.col--3:has(.theme-doc-toc-desktop) {
+    flex: 0 0 210px;
+    max-width: 210px;
+  }
+}
+
+/* Docusaurus caps the body column at 75% with !important inside this layer,
+   so the override must live in the same layer to win */
+@layer docusaurus.theme-classic {
+  @media (min-width: 997px) {
+    .row > .col[class*='docItemCol'] {
+      max-width: calc(100% - 210px) !important;
+    }
+  }
+}
+
 
 .table-of-contents li {
   margin-bottom: 0.3rem;
@@ -718,4 +736,16 @@ html[data-country='au'] .navbar-report::after,
 html[data-country='kr'] .navbar-report::after,
 html[data-country='au'] .navbar-store-mgmt::after {
   display: none;
+}
+
+/* Stretch a table to the full body width (Infima renders tables as display: block,
+   so they shrink to their content). Wrap the table in <div className="table-stretch"> */
+.table-stretch table {
+  display: table;
+}
+
+/* Keep the first column (e.g. Step) as narrow as its content */
+.table-stretch :is(th, td):first-child {
+  width: 1%;
+  white-space: nowrap;
 }

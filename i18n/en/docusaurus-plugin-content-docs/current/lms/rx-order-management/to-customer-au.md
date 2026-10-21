@@ -1,5 +1,5 @@
 ---
-source_hash: "2209db909d"
+source_hash: "5dad64448d"
 sidebar_label: To Customer
 sidebar_position: 1
 author: Wooju(Landa)
@@ -8,6 +8,7 @@ countries: [au]
 ---
 
 import AnnotatedImage from '@site/src/components/AnnotatedImage';
+import ProcessFlow from '@site/src/components/ProcessFlow';
 
 # 📍 To Customer
 
@@ -16,6 +17,15 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > Path : <span className="path-badge">IIC BO > RX (Lens) > Rx Work Management > To Customer</span>
 
 ## 👉 AU online RX work process
+
+<ProcessFlow
+  perRow={4}
+  steps={[
+    {no: '1', title: 'Shipment created', sub: 'AU Online → AU_RX_LAB', desc: 'A shipment is created automatically for each confirmed order', statuses: [
+      {k: 'BO : Outbound', v: ['Create', '(Auto) Outbound Completed']},
+    ]},
+  ]}
+/>
 
 | Step | Action | Handled by |
 |:---:|---|---|
@@ -111,16 +121,23 @@ In **Work Status Management** on the right of the detail screen, change `Worker`
 
 Register the shipping label for orders in `Outbound Inspection` status.
 
-<div className="img-placeholder">📷 [Image] Label Registration popup — Carrier selection</div>
+<div className="img-placeholder">📷 [Image] Label Registration popup — Carrier · Service Type</div>
 
 | Step | Action |
 |:---:|---|
 | **1** | Select the order at the top of the detail screen or in the list, then click **Label Registration** |
-| **2** | Select a `Carrier` |
+| **2** | Check `Carrier` and `Service Type` (default: `Australia Post` · `Ground`) |
 | **3** | Click **Confirm** → label registration request is sent to TMS |
 | **4** | Once the label is registered, the status changes to `Completed` |
 
 - You can select multiple orders in the list to register in bulk. Only orders in `Outbound Inspection` status are sent to TMS.
+
+| Field | Default | Description |
+|---|---|---|
+| **Carrier** | `Australia Post` | Australian RX customer shipments use Australia Post. |
+| **Service Type** | `Ground` | Register with `Ground` by default.<br/><mark>**Change to `Express` only when requested by CS.**</mark> |
+
+- The selected carrier and service type apply to all orders selected together. Select and register Express orders separately.
 
 ## 5. Print label / AC card
 
@@ -198,3 +215,4 @@ For `Do Not Process` and `Prescription Information Needs Verification`, you must
 |---|---|---|
 | 2026-10-03 | Initial AU draft (text) | Wooju(Landa) |
 | 2026-10-12 | Added screen images | Wooju(Landa) |
+| 2026-10-21 | Shipping label registration — Australia Post carrier, service type (Ground / Express) | Wooju(Landa) |

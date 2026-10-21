@@ -7,6 +7,7 @@ countries: [au]
 ---
 
 import AnnotatedImage from '@site/src/components/AnnotatedImage';
+import ProcessFlow from '@site/src/components/ProcessFlow';
 
 # 📍 To Customer (B2C 고객 배송)
 
@@ -15,6 +16,15 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > 경로 : <span className="path-badge">IIC BO > RX (Lens) > Rx Work Management > To Customer</span>
 
 ## 👉 AU 온라인 RX 작업 흐름
+
+<ProcessFlow
+  perRow={4}
+  steps={[
+    {no: '1', title: '출고 생성', sub: 'AU Online → AU_RX_LAB', desc: '처방 승인 건마다 출고 자동 생성', statuses: [
+      {k: 'BO : Outbound', v: ['Create', '(Auto) Outbound Completed']},
+    ]},
+  ]}
+/>
 
 | Step | 처리 내용 | 처리 주체 |
 |:---:|---|---|
@@ -110,16 +120,23 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 `Outbound Inspection` 상태의 주문에서 배송 라벨을 등록합니다.
 
-<div className="img-placeholder">📷 [Image] Label Registration 팝업 — Carrier 선택</div>
+<div className="img-placeholder">📷 [Image] Label Registration 팝업 — Carrier · Service Type</div>
 
 | Step | 처리 내용 |
 |:---:|---|
 | **1** | 상세 화면 상단 또는 목록에서 주문 선택 후 **Label Registration** 클릭 |
-| **2** | `Carrier` 선택 |
+| **2** | `Carrier` · `Service Type` 확인 (기본값: `Australia Post` · `Ground`) |
 | **3** | **Confirm** → TMS로 라벨 등록 요청 |
 | **4** | 라벨 등록이 완료되면 상태가 `Completed`로 변경 |
 
 - 목록에서 여러 건을 선택해 일괄 등록할 수 있으며, `Outbound Inspection` 상태인 건만 TMS로 전송됩니다.
+
+| 항목 | 기본값 | 설명 |
+|---|---|---|
+| **Carrier**<br/><span className="label-sub">배송사</span> | `Australia Post` | 호주 RX 고객 배송은 Australia Post를 사용합니다. |
+| **Service Type**<br/><span className="label-sub">서비스 타입</span> | `Ground` | 기본은 `Ground`로 등록합니다.<br/><mark>**CS 요청이 있는 경우에만 `Express`로 변경**</mark>해 주세요. |
+
+- 선택한 배송사 · 서비스 타입은 함께 선택한 주문 전체에 동일하게 적용됩니다. Express로 보낼 주문은 따로 선택해 등록해 주세요.
 
 ## 5. 라벨 / AC 카드 출력
 
@@ -197,3 +214,4 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |
+| 2026-10-21 | 배송 라벨 등록 — 배송사 Australia Post, 서비스 타입(Ground / Express) 반영 | Wooju(Landa) |

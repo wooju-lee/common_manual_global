@@ -1,0 +1,251 @@
+/* Cards sit on a grid; each arrow lives in the 26px column gap */
+.wrap {
+  --arrow: 26px;
+  --w: calc((100% - (var(--cols) - 1) * var(--arrow)) / var(--cols));
+  container-type: inline-size;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.flow {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  column-gap: var(--arrow);
+}
+
+.cell {
+  position: relative;
+  display: flex;
+  min-width: 0;
+}
+
+.card {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: var(--ifm-background-surface-color);
+  font-size: 0.8rem;
+  line-height: 1.45;
+  word-break: keep-all;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.no {
+  flex: none;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 11px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
+.sub {
+  margin-top: 2px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.74rem;
+}
+
+.desc {
+  margin-top: 6px;
+}
+
+.statuses {
+  margin: 8px 0 0;
+  padding: 8px 0 0;
+  list-style: none;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.statuses li {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 6px;
+}
+
+.statuses li:last-child {
+  margin-bottom: 0;
+}
+
+.k {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.7rem;
+}
+
+.v {
+  align-self: flex-start;
+  font-size: 0.74rem;
+  white-space: nowrap;
+}
+
+.vs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 4px;
+}
+
+.to {
+  color: var(--ifm-color-emphasis-500);
+  font-size: 0.74rem;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.cell > .arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: var(--arrow);
+}
+
+.connector {
+  position: relative;
+  height: 30px;
+  color: var(--ifm-color-emphasis-400);
+}
+
+.connector > span {
+  position: absolute;
+  background: currentColor;
+}
+
+.stem {
+  top: 0;
+  width: 2px;
+  height: 50%;
+  margin-left: -1px;
+}
+
+.bar {
+  top: calc(50% - 1px);
+  height: 2px;
+}
+
+.drop {
+  top: 50%;
+  width: 2px;
+  height: 50%;
+  margin-left: -1px;
+}
+
+.connector > .arrowDown {
+  display: none;
+}
+
+.fork {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--arrow);
+}
+
+/* Branch cards are wide, so lay the statuses out side by side */
+.fork .statuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+}
+
+.fork .statuses li {
+  margin: 0;
+}
+
+.focus {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--ifm-color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+.focusNote {
+  margin: auto -12px -10px;
+  padding: 6px 12px;
+  border-radius: 0 0 8px 8px;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.focus .statuses {
+  margin-bottom: 10px;
+}
+
+.ok {
+  border-color: #2e9e6a;
+  background: rgba(46, 158, 106, 0.08);
+}
+
+.ok .no {
+  background: #2e9e6a;
+}
+
+.ng {
+  border-color: #d9534f;
+  background: rgba(217, 83, 79, 0.08);
+}
+
+.ng .no {
+  background: #d9534f;
+}
+
+/* Narrow column (mobile, or a squeezed doc body): stack vertically */
+@container (max-width: 720px) {
+  .flow {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: var(--arrow);
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  .cell > .arrow {
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: var(--arrow);
+  }
+
+  .connector > span {
+    display: none;
+  }
+
+  .connector > .arrowDown {
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    background: none;
+  }
+}
+
+@container (max-width: 420px) {
+  .fork {
+    grid-template-columns: 1fr;
+  }
+}
