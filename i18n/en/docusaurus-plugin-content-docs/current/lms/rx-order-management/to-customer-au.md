@@ -1,5 +1,5 @@
 ---
-source_hash: "5dad64448d"
+source_hash: "464cc6ecde"
 sidebar_label: To Customer
 sidebar_position: 1
 author: Wooju(Landa)
@@ -16,30 +16,48 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 >
 > Path : <span className="path-badge">IIC BO > RX (Lens) > Rx Work Management > To Customer</span>
 
-## 👉 AU online RX work process
+## 👉 AU Online RX Work process
 
 <ProcessFlow
-  perRow={4}
+  perRow={3}
   steps={[
-    {no: '1', title: 'Shipment created', sub: 'AU Online → AU_RX_LAB', desc: 'A shipment is created automatically for each confirmed order', statuses: [
+    {no: '1', title: 'Shipment created', desc: 'A shipment is created automatically for each confirmed order (ONLINE → AU_RX_LAB)', statuses: [
       {k: 'BO : Outbound', v: ['Create', '(Auto) Outbound Completed']},
+    ]},
+    {no: '2', title: 'Inbound created', desc: 'Lab inbound is created once the shipment auto-completes (AU_RX_LAB)', statuses: [
+      {k: 'BO : Inbound', v: 'Pending Inbound'},
+    ]},
+    {no: '3', title: 'Inbound confirmed (manual)', link: 'At the lab (when OWNDAYS work is done)', focus: '📍 Staff deliver the product and prescription to the lab (OWNDAYS) in person', desc: 'Confirm the inbound when the order is handed to the lab (Inbound List)', statuses: [
+      {k: 'BO : Inbound', v: ['Pending Inbound', 'Inbound Confirmed']},
+    ]},
+    {no: '4', title: 'Work status changed', desc: 'Change the RX work status once the work is done (ready to ship)', statuses: [
+      {k: 'BO : Rx Work Management', v: 'Outbound Inspection'},
+    ]},
+    {no: '5', title: 'Label register / print', desc: ['Register / print the customer shipping label', '• Labels can be registered only in Outbound Inspection', '• Once registered, the status changes to Completed automatically'], statuses: [
+      {k: 'BO : Rx Work Management', v: ['Outbound Inspection', 'Completed']},
+    ]},
+    {no: '6', title: 'Finalized', desc: ['Carrier pickup completed', '• Completed → Finalized (automatic)', '• ONLINE RX Sales created and AU_RX_LAB pending-outbound quantity deducted'], statuses: [
+      {k: 'BO : Rx Work Management', v: ['Completed', 'Finalized']},
     ]},
   ]}
 />
 
-| Step | Action | Handled by |
-|:---:|---|---|
-| **1** | On prescription approval, an **S2S outbound from the online store → lab (AU_RX_LAB) is automatically created and completed** (frame deducted from online stock) | IIC BO (automatic) |
-| **2** | Confirm lab inbound (manual) | Online staff |
-| **3** | Hand over the product + prescription directly to the external lab **OWNDAYS** → lens work | Online staff / OWNDAYS |
-| **4** | Collect the finished product → update work status → `Outbound Inspection` | Online staff |
-| **5** | Select a carrier + request shipping label registration (TMS) | Online staff |
-| **6** | Print the shipping label + AC card, then ship | Online staff |
-| **7** | Receive shipping status → update order status, save RX sales, and deduct lab stock (frame, package, lens) | IIC BO (automatic) |
+<div className="table-stretch">
+
+| Step | Action |
+|:---:|---|
+| **1** | For each confirmed order, a shipment (ONLINE → AU_RX_LAB) is created automatically and immediately completed (`Outbound Completed`). |
+| **2** | Once the shipment auto-completes, an inbound is created at AU_RX_LAB (`Pending Inbound`). |
+| **3** | <mark>**Staff deliver the product and prescription to the lab (OWNDAYS) in person**</mark>; once delivered, confirm the inbound manually in the **Inbound List** (`Inbound Confirmed`). 👉 **[Go to lab inbound confirmation](#2-confirm-lab-inbound)** |
+| **4** | When the lens work is done, change the work status to `Outbound Inspection` in **Rx Work Management**. |
+| **5** | In `Outbound Inspection`, register / print the customer shipping label; once the label is registered, the status updates to `Completed`. |
+| **6** | When the carrier picks up the package, the status updates automatically from `Completed` to `Finalized`, ONLINE RX Sales is created, and the AU_RX_LAB pending-outbound quantity is deducted. |
+
+</div>
 
 <div className="blockquote-gray">
 
-> **AU outbound creation** : Other countries collect approved orders and create outbounds in one batch per day, but in AU **an outbound is created immediately for each approved order**.
+> **AU outbound creation** : **An outbound is created immediately for each approved order**.
 
 </div>
 
@@ -215,4 +233,4 @@ For `Do Not Process` and `Prescription Information Needs Verification`, you must
 |---|---|---|
 | 2026-10-03 | Initial AU draft (text) | Wooju(Landa) |
 | 2026-10-12 | Added screen images | Wooju(Landa) |
-| 2026-10-21 | Shipping label registration — Australia Post carrier, service type (Ground / Express) | Wooju(Landa) |
+| 2026-10-21 | Shipping label registration — Australia Post carrier, service type (Ground / Express)<br/>AU Online RX Work process flow added and steps reorganized | Wooju(Landa) |

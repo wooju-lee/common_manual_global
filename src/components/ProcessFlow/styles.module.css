@@ -154,6 +154,25 @@
   display: none;
 }
 
+.connector.labeled {
+  height: 44px;
+}
+
+/* Text sitting on the connector line */
+.connector > .connLabel {
+  top: 50%;
+  padding: 1px 10px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  /* --ifm-background-color is transparent in this theme, so use the solid surface color */
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.74rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+}
+
 .fork {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -241,6 +260,16 @@
     right: 0;
     justify-content: center;
     background: none;
+  }
+
+  /* Stacked layout: label sits beside the down arrow */
+  .connector > .connLabel {
+    display: block;
+    left: calc(50% + 16px) !important;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
   }
 }
 

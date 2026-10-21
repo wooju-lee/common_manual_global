@@ -15,30 +15,48 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 >
 > 경로 : <span className="path-badge">IIC BO > RX (Lens) > Rx Work Management > To Customer</span>
 
-## 👉 AU 온라인 RX 작업 흐름
+## 👉 AU Online RX Work 프로세스
 
 <ProcessFlow
-  perRow={4}
+  perRow={3}
   steps={[
-    {no: '1', title: '출고 생성', sub: 'AU Online → AU_RX_LAB', desc: '처방 승인 건마다 출고 자동 생성', statuses: [
+    {no: '1', title: '출고 생성', desc: '승인한 주문 건마다 출고 자동 생성 (ONLINE → AU_RX_LAB)', statuses: [
       {k: 'BO : Outbound', v: ['Create', '(Auto) Outbound Completed']},
+    ]},
+    {no: '2', title: '입고 생성', desc: '자동 출고 완료에 따라 랩 입고 생성 (AU_RX_LAB)', statuses: [
+      {k: 'BO : Inbound', v: 'Pending Inbound'},
+    ]},
+    {no: '3', title: '입고 확정 (수동)', link: '작업처 (OWNDAYS 작업 완료 시)', focus: '📍 운영자가 작업처(OWNDAYS)에 제품 · 처방전 직접 전달', desc: '작업처 전달 완료 시점에 맞춰 입고 확정 (Inbound List)', statuses: [
+      {k: 'BO : Inbound', v: ['Pending Inbound', 'Inbound Confirmed']},
+    ]},
+    {no: '4', title: '작업 상태 변경', desc: '작업 완료에 따라 RX 작업 상태 변경 (출고 준비)', statuses: [
+      {k: 'BO : Rx Work Management', v: 'Outbound Inspection'},
+    ]},
+    {no: '5', title: '라벨 등록 / 출력', desc: ['고객 배송 라벨 등록 / 출력', '• Outbound Inspection 상태에서만 라벨 등록 가능', '• 라벨 등록 완료 시, Completed 자동 변경'], statuses: [
+      {k: 'BO : Rx Work Management', v: ['Outbound Inspection', 'Completed']},
+    ]},
+    {no: '6', title: '종결', desc: ['배송사 픽업 완료', '• Completed → Finalized 업데이트 (자동)', '• ONLINE RX Sales 생성 및 AU_RX_LAB 출고대기 수량 차감 완료'], statuses: [
+      {k: 'BO : Rx Work Management', v: ['Completed', 'Finalized']},
     ]},
   ]}
 />
 
-| Step | 처리 내용 | 처리 주체 |
-|:---:|---|---|
-| **1** | 처방 승인 시 온라인 스토어 → 랩(AU_RX_LAB)으로 **S2S 출고 자동 생성 및 완료** (온라인 재고 프레임 차감) | IIC BO (자동) |
-| **2** | 랩 입고 확정 (수기) | 온라인 담당자 |
-| **3** | 제품 + 처방전을 외부 랩 **OWNDAYS**에 직접 전달 → 렌즈 작업 | 온라인 담당자 / OWNDAYS |
-| **4** | 작업 완료 제품 수거 → 작업 상태 업데이트 → `Outbound Inspection` | 온라인 담당자 |
-| **5** | 배송사 지정 + 배송 라벨 등록 요청 (TMS) | 온라인 담당자 |
-| **6** | 배송 라벨 + AC 카드 출력, 출고 | 온라인 담당자 |
-| **7** | 배송 상태 수신 → 주문 상태 업데이트, RX 매출 저장 및 랩 재고(프레임·패키지·렌즈) 차감 | IIC BO (자동) |
+<div className="table-stretch">
+
+| Step | 처리 내용 |
+|:---:|---|
+| **1** | 승인한 주문 건마다 출고(ONLINE → AU_RX_LAB)가 자동 생성되고, 바로 출고 완료(`Outbound Completed`) 처리됩니다. |
+| **2** | 자동 출고 완료에 따라 AU_RX_LAB에 입고가 생성됩니다. (`Pending Inbound`) |
+| **3** | <mark>**운영자가 작업처(OWNDAYS)에 제품 · 처방전을 직접 전달**</mark>한 뒤, **Inbound List**에서 입고 확정(`Inbound Confirmed`)을 진행합니다. 👉 **[랩 입고 확정 바로가기](#2-랩-입고-확정)** |
+| **4** | 렌즈 작업이 완료되는 시점에 맞춰, **Rx Work Management**에서 작업 상태를 `Outbound Inspection`으로 변경합니다. |
+| **5** | `Outbound Inspection` 상태에서 고객 배송 라벨을 등록 / 출력하며, 라벨 등록이 완료되면 `Completed`로 업데이트됩니다. |
+| **6** | 배송사 픽업이 완료되면 `Completed` → `Finalized`로 자동 업데이트되고, ONLINE RX Sales 생성 및 AU_RX_LAB 출고대기 수량이 차감됩니다. |
+
+</div>
 
 <div className="blockquote-gray">
 
-> **AU 출고 생성 방식** : 다른 국가는 승인된 주문을 모아 하루 1회 일괄로 출고를 생성하지만, AU는 **승인된 주문마다 즉시 출고가 생성**됩니다.
+> **AU 출고 생성 방식** : **승인된 주문마다 즉시 출고가 생성**됩니다.
 
 </div>
 
@@ -214,4 +232,4 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-12 | 화면 이미지 추가 | Wooju(Landa) |
-| 2026-10-21 | 배송 라벨 등록 — 배송사 Australia Post, 서비스 타입(Ground / Express) 반영 | Wooju(Landa) |
+| 2026-10-21 | 배송 라벨 등록 — 배송사 Australia Post, 서비스 타입(Ground / Express) 반영<br/>AU Online RX Work 프로세스 흐름도 추가 및 단계 정리 | Wooju(Landa) |

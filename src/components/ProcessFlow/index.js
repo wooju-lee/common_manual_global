@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 // steps / branches: [{no, title, sub, desc, statuses: [{k, v}], tone}]
 // desc can be an array to show one line per item; a status v array shows a transition (a → b).
 // tone ('ok' | 'ng') colors a card; focus (text) highlights a card with a callout at the bottom.
+// link (text) labels the line from a row's last step down to the next row.
 function Card({no, title, sub, desc, statuses = [], tone, focus}) {
   return (
     <div className={`${styles.card} ${tone ? styles[tone] : ''} ${focus ? styles.focus : ''}`}>
@@ -61,10 +62,10 @@ const BRANCH_LEFT = 'calc((100% - var(--arrow)) / 4)';
 const BRANCH_RIGHT = 'calc(100% - (100% - var(--arrow)) / 4)';
 
 // Elbow line: down from `from`, across, then down into each of `to`
-function Connector({from, to}) {
+function Connector({from, to, label}) {
   const xs = [from, ...to].join(', ');
   return (
-    <div className={styles.connector} aria-hidden="true">
+    <div className={`${styles.connector} ${label ? styles.labeled : ''}`}>
       <span className={styles.stem} style={{left: from}} />
       <span className={styles.bar} style={{left: `min(${xs})`, width: `calc(max(${xs}) - min(${xs}))`}} />
       {to.map((x, i) => (
@@ -73,6 +74,11 @@ function Connector({from, to}) {
       <span className={styles.arrowDown}>
         <Arrow />
       </span>
+      {label && (
+        <span className={styles.connLabel} style={{left: `calc((min(${xs}) + max(${xs})) / 2)`}}>
+          {label}
+        </span>
+      )}
     </div>
   );
 }
@@ -87,7 +93,7 @@ export default function ProcessFlow({steps = [], branches = [], perRow}) {
     <div className={styles.wrap} style={{'--cols': cols}}>
       {rows.map((row, r) => (
         <React.Fragment key={r}>
-          {r > 0 && <Connector from={colCenter(cols - 1)} to={[colCenter(0)]} />}
+          {r > 0 && <Connector from={colCenter(cols - 1)} to={[colCenter(0)]} label={rows[r - 1][cols - 1].link} />}
           <div className={styles.flow}>
             {row.map((s, i) => (
               <div key={s.no} className={styles.cell}>
