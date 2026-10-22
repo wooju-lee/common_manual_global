@@ -731,6 +731,12 @@ html[data-country='kr'] .navbar-hide-kr {
   display: none !important;
 }
 
+/* JP shows only the IPOS menu (JP logistics runs on IPOS, not IIC BO) */
+html[data-country='jp'] .navbar-hide-jp,
+html:not([data-country='jp']) .navbar-only-jp {
+  display: none !important;
+}
+
 /* Report is live for AU / KR — no TBD badge */
 html[data-country='au'] .navbar-report::after,
 html[data-country='kr'] .navbar-report::after,

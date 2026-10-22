@@ -15,6 +15,10 @@
     "message": "Common",
     "description": "Navbar item with label Common"
   },
+  "item.label.IPOS": {
+    "message": "IPOS",
+    "description": "Navbar item with label IPOS"
+  },
   "item.label.Inventory": {
     "message": "Inventory",
     "description": "Navbar item with label Inventory"

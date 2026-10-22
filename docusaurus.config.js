@@ -71,10 +71,10 @@ const config = {
                 }
                 return item;
               }).sort((a, b) => {
-                // Put non-stub docs before stub docs (-au, -ca, -kr suffixed)
+                // Put non-stub docs before stub docs (-au, -ca, -kr, -jp suffixed)
                 // so Docusaurus navbar links to the original US doc, not the stub
-                const aIsStub = a.type === 'doc' && /-(au|ca|kr)$/.test(a.id);
-                const bIsStub = b.type === 'doc' && /-(au|ca|kr)$/.test(b.id);
+                const aIsStub = a.type === 'doc' && /-(au|ca|kr|jp)$/.test(a.id);
+                const bIsStub = b.type === 'doc' && /-(au|ca|kr|jp)$/.test(b.id);
                 if (aIsStub !== bIsStub) return aIsStub ? 1 : -1;
                 return 0; // preserve existing order otherwise
               });
@@ -131,62 +131,70 @@ const config = {
             sidebarId: 'commonSidebar',
             position: 'left',
             label: 'Common',
+            className: 'navbar-hide-jp',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'iposSidebar',
+            position: 'left',
+            label: 'IPOS',
+            className: 'navbar-only-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'posSidebar',
             position: 'left',
             label: 'POS',
-            className: 'navbar-hide-kr',
+            className: 'navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'inventorySidebar',
             position: 'left',
             label: 'Inventory',
-            className: 'navbar-hide-kr',
+            className: 'navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'lmsSidebar',
             position: 'left',
             label: 'LMS',
-            className: 'navbar-hide-kr',
+            className: 'navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'salesSidebar',
             position: 'left',
             label: 'Sales',
-            className: 'navbar-hide-kr',
+            className: 'navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'orderSidebar',
             position: 'left',
             label: 'Order',
-            className: 'navbar-hide-kr',
+            className: 'navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'reportSidebar',
             position: 'left',
             label: 'Report',
-            className: 'navbar-tbd navbar-report',
+            className: 'navbar-tbd navbar-report navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'storeManagementSidebar',
             position: 'left',
             label: 'Store Management',
-            className: 'navbar-tbd navbar-store-mgmt',
+            className: 'navbar-tbd navbar-store-mgmt navbar-hide-jp',
           },
           {
             type: 'docSidebar',
             sidebarId: 'systemSettingSidebar',
             position: 'left',
             label: 'System Setting',
-            className: 'navbar-tbd navbar-hide-au navbar-hide-kr',
+            className: 'navbar-tbd navbar-hide-au navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'localeDropdown',

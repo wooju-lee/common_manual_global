@@ -17,8 +17,8 @@ import DocMeta from '@site/src/components/DocMeta';
 import styles from '@docusaurus/theme-classic/lib/theme/DocItem/Layout/styles.module.css';
 import {useCountry} from '../../hooks/useCountry';
 
-// Country variants share a base id: `foo` (US), `foo-ca` (CA), `foo-au` (AU), `foo-kr` (KR)
-const baseDocId = (id) => id.replace(/-(au|ca|kr)$/, '');
+// Country variants share a base id: `foo` (US), `foo-ca` (CA), `foo-au` (AU), `foo-kr` (KR), `foo-jp` (JP)
+const baseDocId = (id) => id.replace(/-(au|ca|kr|jp)$/, '');
 
 function flattenLinks(items, out = []) {
   for (const item of items ?? []) {
