@@ -3,6 +3,7 @@ sidebar_label: Report Board (리포트 게시판)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-06"
+updated: "2026-10-12"
 countries: [au]
 ---
 

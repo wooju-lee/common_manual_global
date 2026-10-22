@@ -3,6 +3,7 @@ sidebar_label: Sales Registration & Inquiry (매출(판매) 등록 및 조회)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-13"
 countries: [au]
 ---
 

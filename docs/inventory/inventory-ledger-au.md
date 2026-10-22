@@ -3,6 +3,7 @@ sidebar_label: Inventory Ledger (재고 원장 조회)
 sidebar_position: 8
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-12"
 countries: [au]
 ---
 

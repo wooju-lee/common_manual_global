@@ -3,6 +3,7 @@ sidebar_label: Inventory In/Out History (입/출고 내역)
 sidebar_position: 10
 author: Wooju(Landa)
 created: "2026-09-15"
+updated: "2026-10-04"
 countries: [us]
 ---
 

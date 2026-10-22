@@ -3,6 +3,7 @@ sidebar_label: Inventory Snapshot (재고 스냅샷 조회)
 sidebar_position: 9
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-12"
 countries: [au]
 ---
 

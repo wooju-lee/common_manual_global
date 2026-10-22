@@ -3,6 +3,7 @@ sidebar_label: Outbound Label Print
 sidebar_position: 8
 author: Wooju(Landa)
 created: "2026-04-21"
+updated: "2026-10-03"
 countries: [us]
 ---
 

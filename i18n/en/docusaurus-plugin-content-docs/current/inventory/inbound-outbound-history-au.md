@@ -4,6 +4,7 @@ sidebar_label: Inventory In/Out History
 sidebar_position: 10
 author: Wooju(Landa)
 created: "2026-10-04"
+updated: "2026-10-12"
 countries: [au]
 ---
 

@@ -3,6 +3,7 @@ sidebar_label: To Customer (B2C 고객 배송)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-21"
 countries: [au]
 ---
 
@@ -41,8 +42,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
   ]}
 />
 
-<div className="table-stretch">
-
 | Step | 처리 내용 |
 |:---:|---|
 | **1** | 승인한 주문 건마다 출고(ONLINE → AU_RX_LAB)가 자동 생성되고, 바로 출고 완료(`Outbound Completed`) 처리됩니다. |
@@ -51,8 +50,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 | **4** | 렌즈 작업이 완료되는 시점에 맞춰, **Rx Work Management**에서 작업 상태를 `Outbound Inspection`으로 변경합니다. |
 | **5** | `Outbound Inspection` 상태에서 고객 배송 라벨을 등록 / 출력하며, 라벨 등록이 완료되면 `Completed`로 업데이트됩니다. |
 | **6** | 배송사 픽업이 완료되면 `Completed` → `Finalized`로 자동 업데이트되고, ONLINE RX Sales 생성 및 AU_RX_LAB 출고대기 수량이 차감됩니다. |
-
-</div>
 
 <div className="blockquote-gray">
 

@@ -3,6 +3,7 @@ sidebar_label: Store > Lab 출고 생성
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-04-21"
+updated: "2026-10-03"
 countries: [us]
 ---
 

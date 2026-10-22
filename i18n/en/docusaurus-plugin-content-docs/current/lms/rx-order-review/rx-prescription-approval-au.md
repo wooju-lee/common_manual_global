@@ -1,9 +1,10 @@
 ---
-source_hash: "fb9132b1f5"
+source_hash: "fcdbccedc5"
 sidebar_label: Rx Prescription Review
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-21"
 countries: [au]
 ---
 
@@ -48,8 +49,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
   ]}
 />
 
-<div className="table-stretch">
-
 | Step | Action |
 |:---:|---|
 | **1** | When the customer completes online payment, the order is created in **GM Admin**. |
@@ -58,8 +57,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 | **4** | Check the prescription and **Confirm** or **Reject** it. The result is sent to OMS. |
 | **5-A** | **Confirm**: the confirm event is sent to OMS, which completes the prescription review, and the order moves on to lens work. 👉 **[Go to To Customer](/docs/lms/rx-order-management/to-customer-au)** |
 | **5-B** | **Reject**: sent to OMS as an **order cancellation**, and the customer **refund is processed** in the online store (GM Admin). |
-
-</div>
 
 ## 1. View the prescription review list
 
@@ -80,8 +77,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 
 You can search for prescription reviews using the filters at the top of the list.
 
-<div className="table-stretch">
-
 | Search filter | Description |
 |---|---|
 | **BP / Store** | Select a BP, then select stores (multiple selection allowed) |
@@ -90,13 +85,9 @@ You can search for prescription reviews using the filters at the top of the list
 | **Search Period** | Based on `Order Date` or `Approval Date` (default: last 30 days) |
 | **Keyword** | Order number, store code/name, customer name, phone number, email (2+ characters) |
 
-</div>
-
 ### Review status
 
 These are the review statuses of incoming RX orders.
-
-<div className="table-stretch">
 
 | Status | Meaning |
 |---|---|
@@ -104,8 +95,6 @@ These are the review statuses of incoming RX orders.
 | **Confirm** | Approved — lens work proceeds |
 | **Reject** | Rejected — order cancellation (refund) proceeds |
 | **Canceled** | Cancellation completed |
-
-</div>
 
 ## 2. Check the RX order detail (Index)
 
@@ -123,8 +112,6 @@ These are the review statuses of incoming RX orders.
 
 In the **Index** panel on the right of the detail screen, check whether each section is complete (green check).
 
-<div className="table-stretch">
-
 | Section | What to check | Editable |
 |---|---|:---:|
 | **Customer Info** | Online orders store the membership ID, so you can check the member's information. |  |
@@ -133,8 +120,6 @@ In the **Index** panel on the right of the detail screen, check whether each sec
 | **Documents** | Prescription file (JPG / PNG / PDF, max 10MB) and `EXP Date` (expiration date) |  |
 | **Delivery** | Customer name, phone number, email, and shipping address (`Address`, `CITY`, `STATE`, `ZIP`) | ✅ |
 | **Comment** | Internal memo | ✅ |
-
-</div>
 
 ## 3. Prescription details
 
@@ -150,16 +135,12 @@ In the **Index** panel on the right of the detail screen, check whether each sec
 
 All prescription details are <mark>**received from the prescription data of the online order**</mark>.
 
-<div className="table-stretch">
-
 | Group | Fields | Notes |
 |---|---|---|
 | **Patient** | `Name`<br/>`Date of Birth` | Received from the online prescription |
 | **Prescriber** | `Prescriber`<br/>`License No.`<br/>`Signature` (`Y` / `N`)<br/>`Address` (prescriber address)<br/>`Phone` / `Fax` | Received from the online prescription |
 | **Date** | `Issue Date`<br/>`Expiry Date` | Received from the online prescription |
 | **Prescription Values** | For right eye `OD (Right Eye)` / left eye `OS (Left Eye)`:<br/>`Sphere`, `Cylinder`, `Axis`, `PD` (Single / Dual), `OC` | Received from the online prescription |
-
-</div>
 
 ## 4. Purchaser / patient (recipient) information
 
@@ -175,16 +156,12 @@ All prescription details are <mark>**received from the prescription data of the 
 
 Check the information of the customer who placed the order (Purchaser), the patient who will receive the product (Patient), and the shipping information.
 
-<div className="table-stretch">
-
 | Group | Fields | Notes |
 |---|---|---|
 | **Purchaser Info** | `Name`<br/>`Phone`<br/>`Email` | • Received from the online order<br/>• <mark>**Not editable**</mark> |
 | **Patient & Shipping Info** | `Patient Name`<br/>`Phone`<br/>`Email` | • Received from the online order<br/>• <mark>**Editable until Confirm**</mark><br/>• After Confirm, edit it in **Rx Work Management** until shipment<br/>• `Patient Name` is auto-filled from the patient name on the prescription |
 | **Shipping Type** | `Ship to Address`<br/>`Ship to Store` | <mark>**AU uses `Ship to Address` only**</mark> (`Ship to Store` is not used) |
 | **Shipping Address** | `Address` / `Address Line 2`<br/>`CITY`, `STATE`, `ZIP` | <mark>**Editable until shipment (before label registration / printing)**</mark> |
-
-</div>
 
 ## 5. Approve (Confirm)
 
@@ -208,8 +185,6 @@ Check the information of the customer who placed the order (Purchaser), the pati
 2. In the `Please select a reason for Reject.` popup, select a rejection reason.
 3. Click **Reject**. The order is sent to OMS as a cancellation, and the refund is processed in the online store (GM Admin).
 
-<div className="table-stretch">
-
 | Rejection reason | Detailed reason (Required) |
 |---|---|
 | Frame is Out of stock | — |
@@ -220,8 +195,6 @@ Check the information of the customer who placed the order (Purchaser), the pati
 | Payment Method Change / Purchase a Different Product / Change of Mind | — |
 | System Error / Policy Violation / Other | — |
 
-</div>
-
 <div className="blockquote-gray">
 
 > A rejection cannot be undone. The refund is processed automatically in the online store (GM Admin).
@@ -230,11 +203,7 @@ Check the information of the customer who placed the order (Purchaser), the pati
 
 ## 📋 Revision history
 
-<div className="table-stretch">
-
 | Date | Changes | Editor |
 |---|---|---|
 | 2026-10-03 | Initial AU draft (text) | Wooju(Landa) |
 | 2026-10-21 | AU Online RX process flow added and steps broken down, screen images added, RX order detail (Index) · prescription details · purchaser / patient (recipient) sections reorganized | Wooju(Landa) |
-
-</div>

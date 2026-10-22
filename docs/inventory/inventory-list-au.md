@@ -3,6 +3,7 @@ sidebar_label: Inventory List (실시간 재고 조회)
 sidebar_position: 6
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-12"
 countries: [au]
 ---
 

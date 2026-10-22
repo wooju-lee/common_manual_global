@@ -1,9 +1,10 @@
 ---
-source_hash: "06c03c0bbf"
+source_hash: "a6373bb5c9"
 sidebar_label: S2S Store Transfer Outbound
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-21"
 countries: [au]
 ---
 
@@ -63,6 +64,18 @@ Click **Outbound Registration / Request** → on the **General Outbound** tab, r
 | **2** | Select Inbound Store | Select the inbound store and location. The outbound type (`S2S`) is shown automatically |
 | **3** | Select Outbound Product | Select the products to ship out (only products with stock in the outbound location are shown) |
 | **4** | Enter Outbound Information | Enter the outbound quantity per product, then click **Register** |
+
+### Which stores are shown {#store-dropdown}
+
+The stores shown in the outbound store / inbound store dropdowns <mark>**depend on the processing method and the permissions (store / BP) set on the account.**</mark>
+
+| Processing method | Outbound store | Inbound store |
+|---|---|---|
+| **Outbound Registration** | Based on the account's **stores**<br/>→ only your stores are shown | Based on the account's **BPs**<br/>→ all stores of the BP are shown |
+| **Request Outbound** | Based on the account's **BPs**<br/>→ all stores of the BP are shown | Based on the account's **stores**<br/>→ only your stores are shown |
+
+- **Outbound Registration** sends stock from your store to another store, so the outbound store is limited to your stores.
+- **Request Outbound** asks another store to send stock to your store, so the inbound store is limited to your stores.
 
 ### Step 1. Select the Outbound Store
 
@@ -127,7 +140,7 @@ If you select **Request Outbound** in Step 1, the outbound is processed after an
 
 <div className="blockquote-gray">
 
-> For **Request Outbound**, the store list is not limited to the account's **store permissions**. <mark>**All stores of the BPs the account has permission for**</mark> are shown.
+> For **Request Outbound**, <mark>**the outbound store shows all stores of the BP, and the inbound store shows only the account's stores**</mark>. 👉 **[Go to Which stores are shown](#store-dropdown)**
 
 </div>
 
@@ -266,3 +279,4 @@ If you enter the outbound method and the carrier and tracking number in **Outbou
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
 | 2026-10-04 | Added process summary, cleaned up manual format | Wooju(Landa) |
+| 2026-10-21 | Added outbound / inbound store dropdown rules for registration vs. request | Wooju(Landa) |

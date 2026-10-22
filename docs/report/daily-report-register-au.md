@@ -3,6 +3,7 @@ sidebar_label: Daily Report Register (데일리 리포트 등록)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-06"
+updated: "2026-10-12"
 countries: [au]
 ---
 

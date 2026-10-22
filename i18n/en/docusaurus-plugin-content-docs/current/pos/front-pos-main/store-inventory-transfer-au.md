@@ -4,6 +4,7 @@ sidebar_label: Inventory Transfer SALES → DP
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-13"
 countries: [au]
 ---
 

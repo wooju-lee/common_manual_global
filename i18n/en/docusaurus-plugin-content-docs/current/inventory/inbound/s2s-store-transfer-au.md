@@ -4,6 +4,7 @@ sidebar_label: S2S Store Transfer Inbound
 sidebar_position: 4
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-04"
 countries: [au]
 ---
 

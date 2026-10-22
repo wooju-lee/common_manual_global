@@ -1,9 +1,10 @@
 ---
-source_hash: "b89282044f"
+source_hash: "ab6cecc026"
 sidebar_label: To Customer
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-21"
 countries: [au]
 ---
 
@@ -42,8 +43,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
   ]}
 />
 
-<div className="table-stretch">
-
 | Step | Action |
 |:---:|---|
 | **1** | For each confirmed order, a shipment (ONLINE → AU_RX_LAB) is created automatically and immediately completed (`Outbound Completed`). |
@@ -52,8 +51,6 @@ import ProcessFlow from '@site/src/components/ProcessFlow';
 | **4** | When the lens work is done, change the work status to `Outbound Inspection` in **Rx Work Management**. |
 | **5** | In `Outbound Inspection`, register / print the customer shipping label; once the label is registered, the status updates to `Completed`. |
 | **6** | When the carrier picks up the package, the status updates automatically from `Completed` to `Finalized`, ONLINE RX Sales is created, and the AU_RX_LAB pending-outbound quantity is deducted. |
-
-</div>
 
 <div className="blockquote-gray">
 

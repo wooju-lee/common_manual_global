@@ -3,6 +3,7 @@ sidebar_label: Refund List (반품 리스트)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-12"
 countries: [au]
 ---
 

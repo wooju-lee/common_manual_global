@@ -3,6 +3,7 @@ sidebar_label: Return Registration & Inquiry (매출(반품) 등록 및 조회)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-13"
 countries: [au]
 ---
 

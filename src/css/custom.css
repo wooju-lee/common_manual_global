@@ -743,14 +743,16 @@ html:is([data-country='au'], [data-country='us'], [data-country='ca']) .navbar-s
   display: none;
 }
 
-/* Stretch a table to the full body width (Infima renders tables as display: block,
-   so they shrink to their content). Wrap the table in <div className="table-stretch"> */
-.table-stretch table {
-  display: table;
-}
+/* Stretch every table to the full body width (Infima renders tables as display: block,
+   so they shrink to their content). On mobile, keep Infima's scrollable block table. */
+@media (min-width: 997px) {
+  .markdown table {
+    display: table;
+  }
 
-/* Keep the first column (e.g. Step) as narrow as its content */
-.table-stretch :is(th, td):first-child {
-  width: 1%;
-  white-space: nowrap;
+  /* Keep the first column (e.g. Step) as narrow as its content */
+  .markdown table :is(th, td):first-child {
+    width: 1%;
+    white-space: nowrap;
+  }
 }

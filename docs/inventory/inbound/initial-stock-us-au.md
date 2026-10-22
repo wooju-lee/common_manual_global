@@ -3,6 +3,7 @@ sidebar_label: C2C Corporate Inbound (C2C 법인 입고)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-04"
 countries: [au]
 ---
 

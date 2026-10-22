@@ -3,6 +3,7 @@ sidebar_label: Offline Name Tag (오프라인 네임택)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-07"
+updated: "2026-10-12"
 countries: [au]
 ---
 

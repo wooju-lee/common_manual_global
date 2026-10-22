@@ -3,6 +3,7 @@ sidebar_label: S2S Store Transfer Outbound (S2S 스토어 간 이동 출고)
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-10-03"
+updated: "2026-10-21"
 countries: [au]
 ---
 
@@ -62,6 +63,18 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 | **2** | Select Inbound Store | 입고할 스토어·로케이션 선택. 출고 유형(`S2S`)이 자동 표시됩니다 |
 | **3** | Select Outbound Product | 출고할 제품 선택 (출고 로케이션에 재고가 있는 제품만 조회) |
 | **4** | Enter Outbound Information | 제품별 출고 수량 입력 후 **Register** |
+
+### 출고 / 입고 스토어 노출 기준 {#store-dropdown}
+
+출고 스토어 · 입고 스토어 드롭다운에 표시되는 스토어는 <mark>**처리 방식과 계정에 설정된 권한(스토어 / 법인)에 따라 다릅니다.**</mark>
+
+| 처리 방식 | 출고 스토어 | 입고 스토어 |
+|---|---|---|
+| **Outbound Registration**<br/><span className="label-sub">출고 등록</span> | 계정에 설정된 **스토어** 기준<br/>→ 내가 가진 스토어만 표시 | 계정에 설정된 **법인** 기준<br/>→ 법인의 모든 스토어 표시 |
+| **Request Outbound**<br/><span className="label-sub">출고 요청</span> | 계정에 설정된 **법인** 기준<br/>→ 법인의 모든 스토어 표시 | 계정에 설정된 **스토어** 기준<br/>→ 내가 가진 스토어만 표시 |
+
+- **출고 등록**은 내 스토어의 재고를 다른 스토어로 보내는 것이므로, 출고 스토어는 내 스토어로 제한됩니다.
+- **출고 요청**은 다른 스토어에 내 스토어로 보내달라고 요청하는 것이므로, 입고 스토어가 내 스토어로 제한됩니다.
 
 ### Step 1. 출고 스토어 선택
 
@@ -126,7 +139,7 @@ Step 1에서 **Request Outbound**를 선택하면, 승인자가 확정한 뒤 �
 
 <div className="blockquote-gray">
 
-> 출고 요청(**Request Outbound**)에서는 스토어 목록이 계정에 설정된 **스토어 권한**이 아니라, <mark>**계정에 설정된 법인 권한 기준으로 해당 법인의 스토어 전체**</mark>가 표시됩니다.
+> 출고 요청(**Request Outbound**)에서는 <mark>**출고 스토어는 법인의 모든 스토어, 입고 스토어는 계정에 설정된 스토어만**</mark> 표시됩니다. 👉 **[스토어 노출 기준 바로가기](#store-dropdown)**
 
 </div>
 
@@ -265,3 +278,4 @@ Step 1에서 **Request Outbound**를 선택하면, 승인자가 확정한 뒤 �
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-04 | 순서 요약 추가, 매뉴얼 형식 정리 | Wooju(Landa) |
+| 2026-10-21 | 출고 등록 / 요청별 출고 · 입고 스토어 노출 기준 추가 | Wooju(Landa) |

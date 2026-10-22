@@ -90,7 +90,7 @@ export default function DocItemLayout({children}) {
           <article>
             <DocBreadcrumbs />
             <DocVersionBadge />
-            <DocMeta author={frontMatter.author} created={frontMatter.created} />
+            <DocMeta author={frontMatter.author} created={frontMatter.created} updated={frontMatter.updated} />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
             <DocItemFooter />
