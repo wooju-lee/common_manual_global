@@ -19,6 +19,7 @@
 - `-au.md` = AU stub (`countries: [au]`)
 - `-kr.md` = KR stub (`countries: [kr]`) — KR은 **Common, Report, Store Management 메뉴만** 운영 (나머지 navbar는 `navbar-hide-kr`로 숨김)
 - `-jp.md` = JP 문서 (`countries: [jp]`) — JP는 IIC BO가 아닌 **IPOS** 기준, **IPOS 메뉴만** 운영 (`docs/ipos/`, navbar `navbar-only-jp` · 나머지는 `navbar-hide-jp`로 숨김). US 원본 없이 `-jp.md`만 둠
+- 국가 지정 URL: `/<국가>/<경로>` (예: `/jp/docs/ipos/maersk-wms-integration-jp`, `/au/docs/inventory/adjustment`) → vercel.json 리다이렉트로 `?country=` 전달 → `src/clientModules/countryFromUrl.js`가 국가 저장. 경로는 US 원본 경로를 써도 해당 국가 문서로 자동 이동
 - stub 기본 내용: `> 이 문서는 준비 중입니다.`
 
 ## i18n 구조

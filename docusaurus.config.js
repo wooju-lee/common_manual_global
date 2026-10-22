@@ -104,6 +104,8 @@ const config = {
 
   plugins: ['docusaurus-plugin-image-zoom'],
 
+  clientModules: ['./src/clientModules/countryFromUrl.js'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

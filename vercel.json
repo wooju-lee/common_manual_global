@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/:country(au|us|ca|kr|jp)", "destination": "/?country=:country", "permanent": false },
+    { "source": "/:country(au|us|ca|kr|jp)/:path*", "destination": "/:path*?country=:country", "permanent": false }
+  ]
+}
