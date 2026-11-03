@@ -3,7 +3,7 @@ sidebar_label: Shopify Sales Creation (Shopify 매출 생성)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-04-21"
-countries: [us, ca]
+countries: [us]
 ---
 
 # Shopify Sales Creation (Shopify 매출 생성)

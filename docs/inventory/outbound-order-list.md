@@ -1,5 +1,5 @@
 ---
-sidebar_label: Outbound Order List (출고별 주문 리스트)
+sidebar_label: Outbound Order List (주문별 출고 리스트)
 sidebar_position: 3
 
 author: Wooju(Landa)
@@ -7,7 +7,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# Outbound Order List (출고별 주문 리스트)
+# Outbound Order List (주문별 출고 리스트)
 
 > 출고 건별 연결된 주문 내역을 조회하는 기능입니다.
 >

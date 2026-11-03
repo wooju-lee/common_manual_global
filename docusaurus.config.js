@@ -53,7 +53,7 @@ const config = {
             const items = await defaultSidebarItemsGenerator({docs, ...args});
             // Inject frontmatter.countries into customProps for client-side filtering
             function enrichItems(sidebarItems) {
-              return sidebarItems.map((item) => {
+              const enriched = sidebarItems.map((item) => {
                 if (item.type === 'doc') {
                   const doc = docs.find((d) => d.id === item.id);
                   if (doc?.frontMatter?.countries) {
@@ -70,14 +70,14 @@ const config = {
                   return {...item, items: enrichItems(item.items)};
                 }
                 return item;
-              }).sort((a, b) => {
-                // Put non-stub docs before stub docs (-au, -ca, -kr, -jp suffixed)
-                // so Docusaurus navbar links to the original US doc, not the stub
-                const aIsStub = a.type === 'doc' && /-(au|ca|kr|jp)$/.test(a.id);
-                const bIsStub = b.type === 'doc' && /-(au|ca|kr|jp)$/.test(b.id);
-                if (aIsStub !== bIsStub) return aIsStub ? 1 : -1;
-                return 0; // preserve existing order otherwise
               });
+              // Docusaurus navbar links to the sidebar's first doc, so keep a non-stub item
+              // (US original or category) first; country docs (-au, -ca, -kr, -jp) otherwise keep
+              // their sidebar_position order
+              const isStub = (it) => it.type === 'doc' && /-(au|ca|kr|jp)$/.test(it.id);
+              const first = enriched.findIndex((it) => !isStub(it));
+              if (first > 0) enriched.unshift(...enriched.splice(first, 1));
+              return enriched;
             }
             return enrichItems(items);
           },

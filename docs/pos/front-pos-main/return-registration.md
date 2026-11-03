@@ -3,7 +3,7 @@ sidebar_label: Return Registration & Inquiry (매출(반품) 등록 및 조회)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
-updated: "2026-10-13"
+updated: "2026-10-22"
 countries: [au]
 ---
 
@@ -14,6 +14,21 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > 외부 POS(유통사 POS 또는 Bluebell POS)에서 환불을 완료한 뒤, IIC BO POS에서 **반품(매출 반품)을 등록**하는 방법을 안내합니다.
 >
 > 경로 : <span className="path-badge">IIC BO > FRONT POS (MAIN)</span>
+
+## 👉 Register / Lookup 구분 {#invoice-mode}
+
+`Invoice No.` 앞의 **Register / Lookup** 토글은 <mark>**매출을 새로 등록할 때(Register)와 이미 등록한 매출을 조회할 때(Lookup)**</mark>를 구분합니다.
+
+<div className="blockquote-gray">
+
+> **판매 등록은 `Register`, 조회 · 반품은 `Lookup`** 으로 기억해 주세요.
+
+</div>
+
+| 모드 | 언제 사용하나요? | 할 수 있는 것 | Cashier / Seller |
+|---|---|---|---|
+| **Register**<br/><span className="label-sub">매출 등록</span> | <mark>**매출(판매)을 등록할 때만**</mark> 사용 | 영수증 번호 입력 → 제품 · 멤버십 · 고객 객층 설정 → Confirm Sales | 로그인한 계정이 기본으로 설정 |
+| **Lookup**<br/><span className="label-sub">매출 조회</span> | <mark>**등록한 매출을 조회할 때**</mark> 사용 | • 매출 조회<br/>• 조회한 매출의 반품 등록 👉 **[반품 등록 바로가기](#refund-with-origin)**<br/>• AC 카드 재출력 | <mark>**매출 생성 시 설정한 Cashier / Seller가 드롭다운에 자동으로 채워짐**</mark> |
 
 ## 👉 AU 오프라인 반품 흐름
 
@@ -43,6 +58,8 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 `Invoice No.` 왼쪽에서 <mark>**Lookup**</mark>을 선택한 뒤, 원 매출의 **영수증 ID**를 스캔하거나 입력하고 Enter를 누릅니다.<br/>
 원 매출 내역이 표시되며, `Qty`에는 반품 가능한 수량이 표시됩니다.
+
+- 조회하면 <mark>**원 매출 생성 시 설정한 Cashier / Seller가 드롭다운에 자동으로 채워집니다.**</mark>
 
 <AnnotatedImage
   maxWidth="720px"
@@ -190,3 +207,4 @@ AU에서 원 매출이 없을 경우는 다음과 같습니다.
 |---|---|---|
 | 2026-10-03 | AU 최초 작성 (텍스트) | Wooju(Landa) |
 | 2026-10-13 | POS 메인 UI 변경 — 화면 이미지 교체, Lookup 모드 조회 반영 | Wooju(Landa) |
+| 2026-10-22 | 상단에 Register / Lookup 구분 추가, 조회 시 Cashier / Seller 자동 입력 안내 | Wooju(Landa) |

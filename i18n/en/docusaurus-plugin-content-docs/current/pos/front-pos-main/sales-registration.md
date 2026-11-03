@@ -1,10 +1,10 @@
 ---
-source_hash: "7e47fe984c"
+source_hash: "2cd5b516d3"
 sidebar_label: Sales Registration & Inquiry
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-10-03"
-updated: "2026-10-13"
+updated: "2026-10-22"
 countries: [au]
 ---
 
@@ -15,6 +15,21 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > This guide explains how to **create a sale** in IIC BO POS and print the AC card after payment is completed on an external POS (retailer POS or Bluebell POS).
 >
 > Path : <span className="path-badge">IIC BO > FRONT POS (MAIN)</span>
+
+## 👉 Register vs. Lookup {#invoice-mode}
+
+The **Register / Lookup** toggle in front of `Invoice No.` separates <mark>**registering a new sale (Register) from looking up a sale that is already registered (Lookup)**</mark>.
+
+<div className="blockquote-gray">
+
+> Remember: **`Register` to register a sale, `Lookup` to look up or return one.**
+
+</div>
+
+| Mode | When to use | What you can do | Cashier / Seller |
+|---|---|---|---|
+| **Register** | <mark>**Only when registering a sale**</mark> | Enter the receipt number → set products, membership, customer profile → Confirm Sales | Defaults to the logged-in account |
+| **Lookup** | <mark>**When looking up a registered sale**</mark> | • Look up the sale<br/>• Register a return for the looked-up sale 👉 **[Go to Return Registration](/docs/pos/front-pos-main/return-registration#refund-with-origin)**<br/>• Reprint the AC card | <mark>**The Cashier / Seller set when the sale was created are filled in the dropdowns automatically**</mark> |
 
 ## 👉 Sale creation process
 
@@ -50,11 +65,7 @@ The BO sale is **created with the same number**.
   ]}
 />
 
-| Mode | Purpose |
-|---|---|
-| **Register** | Register a new sale — the sale is created with the entered number |
-| **Lookup** | Look up an existing sale — used for returns and AC card reprints |
-
+- For what each mode is for, see **[Register vs. Lookup](#invoice-mode)** above.
 - Switching modes clears the entered number.
 - The default mode is `Lookup` only for **GM_Melbourne_MALL_Chadstone**; all other stores default to `Register`.
   - At Chadstone, <mark>**switch to Register**</mark> before registering a sale.
@@ -204,6 +215,7 @@ When the sale is created, the **AC card is printed** and sales registration is c
 
 Select **Lookup** to the left of `Invoice No.`, enter the sale's **Invoice No.** (external POS receipt number), and press Enter to load the purchased product history.
 
+- When you look up a sale, <mark>**the Cashier / Seller set when the sale was created are filled in the dropdowns automatically.**</mark>
 - While a sale is looked up, Confirm Sales and the membership / customer profile inputs are disabled.
 
 - To print the AC card again, click **AC Card RE Print**.
@@ -236,3 +248,4 @@ Select **Lookup** to the left of `Invoice No.`, enter the sale's **Invoice No.**
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
 | 2026-10-03 | Rewritten as a screen-based sale creation process | Wooju(Landa) |
 | 2026-10-13 | POS main UI change — replaced screen images, added Invoice No. Lookup / Register modes | Wooju(Landa) |
+| 2026-10-22 | Added Register vs. Lookup at the top (purpose, Cashier / Seller auto-filled on lookup) | Wooju(Landa) |

@@ -1,10 +1,10 @@
 ---
-source_hash: "601413d0fc"
+source_hash: "c3cc3637f6"
 sidebar_label: Return Registration & Inquiry
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-10-03"
-updated: "2026-10-13"
+updated: "2026-10-22"
 countries: [au]
 ---
 
@@ -15,6 +15,21 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 > This guide explains how to **register a return (sales return)** in IIC BO POS after the refund is completed on an external POS (retailer POS or Bluebell POS).
 >
 > Path : <span className="path-badge">IIC BO > FRONT POS (MAIN)</span>
+
+## 👉 Register vs. Lookup {#invoice-mode}
+
+The **Register / Lookup** toggle in front of `Invoice No.` separates <mark>**registering a new sale (Register) from looking up a sale that is already registered (Lookup)**</mark>.
+
+<div className="blockquote-gray">
+
+> Remember: **`Register` to register a sale, `Lookup` to look up or return one.**
+
+</div>
+
+| Mode | When to use | What you can do | Cashier / Seller |
+|---|---|---|---|
+| **Register** | <mark>**Only when registering a sale**</mark> | Enter the receipt number → set products, membership, customer profile → Confirm Sales | Defaults to the logged-in account |
+| **Lookup** | <mark>**When looking up a registered sale**</mark> | • Look up the sale<br/>• Register a return for the looked-up sale 👉 **[Go to Return Registration](#refund-with-origin)**<br/>• Reprint the AC card | <mark>**The Cashier / Seller set when the sale was created are filled in the dropdowns automatically**</mark> |
 
 ## 👉 AU offline return process
 
@@ -44,6 +59,8 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 Select <mark>**Lookup**</mark> to the left of `Invoice No.`, then scan or enter the original sale's **receipt ID** and press Enter.<br/>
 The original sale details are shown, and `Qty` shows the quantity available for return.
+
+- When you look up the sale, <mark>**the Cashier / Seller set when the original sale was created are filled in the dropdowns automatically.**</mark>
 
 <AnnotatedImage
   maxWidth="720px"
@@ -191,3 +208,4 @@ Store staff follow the same steps in BO. Only the way the return is sent to Blue
 |---|---|---|
 | 2026-10-03 | Initial AU version (text) | Wooju(Landa) |
 | 2026-10-13 | POS main UI change — replaced screen images, added Lookup mode lookup | Wooju(Landa) |
+| 2026-10-22 | Added Register vs. Lookup at the top, Cashier / Seller auto-filled on lookup | Wooju(Landa) |

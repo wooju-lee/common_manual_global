@@ -6,7 +6,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# L2S Distribution Inbound (L2S 분배 입고)
+# 📍 L2S Distribution Inbound (L2S 분배 입고)
 
 > L2S : Logistics To Store로, 물류센터로부터 스토어로의 입고 유형을 의미합니다.
 >

@@ -7,7 +7,7 @@ updated: "2026-10-03"
 countries: [ca]
 ---
 
-# Outbound Label Print
+# 📍 Outbound Label Print
 
 > RX 출고(Store > Lab)의 진행 상황을 확인하고 배송 라벨을 출력하는 방법을 안내합니다.
 >
