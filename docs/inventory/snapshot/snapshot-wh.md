@@ -3,6 +3,7 @@ sidebar_label: Inventory Snapshot (WH) (재고 스냅샷 · WH)
 sidebar_position: 2
 author: Wooju(Landa)
 created: "2026-09-15"
+updated: "2026-11-03"
 countries: [us]
 ---
 

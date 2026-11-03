@@ -3,6 +3,7 @@ sidebar_label: S2S Store Transfer Outbound (S2S 스토어 간 출고)
 sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-09-15"
+updated: "2026-11-03"
 countries: [us]
 ---
 

@@ -3,6 +3,7 @@ sidebar_label: L2S Distribution Outbound (L2S 분배 출고)
 sidebar_position: 4
 author: Wooju(Landa)
 created: "2026-09-15"
+updated: "2026-11-03"
 countries: [us]
 ---
 

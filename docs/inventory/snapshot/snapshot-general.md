@@ -3,6 +3,7 @@ sidebar_label: Inventory Snapshot · Store (재고 스냅샷 · 일반)
 sidebar_position: 1
 author: Wooju(Landa)
 created: "2026-09-15"
+updated: "2026-11-03"
 countries: [us]
 ---
 
@@ -19,6 +20,7 @@ countries: [us]
 | **저장 시점** | 스토어 현지 시간 기준 매일 23:00 자동 저장 |
 | **저장 대상** | 전 스토어 / 로케이션의 재고 |
 | **용도** | 과거 특정일의 재고 확인, 마감 재고 확인 |
+| **SAP 전송** | 매일 01:00(스토어 현지 시간)에 전일 23:00 스냅샷을 한국 본사(SAP)로 전송 |
 
 <div className="blockquote-gray">
 
@@ -60,3 +62,4 @@ countries: [us]
 |---|---|---|
 | 2026-09-15 | 최초 작성 | Wooju(Landa) |
 | 2026-11-03 | 재고 스냅샷 조회(Overview) 문서 내용 이관 (코드 기준 검증) | Wooju(Landa) |
+| 2026-11-03 | 스냅샷이란? 표에 SAP 전송 시점 추가 | Wooju(Landa) |
