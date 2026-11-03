@@ -6,7 +6,7 @@ created: "2026-04-21"
 countries: [us]
 ---
 
-# Inventory List (실시간 재고 조회)
+# 📍 Inventory List (실시간 재고 조회)
 
 > 현재 시점의 전산 재고를 스토어, 로케이션, 아이템별로 실시간 확인할 수 있는 메뉴입니다.
 >

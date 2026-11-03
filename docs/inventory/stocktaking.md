@@ -4,6 +4,7 @@ sidebar_position: 6
 author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
+sidebar_class_name: sidebar-tbd
 ---
 
 # 📍 Stocktaking (실사)

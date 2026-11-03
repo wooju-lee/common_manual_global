@@ -7,7 +7,7 @@ updated: "2026-10-04"
 countries: [us]
 ---
 
-# Inventory In/Out History (입/출고 내역)
+# 📍 Inventory In/Out History (입/출고 내역)
 
 > 스토어 간 재고 이동이 **출고 요청 → 출고 → 입고 확정**까지 어떻게 진행되었는지 한 화면에서 확인하는 메뉴입니다.
 >

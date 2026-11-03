@@ -6,7 +6,7 @@ created: "2026-04-21"
 countries: [us]
 ---
 
-# Inventory Transfer SALES → DP (매장 재고 이동)
+# 📍 Inventory Transfer SALES → DP (매장 재고 이동)
 
 > POS에서 Sales 로케이션 재고를 DP 로케이션으로 이동 처리하는 방법을 안내합니다.
 >

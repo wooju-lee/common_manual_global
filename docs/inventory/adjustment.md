@@ -5,6 +5,7 @@ sidebar_position: 5
 author: Wooju(Landa)
 created: "2026-04-21"
 countries: [us]
+sidebar_class_name: sidebar-tbd
 ---
 
 # 📍 Adjustment (조정)

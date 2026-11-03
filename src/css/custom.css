@@ -51,6 +51,23 @@ html {
   letter-spacing: 0.03em;
 }
 
+/* Sidebar TBD badge — docs with frontmatter `sidebar_class_name: sidebar-tbd` (empty pages) */
+.sidebar-tbd > .menu__link::after {
+  content: 'TBD';
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-size: 0.55rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+  background: var(--ifm-color-primary);
+  padding: 1px 4px;
+  border-radius: 3px;
+  margin-left: 6px;
+  margin-top: 2px;
+  letter-spacing: 0.03em;
+}
+
 /* Sidebar */
 :root {
   --doc-sidebar-width: 240px;
@@ -753,6 +770,24 @@ html:not([data-country='jp']) .navbar-only-jp {
 html:is([data-country='au'], [data-country='us'], [data-country='ca'], [data-country='kr']) .navbar-report::after,
 html:is([data-country='au'], [data-country='us'], [data-country='ca']) .navbar-store-mgmt::after {
   display: none;
+}
+
+/* LMS / POS are TBD for US only; AU / CA keep them live */
+html:not([data-country='us']) :is(.navbar-lms, .navbar-pos)::after {
+  display: none;
+}
+
+/* US: move POS → LMS right before System Setting (flex order; other items keep source order) */
+html[data-country='us'] .navbar-pos {
+  order: 1;
+}
+
+html[data-country='us'] .navbar-lms {
+  order: 2;
+}
+
+html[data-country='us'] .navbar-system-setting {
+  order: 3;
 }
 
 /* Stretch every table to the full body width (Infima renders tables as display: block,

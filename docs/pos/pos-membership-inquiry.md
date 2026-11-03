@@ -6,7 +6,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# Membership Search (멤버십 조회)
+# 📍 Membership Search (멤버십 조회)
 
 > POS 멤버십 정보를 조회하는 기능입니다.
 >

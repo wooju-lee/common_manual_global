@@ -6,7 +6,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# Customer Information (고객 객층 정보 설정)
+# 📍 Customer Information (고객 객층 정보 설정)
 
 > POS 고객 객층 정보를 설정하는 기능입니다.
 >

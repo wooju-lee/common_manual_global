@@ -6,7 +6,7 @@ created: "2026-04-14"
 countries: [us]
 ---
 
-# Inventory Ledger (재고 원장 조회)
+# 📍 Inventory Ledger (재고 원장 조회)
 
 > 모든 재고 처리 이력에 대해 조회할 수 있는 메뉴입니다.
 >

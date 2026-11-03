@@ -6,7 +6,7 @@ created: "2026-04-14"
 countries: [us]
 ---
 
-# Inventory Movement (로케이션 이동)
+# 📍 Inventory Movement (로케이션 이동)
 
 > 동일 매장 내에서 창고(Location) 간 재고를 이동하는 기능입니다.
 >

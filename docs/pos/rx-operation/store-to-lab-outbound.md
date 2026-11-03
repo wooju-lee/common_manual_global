@@ -7,7 +7,7 @@ updated: "2026-10-03"
 countries: [us]
 ---
 
-# Store > Lab 출고 생성
+# 📍 Store > Lab 출고 생성
 
 > Shopify에서 발생한 RX 매출 주문의 조회, 처방 정보 등록, Lab 출고 및 배송 라벨 출력까지의 전체 흐름을 안내합니다.
 >

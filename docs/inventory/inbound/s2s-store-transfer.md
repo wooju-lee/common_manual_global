@@ -4,6 +4,7 @@ sidebar_position: 4
 author: Wooju(Landa)
 created: "2026-09-15"
 countries: [us]
+sidebar_class_name: sidebar-tbd
 ---
 
 # 📍 S2S Store Transfer Inbound (S2S 스토어 간 입고)

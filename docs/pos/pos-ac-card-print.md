@@ -6,7 +6,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# AC Card Print & Reprint (AC 카드 출력 및 재출력)
+# 📍 AC Card Print & Reprint (AC 카드 출력 및 재출력)
 
 > AC 카드를 출력하거나 재출력하는 기능입니다.
 >

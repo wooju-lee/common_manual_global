@@ -4,6 +4,7 @@ sidebar_position: 5
 author: Wooju(Landa)
 created: "2026-09-15"
 countries: [us]
+sidebar_class_name: sidebar-tbd
 ---
 
 # 📍 L2S Distribution Inbound (L2S 분배 입고)

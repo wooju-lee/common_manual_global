@@ -4,6 +4,7 @@ sidebar_position: 3
 author: Wooju(Landa)
 created: "2026-09-15"
 countries: [us]
+sidebar_class_name: sidebar-tbd
 ---
 
 # 📍 S2L Store Return Inbound (S2L 스토어 반품 입고)

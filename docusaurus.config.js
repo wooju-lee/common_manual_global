@@ -147,7 +147,7 @@ const config = {
             sidebarId: 'posSidebar',
             position: 'left',
             label: 'POS',
-            className: 'navbar-hide-kr navbar-hide-jp',
+            className: 'navbar-tbd navbar-pos navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
@@ -161,7 +161,7 @@ const config = {
             sidebarId: 'lmsSidebar',
             position: 'left',
             label: 'LMS',
-            className: 'navbar-hide-kr navbar-hide-jp',
+            className: 'navbar-tbd navbar-lms navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'docSidebar',
@@ -196,7 +196,7 @@ const config = {
             sidebarId: 'systemSettingSidebar',
             position: 'left',
             label: 'System Setting',
-            className: 'navbar-tbd navbar-hide-au navbar-hide-kr navbar-hide-jp',
+            className: 'navbar-tbd navbar-system-setting navbar-hide-au navbar-hide-kr navbar-hide-jp',
           },
           {
             type: 'localeDropdown',

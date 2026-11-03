@@ -6,7 +6,7 @@ created: "2026-04-21"
 countries: [us]
 ---
 
-# Shopify Sales Creation (Shopify 매출 생성)
+# 📍 Shopify Sales Creation (Shopify 매출 생성)
 
 > Shopify를 통해 결제된 오프라인 매출을 조회하고, 멤버십 설정 및 AC Card 인쇄, Gift Card 사용 처리를 안내합니다.
 >

@@ -6,7 +6,7 @@ created: "2026-09-15"
 countries: [us]
 ---
 
-# Sales Inquiry (매출 조회)
+# 📍 Sales Inquiry (매출 조회)
 
 > POS에서 발생한 매출 내역을 조회하는 기능입니다.
 >
