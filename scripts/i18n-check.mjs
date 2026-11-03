@@ -42,6 +42,8 @@ function syncUpdated(file) {
   const line = latest && latest > created ? `updated: "${latest}"` : null;
   const current = fm.match(/^updated:.*$/m)?.[0] ?? null;
   if (current === line) return false;
+  // `updated` equal to `created` shows the same date, so leave it as written
+  if (!line && current?.match(/[\d-]{10}/)?.[0] === created) return false;
   if (current) text = text.replace(/^updated:.*\n/m, line ? `${line}\n` : '');
   else text = text.replace(/^(created:.*)$/m, `$1\n${line}`);
   fs.writeFileSync(file, text);
