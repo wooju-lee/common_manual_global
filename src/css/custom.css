@@ -766,9 +766,8 @@ html:not([data-country='jp']) .navbar-only-jp {
   display: none !important;
 }
 
-/* Report is live for AU / US / CA / KR, Store Management for AU / US / CA — no TBD badge */
-html:is([data-country='au'], [data-country='us'], [data-country='ca'], [data-country='kr']) .navbar-report::after,
-html:is([data-country='au'], [data-country='us'], [data-country='ca']) .navbar-store-mgmt::after {
+/* Report and Store Management are live for AU / US / CA / KR — no TBD badge */
+html:is([data-country='au'], [data-country='us'], [data-country='ca'], [data-country='kr']) :is(.navbar-report, .navbar-store-mgmt)::after {
   display: none;
 }
 
