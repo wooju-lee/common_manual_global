@@ -53,7 +53,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 | **QR 코드** | **Include product QR**을 체크하면 표시 (젠틀몬스터 공식몰 제품 검색 링크) |
 
 - 출력 용지는 **A4**이며, 65 × 13mm 네임택이 2열로 배치됩니다. (페이지당 약 26개)
-- 인쇄 창에서 배율은 **100%**로 출력해 주세요.
+- 인쇄 창에서 배율은 <strong>100%</strong>로 출력해 주세요.
 
 ## 2. 리스트 검색
 
@@ -129,7 +129,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 - 모델 코드 또는 모델명으로 검색(2자 이상)한 뒤, 출력할 모델을 체크합니다.
   - <mark>**최대 50개 모델**</mark>까지 선택할 수 있으며, 페이지를 넘겨도 선택이 유지됩니다.
   - 같은 모델이라도 판매가가 다르면 가격별로 여러 행에 표시되니, 맞는 가격을 선택해 주세요.
-- **Next →**를 클릭합니다.
+- <strong>Next →</strong>를 클릭합니다.
 
 <div className="blockquote-gray">
 
