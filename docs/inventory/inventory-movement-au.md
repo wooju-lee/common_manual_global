@@ -1,6 +1,7 @@
 ---
 sidebar_label: Inventory Movement (로케이션 이동)
-sidebar_position: 2
+sidebar_position: 4
+slug: /inventory/movement/transfer-au
 author: Wooju(Landa)
 created: "2026-10-03"
 updated: "2026-10-12"
@@ -40,7 +41,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 <AnnotatedImage
   maxWidth="720px"
-  src={require('./img/transfer-01.png').default}
+  src={require('./movement/img/transfer-01.png').default}
   alt="Inventory Movement 목록에서 Movement Registration 클릭"
   boxes={[
     {x: 85.2, y: 71.5, w: 8.6, h: 5.2},
@@ -59,7 +60,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 <AnnotatedImage
   maxWidth="720px"
-  src={require('./img/transfer-02.png').default}
+  src={require('./movement/img/transfer-02.png').default}
   alt="Step 1. 스토어 및 출발/도착 로케이션 선택"
   boxes={[
     {x: 8.9, y: 22.6, w: 19.0, h: 4.2},
@@ -75,7 +76,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 <AnnotatedImage
   maxWidth="720px"
-  src={require('./img/transfer-03.png').default}
+  src={require('./movement/img/transfer-03.png').default}
   alt="Step 2. 이동할 제품 검색 및 선택"
   boxes={[
     {x: 4.5, y: 34.0, w: 71.5, h: 14.5},
@@ -90,7 +91,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 <AnnotatedImage
   maxWidth="720px"
-  src={require('./img/transfer-04.png').default}
+  src={require('./movement/img/transfer-04.png').default}
   alt="Step 3. 이동 수량 및 Remarks 입력 후 Register"
   boxes={[
     {x: 64.1, y: 67.6, w: 11.7, h: 11.6},
@@ -129,7 +130,7 @@ import AnnotatedImage from '@site/src/components/AnnotatedImage';
 
 <AnnotatedImage
   maxWidth="720px"
-  src={require('./img/transfer-05.png').default}
+  src={require('./movement/img/transfer-05.png').default}
   alt="Inventory Movement 업로드 양식 작성 예시"
 />
 

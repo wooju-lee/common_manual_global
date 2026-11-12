@@ -1,7 +1,8 @@
 ---
-source_hash: "eadd99fe49"
+source_hash: "7a0e474af0"
 sidebar_label: Inventory Movement
-sidebar_position: 2
+sidebar_position: 4
+slug: /inventory/movement/transfer-au
 author: Wooju(Landa)
 created: "2026-10-03"
 updated: "2026-10-12"

@@ -1,7 +1,8 @@
 ---
-source_hash: "cab3021c88"
+source_hash: "9ee617138e"
 sidebar_label: Inventory Movement
-sidebar_position: 2
+sidebar_position: 4
+slug: /inventory/movement/transfer
 author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]

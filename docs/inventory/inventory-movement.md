@@ -1,6 +1,7 @@
 ---
 sidebar_label: Inventory Movement (로케이션 이동)
-sidebar_position: 2
+sidebar_position: 4
+slug: /inventory/movement/transfer
 author: Wooju(Landa)
 created: "2026-04-14"
 countries: [us]
